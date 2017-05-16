@@ -72,6 +72,16 @@ public:
 	GL_ATOMIC(double,hotwater_temperature); ///< hotwater temperature (degF)
 	GL_ATOMIC(double,hotwater_temperature_drop); ///< hotwater temperature drop from plumbing bus (degF)
 	GL_STRUCT(double_array,state_setpoint); ///< temperature setpoints for each state
+
+	GL_ATOMIC(double, energy_baseline);
+	GL_ATOMIC(bool, heated_dry_enabled);
+	GL_ATOMIC(double, daily_dishwasher_demand);
+	GL_ATOMIC(double, queue);
+	GL_ATOMIC(double, queue_min);
+	GL_ATOMIC(double, queue_max);
+
+
+
 private:
 	size_t n_states; ///< number states defined in controlmode
 

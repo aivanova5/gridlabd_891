@@ -666,7 +666,7 @@ public:
 	};
 	inline complex *get_addr(size_t r, size_t c=0) { return x[r][c]; };
 	inline complex &get_at(size_t r, size_t c=0) { return *(x[r][c]) ; };
-	inline void set_at(size_t r, size_t c, complex &v) 
+	inline void set_at(size_t r, size_t c, complex v)
 	{ 
 		check_valid(r,c);
 		if ( x[r][c]==NULL ) 

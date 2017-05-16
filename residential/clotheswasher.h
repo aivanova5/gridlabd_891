@@ -29,12 +29,12 @@ class clotheswasher : public residential_enduse
 	typedef enum {
 		HOTWASH		= 0x00,
 		WARMWASH	= 0x01,
-		COLDWASH    = 0x02;
+		COLDWASH    = 0x02,
 	} CLOTHESWASHERWASHTEMP;
 	typedef enum {
 		HOTRINSE	= 0x00,
 		WARMRINSE	= 0x01,
-		COLDRINSE   = 0x02;
+		COLDRINSE   = 0x02,
 	} CLOTHESWASHERRINSETEMP;
 	typedef enum {
 		QUICK	= 0x00,
@@ -72,7 +72,12 @@ public:
 	GL_BITFLAGS(enumeration,washtemp); ///< dry option selector
 	GL_BITFLAGS(enumeration,rinsetemp); ///< wash option selector
 	GL_BITFLAGS(enumeration,washmode); ///< wash option selector
+	GL_BITFLAGS(enumeration,drymode); ///< dry option selector
 	GL_STRUCT(complex,pump_power); ///< power used by pump
+	GL_STRUCT(complex,pump_power_low); ///< power used by pump at low RPMs
+	GL_STRUCT(complex,pump_power_medium); ///<power used by pump at medium RPMs
+	GL_STRUCT(complex,pump_power_high);  ///<power used by pump at high RPMs
+	///GL_STRUCT(complex,coil_power); ///<power used by coil to heat
 	GL_STRUCT(complex,coil_power_wet); ///< power used by coils when wet (100C)
 	//GL_STRUCT(complex,coil_power_dry); ///< power used by coils when dry (>>100C)
 	GL_STRUCT(complex,control_power); ///< power used by controller
@@ -81,6 +86,9 @@ public:
 	GL_ATOMIC(double,hotwater_demand); ///< hotwater consumption (gpm)
 	GL_ATOMIC(double,hotwater_temperature); ///< hotwater temperature (degF)
 	GL_ATOMIC(double,hotwater_temperature_drop); ///< hotwater temperature drop from plumbing bus (degF)
+	GL_ATOMIC(double,warmwater_demand); ///< warm water consumption (gpm)
+	GL_ATOMIC(double,warmwater_temperature); ///< warm water temperature (degF)
+	GL_ATOMIC(double,warmwater_temperature_drop); ///< warm water temperature drop from plumbing bus (degF)
 	GL_STRUCT(double_array,state_setpoint); ///< temperature setpoints for each state
 private:
 	size_t n_states; ///< number states defined in controlmode

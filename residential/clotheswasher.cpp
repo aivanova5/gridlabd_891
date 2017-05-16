@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <math.h>
 
-#include "house_a.h"
+#include "house_e.h"
 #include "clotheswasher.h"
 
 EXPORT_CREATE(clotheswasher)
@@ -21,20 +21,20 @@ EXPORT_PRECOMMIT(clotheswasher)
 EXPORT_SYNC(clotheswasher)
 EXPORT_ISA(clotheswasher)
 
-extern "C" void decrement_queue(statemachine *machine)
+extern "C" void clotheswasher_decrement_queue(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property queue(obj,"state_queue");
 	double value = queue.get_double();
 	queue.setp(value-1);
 }
-extern "C" void fill_unit(statemachine *machine)
+extern "C" void clotheswasher_fill_unit(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property gpm(obj,"hotwater_demand");
 	gpm.setp(5.0);
 }
-extern "C" void check_fill(statemachine *machine)
+extern "C" void clotheswasher_check_fill(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property gpm(obj,"hotwater_demand");
@@ -47,23 +47,23 @@ extern "C" void check_fill(statemachine *machine)
 		gpm.setp(0.0);
 	}
 }
-extern "C" void drain_unit(statemachine *machine)
+extern "C" void clotheswasher_drain_unit(statemachine *machine)
 {
 	// TODO nothing here?
 }
-extern "C" void heat_water(statemachine *machine)
+extern "C" void clotheswasher_heat_water(statemachine *machine)
 {
 	// TODO turn on heater
 }
-extern "C" void check_water(statemachine *machine)
+extern "C" void clotheswasher_check_water(statemachine *machine)
 {
 	// TODO turn off heater when water reaches setpoint
 }
-extern "C" void heat_air(statemachine *machine)
+extern "C" void clotheswasher_heat_air(statemachine *machine)
 {
 	// TODO turn on heater
 }
-extern "C" void check_air(statemachine *machine)
+extern "C" void clotheswasher_check_air(statemachine *machine)
 {
 	// TODO turn off heater when water reaches setpoint
 }
@@ -131,7 +131,7 @@ clotheswasher::clotheswasher(MODULE *module) : residential_enduse(module)
 			PT_complex,"pump_power_low",PADDR(pump_power_low), PT_DESCRIPTION, "the power consumed by the pump when it runs at low speed",
 			PT_complex,"pump_power_medium",PADDR(pump_power_medium), PT_DESCRIPTION, "the power consumed by the pump when it runs at medium speed",
 			PT_complex,"pump_power_high",PADDR(pump_power_high), PT_DESCRIPTION, "the power consumed by the pump when it runs at high speed",
-			PT_complex,"coil_power",PADDR(coil_power), PT_DESCRIPTION, "the power consumed by the coil while heating water",
+			PT_complex,"coil_power_wet",PADDR(coil_power_wet), PT_DESCRIPTION, "the power consumed by the coil while heating water",
 			PT_complex,"control_power",PADDR(control_power), PT_DESCRIPTION, "the power consumed by the controller when it is on",
 
 			PT_double,"demand_rate[unit/day]",PADDR(demand_rate), PT_DESCRIPTION, "the rate at which dishwasher loads accumulate per day",
@@ -140,10 +140,10 @@ clotheswasher::clotheswasher(MODULE *module) : residential_enduse(module)
 			PT_double,"hotwater_demand[gpm]", PADDR(hotwater_demand), PT_DESCRIPTION, "the rate at which hotwater is being consumed",
 			PT_double,"hotwater_temperature[degF]", PADDR(hotwater_temperature), PT_DESCRIPTION, "the incoming hotwater temperature",
 			PT_double,"hotwater_temperature_drop[degF]", PADDR(hotwater_temperature_drop), PT_DESCRIPTION, "the temperature drop from the plumbing bus to the clotheswasher",
-			NULL)<1) 
-			PT_double, "warmwater_demand[gpm]", PADDR(warmwater_demand), PT_DESCRIPTION, "the rate at which warmwater is being consumed",
-			PT_double, "warmwater_temperature[degF]", PADDR(warmwater_temperature), PT_DESCRIPTION, "the incoming warm water temperature"
-			PT_double, "warmwater_temperature_drop[degF]", PADDR(warmwater_temperature_drop). PT_DESCRIPTION, "the temperature drop from the plumbing bus to the clotheswasher"
+//			PT_double,"warmwater_demand[gpm]", PADDR(warmwater_demand), PT_DESCRIPTION, "the rate at which warmwater is being consumed",
+//			PT_double,"warmwater_temperature[degF]", PADDR(warmwater_temperature), PT_DESCRIPTION, "the incoming warm water temperature",
+//			PT_double,"warmwater_temperature_drop[degF]", PADDR(warmwater_temperature_drop). PT_DESCRIPTION, "the temperature drop from the plumbing bus to the clotheswasher"
+			NULL)<1)
 			GL_THROW("unable to publish properties in %s",__FILE__);
 	}
 }
@@ -166,8 +166,8 @@ int clotheswasher::create()
 
 	controlmode = OFF;
 	washmode = HEAVY;
-	washtemp = WARM;
-	rinsetemp = WARM;
+	washtemp = WARMWASH;
+	rinsetemp = WARMRINSE;
 	demand_rate = 1.0;
 
 	gl_warning("explicit %s model is experimental and has not been validated", OBJECTHDR(this)->oclass->name);
@@ -200,7 +200,7 @@ int clotheswasher::init(OBJECT *parent)
 	if ( pump_power_low.Mag()==0 ) pump_power.SetRect(150,82);
 	if ( pump_power_medium.Mag()==0 ) pump_power.SetRect(200,82);
 	if ( pump_power_high.Mag()==0 ) pump_power.SetRect(250,82);
-	if ( coil_power.Mag()==0 ) coil_power.SetRect(950,0);
+	if ( coil_power_wet.Mag()==0 ) coil_power_wet.SetRect(950,0);
 	if ( control_power.Mag()==0 ) control_power.SetRect(10,0);
 
 	// count the number of states
@@ -279,12 +279,12 @@ int clotheswasher::init(OBJECT *parent)
 		state_power.set_at(POSTRINSEAGITATION,P,&pump_power_low);
 		state_power.set_at(PUMPRINSEHIGH,P,&pump_power_high);
 		state_power.set_at(POSTRINSEHIGHAGITATION,P,&pump_power_low);
-		state_power.set_at(PUMPWASHLOWHEATWARM,Z,&coil_power);
-		state_power.set_at(PUMPWASHLOWHEATHOT,Z,&coil_power);
-		state_power.set_at(WASHAGITATION,Z,&coil_power);
-		state_power.set_at(PUMPRINSELOWHEATWARM,Z,&coil_power);
-		state_power.set_at(PUMPRINSELOWHEATHOT,Z,&coil_power);
-		state_power.set_at(RINSEAGITATION,Z,&coil_power);
+		state_power.set_at(PUMPWASHLOWHEATWARM,Z,&coil_power_wet);
+		state_power.set_at(PUMPWASHLOWHEATHOT,Z,&coil_power_wet);
+		state_power.set_at(WASHAGITATION,Z,&coil_power_wet);
+		state_power.set_at(PUMPRINSELOWHEATWARM,Z,&coil_power_wet);
+		state_power.set_at(PUMPRINSELOWHEATHOT,Z,&coil_power_wet);
+		state_power.set_at(RINSEAGITATION,Z,&coil_power_wet);
 	}
 
 	// check the size of the state_power array 
@@ -338,23 +338,23 @@ int clotheswasher::init(OBJECT *parent)
 		CLOTHESWASHERSTATE state;
 		FSMCALL call;
 	} *f, map[] = {
-		{OFF,					decrement_queue,	NULL,			NULL},
-		{CONTROLSTART			NULL,				NULL,			NULL},
-		{PUMPWASHLOWHEATCOLD,	fill_unit,			check_fill,		NULL}, // note: may use cold water
-		{PUMPWASHLOWHEATWARM,	fill_unit,			check_fill, 	NULL},
-		{PUMPWASHLOWHEATHOT,	fill_unit,			check_fill,		NULL},
-		{WASHAGITATION,			heat_unit,			check_water,	NULL},
-		{PUMPWASHMEDIUM,		NULL,				NULL,			drain_unit},
+		{OFF,					clotheswasher_decrement_queue,	NULL,			NULL},
+		{CONTROLSTART,			NULL,				NULL,			NULL},
+		{PUMPWASHLOWHEATCOLD,	clotheswasher_fill_unit,			clotheswasher_check_fill,		NULL}, // note: may use cold water
+		{PUMPWASHLOWHEATWARM,	clotheswasher_fill_unit,			clotheswasher_check_fill, 	NULL},
+		{PUMPWASHLOWHEATHOT,	clotheswasher_fill_unit,			clotheswasher_check_fill,		NULL},
+		{WASHAGITATION,			clotheswasher_heat_water,			clotheswasher_check_water,	NULL},
+		{PUMPWASHMEDIUM,		NULL,				NULL,			clotheswasher_drain_unit},
 		{CONTROLRINSE,			NULL,				NULL,			NULL},
-		{PUMPRINSELOWHEATCOLD,	fill_unit,			check_fill,		NULL},
-		{PUMPRINSELOWHEATWARM,	fill_unit,			check_fill,		NULL},
-		{PUMPRINSELOWHEATHOT,	fill_unit,			check_fill,		NULL},
-		{RINSEAGITATION,		heat_water,			check_water,	NULL},
-		{PUMPRINSEMEDIUM,		NULL,				NULL,			drain_unit},
-		{POSTRINSEAGITATION,	NULL,				NULL,			drain_unit},
+		{PUMPRINSELOWHEATCOLD,	clotheswasher_fill_unit,			clotheswasher_check_fill,		NULL},
+		{PUMPRINSELOWHEATWARM,	clotheswasher_fill_unit,			clotheswasher_check_fill,		NULL},
+		{PUMPRINSELOWHEATHOT,	clotheswasher_fill_unit,			clotheswasher_check_fill,		NULL},
+		{RINSEAGITATION,		clotheswasher_heat_water,			clotheswasher_check_water,	NULL},
+		{PUMPRINSEMEDIUM,		NULL,				NULL,			clotheswasher_drain_unit},
+		{POSTRINSEAGITATION,	NULL,				NULL,			clotheswasher_drain_unit},
 		{CONTROLRINSEHIGH,		NULL,				NULL,			NULL},
-		{PUMPRINSEHIGH,			NULL,				NULL,			drain_unit},
-		{POSTRINSEHIGHAGITATION,NULL,				NULL,			drain_unit},
+		{PUMPRINSEHIGH,			NULL,				NULL,			clotheswasher_drain_unit},
+		{POSTRINSEHIGHAGITATION,NULL,				NULL,			clotheswasher_drain_unit},
 		{CONTROLEND,			NULL,				NULL,			NULL},
 	};
 	for ( size_t n=0 ; n<sizeof(map)/sizeof(map[0]) ; n++ )

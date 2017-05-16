@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <math.h>
 
-#include "house_a.h"
+#include "house_e.h"
 #include "dishwasher.h"
 
 EXPORT_CREATE(dishwasher)
@@ -21,20 +21,20 @@ EXPORT_PRECOMMIT(dishwasher)
 EXPORT_SYNC(dishwasher)
 EXPORT_ISA(dishwasher)
 
-extern "C" void decrement_queue(statemachine *machine)
+extern "C" void dishwasher_decrement_queue(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property queue(obj,"state_queue");
 	double value = queue.get_double();
 	queue.setp(value-1);
 }
-extern "C" void fill_unit(statemachine *machine)
+extern "C" void dishwasher_fill_unit(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property gpm(obj,"hotwater_demand");
 	gpm.setp(5.0);
 }
-extern "C" void check_fill(statemachine *machine)
+extern "C" void dishwasher_check_fill(statemachine *machine)
 {
 	gld_object *obj = get_object(machine->context);
 	gld_property gpm(obj,"hotwater_demand");
@@ -47,23 +47,23 @@ extern "C" void check_fill(statemachine *machine)
 		gpm.setp(0.0);
 	}
 }
-extern "C" void drain_unit(statemachine *machine)
+extern "C" void dishwasher_drain_unit(statemachine *machine)
 {
 	// TODO nothing here?
 }
-extern "C" void heat_water(statemachine *machine)
+extern "C" void dishwasher_heat_water(statemachine *machine)
 {
 	// TODO turn on heater
 }
-extern "C" void check_water(statemachine *machine)
+extern "C" void dishwasher_check_water(statemachine *machine)
 {
 	// TODO turn off heater when water reaches setpoint
 }
-extern "C" void heat_air(statemachine *machine)
+extern "C" void dishwasher_heat_air(statemachine *machine)
 {
 	// TODO turn on heater
 }
-extern "C" void check_air(statemachine *machine)
+extern "C" void dishwasher_check_air(statemachine *machine)
 {
 	// TODO turn off heater when water reaches setpoint
 }
@@ -130,7 +130,13 @@ dishwasher::dishwasher(MODULE *module) : residential_enduse(module)
 			PT_double,"hotwater_demand[gpm]", PADDR(hotwater_demand), PT_DESCRIPTION, "the rate at which hotwater is being consumed",
 			PT_double,"hotwater_temperature[degF]", PADDR(hotwater_temperature), PT_DESCRIPTION, "the incoming hotwater temperature",
 			PT_double,"hotwater_temperature_drop[degF]", PADDR(hotwater_temperature_drop), PT_DESCRIPTION, "the temperature drop from the plumbing bus to the dishwasher",
-			NULL)<1) 
+			PT_double,"energy_baseline[kWh]", PADDR(energy_baseline), PT_DESCRIPTION, "baseline energy consumed by the appliance",
+			PT_bool,"heated_dry_enabled", PADDR(heated_dry_enabled), PT_DESCRIPTION, "the selection of ON/OFF of the Heated dry cycle",
+			PT_double,"daily_dishwasher_demand[kWh]", PADDR(daily_dishwasher_demand), PT_DESCRIPTION, "amount of energy consumed by the dishwasher during the day",
+			PT_double,"queue", PADDR(queue), PT_DESCRIPTION, "current queue value",
+			PT_double,"queue_min", PADDR(queue_min), PT_DESCRIPTION, "minimum queue value",
+			PT_double,"queue_max", PADDR(queue_max), PT_DESCRIPTION, "maximum queue value",
+			NULL)<1)
 			GL_THROW("unable to publish properties in %s",__FILE__);
 	}
 }
@@ -310,22 +316,22 @@ int dishwasher::init(OBJECT *parent)
 		DISHWASHERSTATE state;
 		FSMCALL call;
 	} *f, map[] = {
-		{OFF,				decrement_queue,	NULL,			NULL},
-		{PUMPPREWASH,		fill_unit,			check_fill,		drain_unit}, // note: may use cold water
-		{PUMPWASHQUICK,		fill_unit,			check_fill,		NULL},
-		{HEATWASHQUICK,		heat_water,			check_water,		drain_unit},
-		{PUMPWASHNORMAL,	fill_unit,			check_fill,		NULL},
-		{HEATWASHNORMAL,	heat_water,			check_water,		drain_unit},
-		{PUMPWASHHEAVY,		fill_unit,			check_fill,		NULL},
-		{HEATWASHHEAVY,		heat_water,			check_water,		drain_unit},
-		{CONTROLWASH,		NULL,				NULL,			NULL},
-		{PUMPRINSE,			fill_unit,			check_fill,		NULL},
-		{HEATRINSE,			heat_water,			check_water,		drain_unit},
-		{CONTROLRINSE,		NULL,				NULL,			NULL},
-		{HEATDRYON,			heat_air,			check_air,		NULL},
-		{HEATDRYOFF,		NULL,				NULL,			NULL},
-		{CONTROLDRY,		NULL,				NULL,			NULL},
-		{CONTROLEND,		NULL,				NULL,			NULL},
+		{OFF,				dishwasher_decrement_queue,		NULL,						NULL},
+		{PUMPPREWASH,		dishwasher_fill_unit,			dishwasher_check_fill,		dishwasher_drain_unit}, // note: may use cold water
+		{PUMPWASHQUICK,		dishwasher_fill_unit,			dishwasher_check_fill,		NULL},
+		{HEATWASHQUICK,		dishwasher_heat_water,			dishwasher_check_water,		dishwasher_drain_unit},
+		{PUMPWASHNORMAL,	dishwasher_fill_unit,			dishwasher_check_fill,		NULL},
+		{HEATWASHNORMAL,	dishwasher_heat_water,			dishwasher_check_water,		dishwasher_drain_unit},
+		{PUMPWASHHEAVY,		dishwasher_fill_unit,			dishwasher_check_fill,		NULL},
+		{HEATWASHHEAVY,		dishwasher_heat_water,			dishwasher_check_water,		dishwasher_drain_unit},
+		{CONTROLWASH,		NULL,							NULL,			NULL},
+		{PUMPRINSE,			dishwasher_fill_unit,			dishwasher_check_fill,		NULL},
+		{HEATRINSE,			dishwasher_heat_water,			dishwasher_check_water,		dishwasher_drain_unit},
+		{CONTROLRINSE,		NULL,							NULL,			NULL},
+		{HEATDRYON,			dishwasher_heat_air,			dishwasher_check_air,		NULL},
+		{HEATDRYOFF,		NULL,							NULL,			NULL},
+		{CONTROLDRY,		NULL,							NULL,			NULL},
+		{CONTROLEND,		NULL,							NULL,			NULL},
 	};
 	for ( size_t n=0 ; n<sizeof(map)/sizeof(map[0]) ; n++ )
 	{

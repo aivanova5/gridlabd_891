@@ -1222,7 +1222,7 @@ void waterheater::update_T_and_or_h(double nHours)
 			// things are moving (RECOVERING vs DEPLETING)...
 SingleZone:
 			Tw = new_temp_1node(Tw, nHours);
-			/*Tupper*/ Tw = Tw;
+			/*Tupper*/ // what's that? Tw = Tw;
 			Tlower = Tinlet;
 			break;
 
@@ -1281,7 +1281,7 @@ SingleZone:
 				// adjust Tlower, even if the Tinlet has changed.  This avoids
 				// the headache of adjusting h and is of minimal consequence because
 				// Tinlet changes so slowly...
-				/*Tupper*/ Tw = Tw;
+				/*Tupper*/ // what's that? Tw = Tw;
 			}
 			break;
 
