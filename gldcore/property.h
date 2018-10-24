@@ -275,7 +275,7 @@ public:
 	};
 	void grow_to(const size_t c) { grow_to(n>0?n:1,c); };
 	void grow_to(const double_array &y) { grow_to(y.get_rows(),y.get_cols()); };
-	void check_valid(const size_t r, const size_t c) const { if ( !is_valid(r,c) ) exception(".check_value(%u,%u): invalid (r,c)",r,c); };
+	void check_valid(const size_t r, const size_t c) const { if ( !is_valid(r,c) ) exception("%s.check_valid(%u,%u): invalid array reference (r,c)",name?"":"(unnamed)",r,c); };
 	inline void check_valid(const size_t c) const { check_valid(0,c); };
 	bool is_valid(const size_t r, const size_t c) const { return r<n && c<m; };
 	inline bool is_valid(const size_t c) const { return is_valid(0,c); };

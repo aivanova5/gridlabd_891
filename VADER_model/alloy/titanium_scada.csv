@@ -1,0 +1,12 @@
+# file...... titanium_scada.csv
+# date...... Mon Aug  7 21:56:34 2017
+# user...... ec2-user
+# host...... (null)
+# target.... meter 2
+# trigger... (none)
+# interval.. -1
+# limit..... 0
+# timestamp,measured_real_energy,measured_reactive_energy
+2013-01-01 00:00:00 PST,+0,+0
+2013-01-01 00:04:00 PST,+572.239,-73770.9
+2013-01-01 00:08:00 PST,+1144.48,-147542

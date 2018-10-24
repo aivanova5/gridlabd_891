@@ -1,0 +1,125 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Model name
+//
+#define NAME=aluminum
+#print Config file loaded...
+//
+// Location specification (required for all runs)
+//
+// The STATE, CITY, and TIMEZONE are required to establish the weather and
+// clock configurations.  The TMY2 file <STATE>-<CITY>.tmy2 must be loaded
+// in the $HOME folder. You may choose to use TMY3 data using the TMYTYPE
+// configuration (see below)
+//
+#define STATE=CA
+#define CITY=Bakersfield
+#define TIMEZONE=US/CA/Los Angeles
+
+//
+// Weather data specification (required for all runs)
+//
+// There are two types of weather data files supported, TMY2 and TMY3.
+// TMY2 files may not work correctly for certain timezones. The default is
+// TMY3.
+//
+#define TMYTYPE=tmy3
+
+//
+// Solar panel design
+//
+// PVAREA can be defined random, e.g., random.trianble(200,500)
+//
+// PVPROB specifies the probability that a house has an active PVUNIT. Note
+// that a PV unit is always installed when SOLAR=yes, but it is not 
+// online unless the Bernoulli probability at PVPROB is 1.
+//
+#define SOLAR=no
+#define PVAREA=350 sf
+#define PVPROB=1.0
+
+//
+// Baseline period (required only for history runs)
+//
+#define HISTORY_YEAR=2016
+#define HISTORY_START_MONTH=7
+#define HISTORY_END_MONTH=10
+
+//
+// Web server hostname (required for realtime runs)
+// by default this is taken from the environment variable HOSTNAME
+//#define HOSTNAME=mywebhost.mycompany.com
+
+//
+// MySQL server hostname (required if not using localhost)
+//
+//#define MYSQLHOST=mysqlhost.mycompany.com
+
+//
+// MySQL connection method (uncomment if using a local socket instead of port 3306)
+//
+//#define SOCKETNAME=/var/lib/mysql/mysql.sock
+//#define PORT=6266
+
+//
+// Enable detailed load model
+//
+#define LOADS=yes
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Options the control data collection
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Output realtime data 
+//
+// SCADA and AMI data are stored in separate databases for realtime runs.
+// Comment these out if the data is not desired. Note that some graphing
+// feature may not function if realtime SCADA and AMI data are not stored.
+//
+#ifndef HISTORY
+
+#define MYSQL_SCADA=${NAME}_scada // output of SCADA recordings
+#define MYSQL_AMI=${NAME}_ami // output of AMI recordings
+
+//
+// Output history data 
+//
+// SCADA and AMI data are stored in the same database for history runs.
+// Comment these out if the data is not desired.
+//
+#else 
+
+#define MYSQL_SCADA=${NAME}_data // record SCADA data
+#define MYSQL_AMI=${NAME}_data // record AMI data
+
+#endif
+
+//
+// Export system model to database
+//
+// Define MYSQL_MODEL to specify the database to which the system model
+// is export when loading is complete.  This model will provide the initial
+// conditions for the simulation as well. Comment this out if the model is
+// not desired.
+//
+#define MYSQL_MODEL=${NAME}_model 
+
+//
+// Voltage and current dumps
+//
+// Define VOLTDUMP and CURRDUMP to specify the name of the files to which
+// the powerflow solver's voltage and current solutions are dumped. Comment
+// these out if the dumps are not desired.
+//
+#define VOLTDUMP=${NAME}_voltage.csv
+#define CURRDUMP=${NAME}_current.csv

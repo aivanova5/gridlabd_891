@@ -1,0 +1,62 @@
+#set suppress_repeat_messages=0
+
+//#define MYSQL_AMI=${NAME}_data // record AMI data
+#define MYSQL_AMI=titanium_AMI_KWH;
+
+#ifndef NOMYSQL
+#ifndef MYSQLHOST
+//#define MYSQLHOST=localhost
+#define MYSQLHOST=gridlabd
+#endif
+#print Setting up database for model ${NAME} on ${MYSQLHOST}...
+module mysql {
+	hostname "${MYSQLHOST}";
+	username "gridlabd";
+	password "gridlabd";
+	schema "titanium_AMI_KWH";
+}
+
+//#ifdef SWITCHTEST
+//#define MYSQL_SCADA=ieee123_switchtest_${SWITCHINIT}
+//#define MYSQL_AMI=ieee123_switchtest_${SWITCHINIT}
+//#endif
+
+//#print Setting SCADA tables ${MYSQL_SCADA}...
+object database {
+	name AMI_data;
+	schema "${MYSQL_SCADA}";
+}
+//#endif
+
+#ifdef MYSQL_AMI
+#print Setting AMI tables in ${MYSQL_AMI}...
+object database {
+	name ami;
+	schema "${MYSQL_AMI}";
+#ifdef HISTORY
+	options NEWDB; // only rebuild database for history runs
+#endif
+}
+#endif
+#endif // NOMYSQL
+
+
+#ifdef PLAYERDATA
+object player {
+  property total_power;
+  table "${MYSQL_AMI.SCEAMI_ALL}";
+  mode {"r","r+"};
+  filetype {"CSV"};
+}
+#else
+	//house data
+#endif
+
+object recorder{
+	name AMI_recorder
+  	parent meter;
+  	property total_power;
+  	file meter.csv;
+}
+
+

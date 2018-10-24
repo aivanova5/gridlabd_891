@@ -1,0 +1,30 @@
+module mysql;
+object database {
+        name sce_ami;
+        hostname gridlabd.slac.stanford.edu;
+        username gridlabd_ro;
+        password gridlabd;
+        port 3306;
+        schema sce;
+}
+clock {
+        starttime '2015-01-01 00:00:00 UTC';
+        stoptime '2016-01-01 00:00:00 UTC';
+}
+ 
+module tape;
+class test {
+        double energy;
+}
+object test {
+        object mysql.player {
+                property energy;
+                connection sce_ami;
+                query "SELECT adddate(record_date,interval hour_id+utc_offset hour) as t, energy_value as energy FROM titanium_AMI_KWH.SCEAMI_ALL WHERE customer_id = \"1252657E\" and adddate(record_date,interval hour_id hour) between '${starttime/ UTC/}' and '${stoptime/ UTC/}' ORDER BY t";
+        };
+        object tape.recorder {
+                property energy;
+                file energy.csv;
+                interval -1;
+        };
+}

@@ -1,0 +1,1808 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAA-D service model configuration control file
+// Aopyright (A) 2016, SLAA National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+object triplex_load {
+	name load_1_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_2_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_3_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_4_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_5_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_6_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_7_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_8_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_9_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_10_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_11_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_12_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_13_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_14_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_15_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_16_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_17_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_18_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_19_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_20_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_21_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_22_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_23_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_24_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_25_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_26_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_27_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_28_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_29_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_30_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_31_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_32_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_33_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_34_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_35_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_36_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_37_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_38_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_39_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_40_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_41_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_42_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_43_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_44_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_45_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_46_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_47_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_48_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_49_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_50_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_51_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_52_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_53_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_54_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_55_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_56_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_57_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_58_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_59_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_60_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_61_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_62_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_63_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_64_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_65_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_66_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_67_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_68_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_69_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_70_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_71_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_72_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_73_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_74_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_75_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_76_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_77_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_78_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_79_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_80_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_81_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_82_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_83_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_84_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_85_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_86_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_87_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_88_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_89_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_90_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_91_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_92_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_93_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_94_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_95_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_96_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_97_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_98_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_99_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_100_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_101_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_102_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_103_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_104_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_105_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_106_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_107_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_108_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_109_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_110_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_111_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_112_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_113_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_114_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_115_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_116_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_117_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_118_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_119_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_120_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_121_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_122_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_123_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_124_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_125_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_126_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_127_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_128_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_129_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_130_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_131_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_132_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_133_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_134_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_135_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_136_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_137_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_138_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_139_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_140_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_141_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_142_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_143_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_144_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_145_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_146_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_147_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_148_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_149_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_150_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_151_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_152_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_153_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_154_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_155_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_156_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_157_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_158_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_159_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_160_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_161_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_162_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_163_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_164_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_165_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_166_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_167_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_168_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_169_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_170_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_171_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_172_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_173_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_174_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_175_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_176_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_177_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_178_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_179_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_180_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_181_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_182_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_183_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_184_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_185_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_186_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_187_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_188_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_189_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_190_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_191_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_192_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_193_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_194_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_195_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_196_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_197_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_198_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_199_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_200_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_201_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_202_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_203_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_204_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_205_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_206_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_207_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_208_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_209_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_210_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_211_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_212_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_213_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_214_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_215_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_216_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_217_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_218_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_219_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_220_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_221_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_222_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_223_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_224_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_225_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_226_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_227_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_228_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_229_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_230_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_231_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_232_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_233_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_234_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_235_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_236_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_237_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_238_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_239_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_240_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_241_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_242_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_243_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_244_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name load_245_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_246_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_247_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_248_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_249_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_250_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_251_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_252_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_253_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_254_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_255_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_256_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_257_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name load_258_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+

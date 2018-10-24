@@ -1,0 +1,1006 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, NLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+object triplex_load {
+	name titanium_load_1_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_2_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_3_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_4_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_5_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_6_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_7_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_8_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_9_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_10_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_11_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_12_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_13_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_14_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_15_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_16_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_17_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_18_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_19_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_20_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_21_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_22_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_23_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_24_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_25_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_26_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_27_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_28_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_29_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_30_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_31_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_32_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_33_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_34_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_35_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_36_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_37_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_38_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_39_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_40_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_41_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_42_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_43_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_44_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_45_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_46_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_47_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_48_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_49_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_50_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_51_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_52_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_53_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_54_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_55_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_56_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_57_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_58_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_59_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_60_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_61_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_62_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_63_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_64_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_65_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_66_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_67_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_68_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_69_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_70_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_71_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_72_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_73_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_74_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_75_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_76_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_77_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_78_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_79_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_80_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_81_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_82_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_83_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_84_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_85_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_86_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_87_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_88_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_89_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_90_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_91_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_92_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_93_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_94_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_95_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_96_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_97_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_98_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_99_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_100_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_101_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_102_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_103_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_104_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_105_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_106_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_107_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_108_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_109_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name titanium_load_110_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_111_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_112_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name titanium_load_113_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_114_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_115_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_116_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_117_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_118_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_119_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_120_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_121_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_122_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_123_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_124_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_125_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_126_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_127_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_128_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_129_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_130_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_131_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_132_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_133_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_134_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_135_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_136_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_137_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_138_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_139_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_140_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_141_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_142_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name titanium_load_143_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}

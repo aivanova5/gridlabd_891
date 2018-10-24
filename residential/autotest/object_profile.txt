@@ -1,0 +1,4 @@
+object,presync,sync,postsync,init,heartbeat,precommit,commit,finalize
+house:1453523143,0,1000,0,0,0,0,0,0
+dishwasher:1453523143,0,0,0,0,0,0,0,0
+recorder:1453523143,0,0,0,0,0,0,0,0

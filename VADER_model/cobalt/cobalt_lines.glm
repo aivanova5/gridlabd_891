@@ -1,0 +1,6469 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+object line_configuration {
+name equivalentsource_03716;
+//z11 0+0j;
+//z12 0+0j;
+//z13 0+0j;
+//z21 0+0j;
+//z22 0+0j;
+//z23 0+0j;
+//z31 0+0j;
+//z32 0+0j;
+//z33 0+0j;
+	z11 0.018504+0.393917j;
+	z12 -0.005097-0.083535j;
+	z13 -0.005097-0.083535j;
+	z21 -0.005097-0.083535j;
+	z22 0.018504+0.393917j;
+	z23 -0.005097-0.083535j;
+	z31 -0.005097-0.083535j;
+	z32 -0.005097-0.083535j;
+	z33 0.018504+0.393917j;
+}
+object underground_line {
+phases ABC;
+name source_03716$node_03716;
+from source_03716;
+to node_03716;
+length 5280 ft;
+configuration equivalentsource_03716;
+}
+
+
+object line_configuration {
+name underground_JCN_3C_1000_5_12_16KV;
+z11 0.381568986666667+0.205784664j;
+z12 0.225315778666667+0.015988633j;
+z13 0.225315778666667+0.015988633j;
+z21 0.225315778666667+0.015988633j;
+z22 0.381568986666667+0.205784664j;
+z23 0.225315778666667+0.015988633j;
+z31 0.225315778666667+0.015988633j;
+z32 0.225315778666667+0.015988633j;
+z33 0.381568986666667+0.205784664j;
+}
+object line_configuration {
+name underground_PILC_3C_350_5_12_16KV;
+z11 0.392916727333333+0.246613575333333j;
+z12 0.202956578333333+0.0866484043333333j;
+z13 0.202956578333333+0.0866484043333333j;
+z21 0.202956578333333+0.0866484043333333j;
+z22 0.392916727333333+0.246613575333333j;
+z23 0.202956578333333+0.0866484043333333j;
+z31 0.202956578333333+0.0866484043333333j;
+z32 0.202956578333333+0.0866484043333333j;
+z33 0.392916727333333+0.246613575333333j;
+}
+object line_configuration {
+name underground_JCN_3C_1_0_5_12_16KV;
+z11 1.633727112+0.472154614j;
+z12 0.498640363+0.21240409j;
+z13 0.498640363+0.21240409j;
+z21 0.498640363+0.21240409j;
+z22 1.633727112+0.472154614j;
+z23 0.498640363+0.21240409j;
+z31 0.498640363+0.21240409j;
+z32 0.498640363+0.21240409j;
+z33 1.633727112+0.472154614j;
+}
+object line_configuration {
+name underground_CLP_3C_1_0_5_12_16KV;
+z11 1.63424252833333+0.464290894666667j;
+z12 0.500159795333333+0.215327106666667j;
+z13 0.500159795333333+0.215327106666667j;
+z21 0.500159795333333+0.215327106666667j;
+z22 1.63424252833333+0.464290894666667j;
+z23 0.500159795333333+0.215327106666667j;
+z31 0.500159795333333+0.215327106666667j;
+z32 0.500159795333333+0.215327106666667j;
+z33 1.63424252833333+0.464290894666667j;
+}
+object line_configuration {
+name underground_DEFAULT;
+z11 0.307593066333333+0.188426235666667j;
+z12 0.177732285333333-0.000533115333333334j;
+z13 0.177732285333333-0.000533115333333334j;
+z21 0.177732285333333-0.000533115333333334j;
+z22 0.307593066333333+0.188426235666667j;
+z23 0.177732285333333-0.000533115333333334j;
+z31 0.177732285333333-0.000533115333333334j;
+z32 0.177732285333333-0.000533115333333334j;
+z33 0.307593066333333+0.188426235666667j;
+}
+object line_configuration {
+name underground_CLP_2C_#2_5_12_16KV;
+z11 1.93915124633333+0.495292570333333j;
+z12 0.527403383333333+0.221093226333333j;
+z13 0.527403383333333+0.221093226333333j;
+z21 0.527403383333333+0.221093226333333j;
+z22 1.93915124633333+0.495292570333333j;
+z23 0.527403383333333+0.221093226333333j;
+z31 0.527403383333333+0.221093226333333j;
+z32 0.527403383333333+0.221093226333333j;
+z33 1.93915124633333+0.495292570333333j;
+}
+object line_configuration {
+name underground_CLP_3C_#2_5_12_16KV;
+z11 2.25478609466667+0.451953082666667j;
+z12 0.469360853666667+0.176738459666667j;
+z13 0.469360853666667+0.176738459666667j;
+z21 0.469360853666667+0.176738459666667j;
+z22 2.25478609466667+0.451953082666667j;
+z23 0.469360853666667+0.176738459666667j;
+z31 0.469360853666667+0.176738459666667j;
+z32 0.469360853666667+0.176738459666667j;
+z33 2.25478609466667+0.451953082666667j;
+}
+object line_configuration {
+name underground_BUS;
+z11 0.000999189+0.000999189j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 0.000999189+0.000999189j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 0.000999189+0.000999189j;
+}
+object line_configuration {
+name underground_CLP_1C_750_5_12_16KV;
+z11 0.443786335+1.300617451j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 0.443786335+1.300617451j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 0.443786335+1.300617451j;
+}
+object line_configuration {
+name underground_CLP_2C_750_5_12_16KV;
+z11 0.530318891333333+0.289823270333333j;
+z12 0.393417126333333+0.0995638473333333j;
+z13 0.393417126333333+0.0995638473333333j;
+z21 0.393417126333333+0.0995638473333333j;
+z22 0.530318891333333+0.289823270333333j;
+z23 0.393417126333333+0.0995638473333333j;
+z31 0.393417126333333+0.0995638473333333j;
+z32 0.393417126333333+0.0995638473333333j;
+z33 0.530318891333333+0.289823270333333j;
+}
+object line_configuration {
+name underground_CLP_3C_750_5_12_16KV;
+z11 0.386699551333333+0.221074991j;
+z12 0.205424784333333-0.00155429399999999j;
+z13 0.205424784333333-0.00155429399999999j;
+z21 0.205424784333333-0.00155429399999999j;
+z22 0.386699551333333+0.221074991j;
+z23 0.205424784333333-0.00155429399999999j;
+z31 0.205424784333333-0.00155429399999999j;
+z32 0.205424784333333-0.00155429399999999j;
+z33 0.386699551333333+0.221074991j;
+}
+object underground_line {
+phases "A";
+name line_BS4934-1_03716$B5074940-1_03716;
+from node_BS4934-1_03716;
+to node_B5074940-1_03716;
+length 38.404799 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_148058961_03716$P5074272-A_03716;
+from node_148058961_03716;
+to node_P5074272-A_03716;
+length 14.325600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46739375_03716$P5072856-1_03716;
+from node_46739375_03716;
+to node_P5072856-1_03716;
+length 3.048000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5076622-2_03716$B5076623-1_03716;
+from node_B5076622-2_03716;
+to node_B5076623-1_03716;
+length 86.563197 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_BS0222-1_03716$B5072423-1_03716;
+from node_BS0222-1_03716;
+to node_B5072423-1_03716;
+length 121.919996 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_2242831E_03716$46720420_03716;
+from node_2242831E_03716;
+to node_46720420_03716;
+length 72.237598 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_BS5956-R_03716$P5072132-1_03716;
+from node_BS5956-R_03716;
+to node_P5072132-1_03716;
+length 33.832799 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075162-1_03716$B5075639-1_03716;
+from node_B5075162-1_03716;
+to node_B5075639-1_03716;
+length 100.583997 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS0297-1_03716$BS0932-T_03716;
+from node_GS0297-1_03716;
+to node_BS0932-T_03716;
+length 263.651992 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46740085_03716$BS6035-1_03716;
+from node_ND46740085_03716;
+to node_BS6035-1_03716;
+length 146.608795 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND160132719_03716$109080743_03716;
+from node_ND160132719_03716;
+to node_109080743_03716;
+length 86.258397 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075163-1_03716$B5075164-2_03716;
+from node_B5075163-1_03716;
+to node_B5075164-2_03716;
+length 69.189598 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46740046_03716$P5075839-1_03716;
+from node_ND46740046_03716;
+to node_P5075839-1_03716;
+length 21.640799 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46738248_03716$E5071509_03716;
+from node_46738248_03716;
+to node_E5071509_03716;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "A";
+name line_ND46780053_03716$BS4934-1_03716_1;
+from node_ND46780053_03716;
+to node_BS4934-1_03716_1;
+length 3.352800 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_2286233E_03716_1$P5199841-1_03716;
+from node_2286233E_03716_1;
+to node_P5199841-1_03716;
+length 12.801600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_2369067E_03716_1$BS5956-T_03716;
+from node_2369067E_03716_1;
+to node_BS5956-T_03716;
+length 38.709599 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_91476364_03716$GS0297-4_03716;
+from node_91476364_03716;
+to node_GS0297-4_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "AB";
+name line_100711501_03716$P5074273-2_03716;
+from node_100711501_03716;
+to node_P5074273-2_03716;
+length 21.640799 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075370-1_03716$B5075368-2_03716;
+from node_B5075370-1_03716;
+to node_B5075368-2_03716;
+length 125.882396 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1575445E_03716_1$46738248_03716;
+from node_1575445E_03716_1;
+to node_46738248_03716;
+length 46.634399 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-3_03716_1$ND46778984_03716;
+from node_OS0438-3_03716_1;
+to node_ND46778984_03716;
+length 341.071189 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5072746-1_03716$B5073095-1_03716;
+from node_B5072746-1_03716;
+to node_B5073095-1_03716;
+length 161.543995 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076507-2_03716$ND46780557_03716;
+from node_B5076507-2_03716;
+to node_ND46780557_03716;
+length 1.219200 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND104951093_03716$104951106_03716_1;
+from node_ND104951093_03716;
+to node_104951106_03716_1;
+length 86.867997 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5076621-2_03716$B5076622-1_03716;
+from node_B5076621-2_03716;
+to node_B5076622-1_03716;
+length 170.687995 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5073869-B_03716$144734838_03716;
+from node_P5073869-B_03716;
+to node_144734838_03716;
+length 1.524000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_1642371E_03716$148058882_03716;
+from node_1642371E_03716;
+to node_148058882_03716;
+length 13.411200 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076187-1_03716$B5076188-2_03716;
+from node_B5076187-1_03716;
+to node_B5076188-2_03716;
+length 145.389595 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_144734911_03716$P5073869-A_03716;
+from node_144734911_03716;
+to node_P5073869-A_03716;
+length 1.828800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46739942_03716$46739618_03716_1;
+from node_ND46739942_03716;
+to node_46739618_03716_1;
+length 73.761598 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46698914_03716$OS0438-6_03716;
+from node_46698914_03716;
+to node_OS0438-6_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_91476348_03716$91476356_03716;
+from node_91476348_03716;
+to node_91476356_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_1589933E_03716$46739375_03716_1;
+from node_1589933E_03716;
+to node_46739375_03716_1;
+length 35.661599 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076266-2_03716$B5076267-2_03716;
+from node_B5076266-2_03716;
+to node_B5076267-2_03716;
+length 113.385596 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_ND46781531_03716$B5077401-1_03716;
+from node_ND46781531_03716;
+to node_B5077401-1_03716;
+length 36.575999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076503-1_03716$ND46779805_03716;
+from node_B5076503-1_03716;
+to node_ND46779805_03716;
+length 3.352800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_BS3123-1_03716_1$ND46780238_03716;
+from node_BS3123-1_03716_1;
+to node_ND46780238_03716;
+length 15.849599 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46739981_03716$BS5250-1_03716_1;
+from node_ND46739981_03716;
+to node_BS5250-1_03716_1;
+length 27.736799 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_148058992_03716$P5074271-2_03716;
+from node_148058992_03716;
+to node_P5074271-2_03716;
+length 1.524000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS1322-4_03716$1130050E_03716;
+from node_GS1322-4_03716;
+to node_1130050E_03716;
+length 178.612794 m;
+configuration underground_JCN_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_46720420_03716$P5300971_03716;
+from node_46720420_03716;
+to node_P5300971_03716;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46739868_03716$46739588_03716_1;
+from node_ND46739868_03716;
+to node_46739588_03716_1;
+length 145.999195 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076267-1_03716$B5076272-1_03716;
+from node_B5076267-1_03716;
+to node_B5076272-1_03716;
+length 107.289597 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46737055_03716$P5439147_03716;
+from node_46737055_03716;
+to node_P5439147_03716;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46779805_03716$B5076504-1_03716;
+from node_ND46779805_03716;
+to node_B5076504-1_03716;
+length 81.686397 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_148058882_03716_1$P5074269-1_03716;
+from node_148058882_03716_1;
+to node_P5074269-1_03716;
+length 1.828800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_5439147-1CL_03716$46739351_03716;
+from node_5439147-1CL_03716;
+to node_46739351_03716;
+length 12.801600 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46780745_03716$BS2176-1_03716_1;
+from node_ND46780745_03716;
+to node_BS2176-1_03716_1;
+length 6.705600 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5072424-1_03716$B5072428-2_03716;
+from node_B5072424-1_03716;
+to node_B5072428-2_03716;
+length 155.143195 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075469-2_03716$B5075468-1_03716;
+from node_B5075469-2_03716;
+to node_B5075468-1_03716;
+length 162.458395 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_BS5206-1_03716_1$B5075160-1_03716;
+from node_BS5206-1_03716_1;
+to node_B5075160-1_03716;
+length 277.063191 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5207110-B_03716$P5300996-A_03716;
+from node_P5207110-B_03716;
+to node_P5300996-A_03716;
+length 163.372795 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1679856E_03716_1$148086951_03716_1;
+from node_1679856E_03716_1;
+to node_148086951_03716_1;
+length 19.507199 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_2028723E_03716$B5076266-1_03716;
+from node_2028723E_03716;
+to node_B5076266-1_03716;
+length 56.997598 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_1701702E_03716$ND104951093_03716;
+from node_1701702E_03716;
+to node_ND104951093_03716;
+length 14.935200 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074269-2_03716$148058911_03716;
+from node_P5074269-2_03716;
+to node_148058911_03716;
+length 1.828800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_ND46780238_03716$B5072745-1_03716;
+from node_ND46780238_03716;
+to node_B5072745-1_03716;
+length 21.031199 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_160132034_03716$160132025_03716;
+from node_160132034_03716;
+to node_160132025_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_1575641E_03716_1$108142758_03716;
+from node_1575641E_03716_1;
+to node_108142758_03716;
+length 14.630400 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46779805_03716$B5076507-1_03716;
+from node_ND46779805_03716;
+to node_B5076507-1_03716;
+length 120.395996 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076318-1_03716$B5076319-2_03716;
+from node_B5076318-1_03716;
+to node_B5076319-2_03716;
+length 39.319199 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075160-2_03716$B5075161-1_03716;
+from node_B5075160-2_03716;
+to node_B5075161-1_03716;
+length 94.487997 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1288621E_03716_1$PMH0815-1_03716;
+from node_1288621E_03716_1;
+to node_PMH0815-1_03716;
+length 38.709599 m;
+configuration underground_PILC_3C_350_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_46739618_03716$P5511860-1_03716;
+from node_46739618_03716;
+to node_P5511860-1_03716;
+length 2.438400 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46739598_03716$P5513919-1_03716;
+from node_46739598_03716;
+to node_P5513919-1_03716;
+length 2.438400 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_108142758_03716_1$P5511905-1_03716;
+from node_108142758_03716_1;
+to node_P5511905-1_03716;
+length 2.438400 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46778984_03716$ND46780053_03716;
+from node_ND46778984_03716;
+to node_ND46780053_03716;
+length 10.972800 m;
+configuration underground_CLP_2C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_FP923_03716$P5076661-1_03716;
+from node_FP923_03716;
+to node_P5076661-1_03716;
+length 42.062399 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075556-2_03716$B5075470-2_03716;
+from node_B5075556-2_03716;
+to node_B5075470-2_03716;
+length 187.147194 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND149492380_03716$B5076187-2_03716;
+from node_ND149492380_03716;
+to node_B5076187-2_03716;
+length 8.229600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_1087858E_03716_1$ND46781531_03716;
+from node_1087858E_03716_1;
+to node_ND46781531_03716;
+length 7.924800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5074937-1_03716$B5076189-2_03716;
+from node_B5074937-1_03716;
+to node_B5076189-2_03716;
+length 146.913595 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076523-1_03716$B5076522-2_03716;
+from node_B5076523-1_03716;
+to node_B5076522-2_03716;
+length 154.838395 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076188-1_03716$B5076194-2_03716;
+from node_B5076188-1_03716;
+to node_B5076194-2_03716;
+length 55.168798 m;
+configuration underground_CLP_2C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075367-1_03716$B5075370-2_03716;
+from node_B5075367-1_03716;
+to node_B5075370-2_03716;
+length 111.556796 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_BS0932-R_03716$P5207110-A_03716;
+from node_BS0932-R_03716;
+to node_P5207110-A_03716;
+length 134.111996 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1641750E_03716$P5078461-A_03716;
+from node_1641750E_03716;
+to node_P5078461-A_03716;
+length 38.709599 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_BS2176-1_03716$B5072425-1_03716;
+from node_BS2176-1_03716;
+to node_B5072425-1_03716;
+length 210.921593 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46739868_03716$BS2056-1_03716;
+from node_ND46739868_03716;
+to node_BS2056-1_03716;
+length 133.807196 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-3_03716$46698882_03716;
+from node_OS0438-3_03716;
+to node_46698882_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "A";
+name line_ND46781033_03716$BS0222-1_03716_1;
+from node_ND46781033_03716;
+to node_BS0222-1_03716_1;
+length 7.315200 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46781200_03716$B5077395-1_03716;
+from node_ND46781200_03716;
+to node_B5077395-1_03716;
+length 6.400800 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46780557_03716$B5076523-2_03716;
+from node_ND46780557_03716;
+to node_B5076523-2_03716;
+length 110.947196 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_91476364_03716$91476348_03716;
+from node_91476364_03716;
+to node_91476348_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4814502E_03716$151450125_03716;
+from node_4814502E_03716;
+to node_151450125_03716;
+length 56.083198 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_46698882_03716$OS0438-1_03716;
+from node_46698882_03716;
+to node_OS0438-1_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "A";
+name line_B5074939-1_03716$B5074938-2_03716;
+from node_B5074939-1_03716;
+to node_B5074938-2_03716;
+length 132.587996 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_100711528_03716_1$P5074277-B_03716;
+from node_100711528_03716_1;
+to node_P5074277-B_03716;
+length 2.133600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074277-A_03716$100711501_03716_1;
+from node_P5074277-A_03716;
+to node_100711501_03716_1;
+length 2.438400 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_ND46780238_03716$B5072746-2_03716;
+from node_ND46780238_03716;
+to node_B5072746-2_03716;
+length 81.686397 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46781531_03716$B5077400-1_03716;
+from node_ND46781531_03716;
+to node_B5077400-1_03716;
+length 36.271199 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_BS6035-1_03716_1$B5075889-1_03716;
+from node_BS6035-1_03716_1;
+to node_B5075889-1_03716;
+length 46.634399 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5072426-2_03716$B5072427-1_03716;
+from node_B5072426-2_03716;
+to node_B5072427-1_03716;
+length 112.166396 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_46739608_03716$P5506510-1_03716;
+from node_46739608_03716;
+to node_P5506510-1_03716;
+length 3.048000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5071789_03716$PME9147-1_03716;
+from node_P5071789_03716;
+to node_PME9147-1_03716;
+length 85.648797 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46740059_03716$ND46739981_03716;
+from node_ND46740059_03716;
+to node_ND46739981_03716;
+length 24.079199 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_2028724E_03716_1$B5076503-2_03716;
+from node_2028724E_03716_1;
+to node_B5076503-2_03716;
+length 5.181600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5077402-2_03716$B5077403-2_03716;
+from node_B5077402-2_03716;
+to node_B5077403-2_03716;
+length 23.469599 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_PMH0815-4_03716$PMH0815-3_03716;
+from node_PMH0815-4_03716;
+to node_PMH0815-3_03716;
+length 15.240000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "A";
+name line_B5075860-1_03716$B5075978-2_03716;
+from node_B5075860-1_03716;
+to node_B5075978-2_03716;
+length 74.675998 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074275-1_03716$P5074274-A_03716;
+from node_P5074275-1_03716;
+to node_P5074274-A_03716;
+length 209.397593 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_148086951_03716$P5075747-A_03716;
+from node_148086951_03716;
+to node_P5075747-A_03716;
+length 4.572000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_PME9147-1CL_03716$46737055_03716;
+from node_PME9147-1CL_03716;
+to node_46737055_03716;
+length 10.058400 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1679854E_03716$73766882_03716;
+from node_1679854E_03716;
+to node_73766882_03716;
+length 42.367199 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_151450125_03716_1$P5512122-1_03716;
+from node_151450125_03716_1;
+to node_P5512122-1_03716;
+length 1.524000 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_BS5250-1_03716$B5075621-1_03716;
+from node_BS5250-1_03716;
+to node_B5075621-1_03716;
+length 498.652784 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075859-1_03716$B5075860-2_03716;
+from node_B5075859-1_03716;
+to node_B5075860-2_03716;
+length 71.932798 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46739942_03716$P5078462-1_03716;
+from node_ND46739942_03716;
+to node_P5078462-1_03716;
+length 9.753600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46737055_03716$5439147-1_03716;
+from node_46737055_03716;
+to node_5439147-1_03716;
+length 28.955999 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075164-1_03716$B5075367-2_03716;
+from node_B5075164-1_03716;
+to node_B5075367-2_03716;
+length 136.245596 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46780053_03716$BS4933-1_03716_1;
+from node_ND46780053_03716;
+to node_BS4933-1_03716_1;
+length 16.459199 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5077396-2_03716$B5077397-1_03716;
+from node_B5077396-2_03716;
+to node_B5077397-1_03716;
+length 59.740798 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_BS5956-L_03716$P5072858-1_03716;
+from node_BS5956-L_03716;
+to node_P5072858-1_03716;
+length 33.832799 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_ND46781033_03716$ND46780745_03716;
+from node_ND46781033_03716;
+to node_ND46780745_03716;
+length 24.688799 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_4538745E_03716_1$ND46739868_03716;
+from node_4538745E_03716_1;
+to node_ND46739868_03716;
+length 12.192000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_73766882_03716_1$P5072256-1_03716;
+from node_73766882_03716_1;
+to node_P5072256-1_03716;
+length 4.876800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_ND46740085_03716$BS3123-1_03716;
+from node_ND46740085_03716;
+to node_BS3123-1_03716;
+length 17.678399 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46778984_03716$S5074936-1_03716;
+from node_ND46778984_03716;
+to node_S5074936-1_03716;
+length 36.271199 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_2340833E_03716$P5407570-1_03716;
+from node_2340833E_03716;
+to node_P5407570-1_03716;
+length 57.302398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074276-B_03716$P5074275-2_03716;
+from node_P5074276-B_03716;
+to node_P5074275-2_03716;
+length 32.003999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076200-2_03716$B5076318-2_03716;
+from node_B5076200-2_03716;
+to node_B5076318-2_03716;
+length 157.276795 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_1642377E_03716$P5074276-A_03716;
+from node_1642377E_03716;
+to node_P5074276-A_03716;
+length 83.515197 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-4_03716_1$P5363732-1_03716;
+from node_OS0438-4_03716_1;
+to node_P5363732-1_03716;
+length 589.178381 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074271-1_03716$148058961_03716_1;
+from node_P5074271-1_03716;
+to node_148058961_03716_1;
+length 2.438400 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074270-1_03716$148058992_03716_1;
+from node_P5074270-1_03716;
+to node_148058992_03716_1;
+length 87.172797 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5072745-2_03716$B5072744-1_03716;
+from node_B5072745-2_03716;
+to node_B5072744-1_03716;
+length 119.176796 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_104951133_03716_1$P5422294-1_03716;
+from node_104951133_03716_1;
+to node_P5422294-1_03716;
+length 3.657600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076194-1_03716$B5076199-2_03716;
+from node_B5076194-1_03716;
+to node_B5076199-2_03716;
+length 135.026396 m;
+configuration underground_CLP_2C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46740046_03716$B5072813-1_03716;
+from node_ND46740046_03716;
+to node_B5072813-1_03716;
+length 28.955999 m;
+configuration underground_CLP_2C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075621-2_03716$B5075557-2_03716;
+from node_B5075621-2_03716;
+to node_B5075557-2_03716;
+length 66.751198 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_109080743_03716_1$P5511923-1_03716;
+from node_109080743_03716_1;
+to node_P5511923-1_03716;
+length 2.743200 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1839739E_03716_1$144734911_03716_1;
+from node_1839739E_03716_1;
+to node_144734911_03716_1;
+length 86.563197 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075557-1_03716$B5075556-1_03716;
+from node_B5075557-1_03716;
+to node_B5075556-1_03716;
+length 114.909596 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075891-2_03716$B5075890-2_03716;
+from node_B5075891-2_03716;
+to node_B5075890-2_03716;
+length 91.439997 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5077400-2_03716$B5077402-1_03716;
+from node_B5077400-2_03716;
+to node_B5077402-1_03716;
+length 27.431999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_03716$1717927E_03716_1_03716;
+from node_03716;
+to node_1717927E_03716_1_03716;
+length 90.830397 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5074938-1_03716$B5074937-2_03716;
+from node_B5074938-1_03716;
+to node_B5074937-2_03716;
+length 114.299996 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1703677E_03716$OS0438-5_03716;
+from node_1703677E_03716;
+to node_OS0438-5_03716;
+length 384.047988 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076272-2_03716$B5076265-1_03716;
+from node_B5076272-2_03716;
+to node_B5076265-1_03716;
+length 89.001597 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076265-2_03716$B5076263-2_03716;
+from node_B5076265-2_03716;
+to node_B5076263-2_03716;
+length 72.542398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_104951106_03716$P5514099-1_03716;
+from node_104951106_03716;
+to node_P5514099-1_03716;
+length 3.657600 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075368-1_03716$B5075369-2_03716;
+from node_B5075368-1_03716;
+to node_B5075369-2_03716;
+length 122.529596 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-1_03716_1$ND46740059_03716;
+from node_OS0438-1_03716_1;
+to node_ND46740059_03716;
+length 118.871996 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_P5074273-1_03716$P5074274-B_03716;
+from node_P5074273-1_03716;
+to node_P5074274-B_03716;
+length 111.861596 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075639-2_03716$B5075638-1_03716;
+from node_B5075639-2_03716;
+to node_B5075638-1_03716;
+length 94.487997 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5077395-2_03716$B5077396-1_03716;
+from node_B5077395-2_03716;
+to node_B5077396-1_03716;
+length 72.237598 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5078461-B_03716$ND46739942_03716;
+from node_P5078461-B_03716;
+to node_ND46739942_03716;
+length 67.970398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-2_03716$GS0297-3_03716;
+from node_OS0438-2_03716;
+to node_GS0297-3_03716;
+length 554.126382 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_BS4933-1_03716$B5074939-2_03716;
+from node_BS4933-1_03716;
+to node_B5074939-2_03716;
+length 117.957596 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075889-2_03716$B5075891-1_03716;
+from node_B5075889-2_03716;
+to node_B5075891-1_03716;
+length 78.333597 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46780557_03716$B5076508-2_03716;
+from node_ND46780557_03716;
+to node_B5076508-2_03716;
+length 166.420795 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075470-1_03716$B5075469-1_03716;
+from node_B5075470-1_03716;
+to node_B5075469-1_03716;
+length 200.253594 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_148086963_03716_1$ND46740046_03716;
+from node_148086963_03716_1;
+to node_ND46740046_03716;
+length 102.412797 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5072425-2_03716$B5072426-1_03716;
+from node_B5072425-2_03716;
+to node_B5072426-1_03716;
+length 149.351995 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5074940-2_03716$B5074942-2_03716;
+from node_B5074940-2_03716;
+to node_B5074942-2_03716;
+length 122.529596 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_PMH0815-2_03716$P5071789_03716;
+from node_PMH0815-2_03716;
+to node_P5071789_03716;
+length 67.970398 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_46739588_03716$P5444640-1_03716;
+from node_46739588_03716;
+to node_P5444640-1_03716;
+length 3.657600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_4009398E_03716_1$GS1322-2_03716;
+from node_4009398E_03716_1;
+to node_GS1322-2_03716;
+length 188.975994 m;
+configuration underground_JCN_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND104951093_03716$104951133_03716;
+from node_ND104951093_03716;
+to node_104951133_03716;
+length 41.452799 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_144734810_03716_1$P5073871-1_03716;
+from node_144734810_03716_1;
+to node_P5073871-1_03716;
+length 3.657600 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_ND46781200_03716$ND46781033_03716;
+from node_ND46781200_03716;
+to node_ND46781033_03716;
+length 32.918399 m;
+configuration underground_CLP_2C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_144734838_03716_1$144734810_03716;
+from node_144734838_03716_1;
+to node_144734810_03716;
+length 42.671999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS1322-3_03716$160132052_03716;
+from node_GS1322-3_03716;
+to node_160132052_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_46737235_03716$P5447219_03716;
+from node_46737235_03716;
+to node_P5447219_03716;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4470236E_03716_1$46739598_03716_1;
+from node_4470236E_03716_1;
+to node_46739598_03716_1;
+length 59.740798 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_160132034_03716$GS1322-3_03716;
+from node_160132034_03716;
+to node_GS1322-3_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND46739981_03716$BS5249-1_03716_1;
+from node_ND46739981_03716;
+to node_BS5249-1_03716_1;
+length 49.987198 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_ND46740059_03716$BS5206-1_03716;
+from node_ND46740059_03716;
+to node_BS5206-1_03716;
+length 31.394399 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_9044E_03716$46737235_03716;
+from node_9044E_03716;
+to node_46737235_03716;
+length 45.110399 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5075890-1_03716$B5076621-1_03716;
+from node_B5075890-1_03716;
+to node_B5076621-1_03716;
+length 145.084795 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_148058911_03716_1$P5074270-2_03716;
+from node_148058911_03716_1;
+to node_P5074270-2_03716;
+length 32.003999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_46698914_03716$OS0438-4_03716;
+from node_46698914_03716;
+to node_OS0438-4_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS1322-3_03716_1$ND160132719_03716;
+from node_GS1322-3_03716_1;
+to node_ND160132719_03716;
+length 28.651199 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-4_03716$OS0438-3_03716;
+from node_OS0438-4_03716;
+to node_OS0438-3_03716;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5075747-B_03716$148086963_03716;
+from node_P5075747-B_03716;
+to node_148086963_03716;
+length 4.572000 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_1874793E_03716_1$P5074272-B_03716;
+from node_1874793E_03716_1;
+to node_P5074272-B_03716;
+length 11.582400 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5074942-1_03716$B5075859-2_03716;
+from node_B5074942-1_03716;
+to node_B5075859-2_03716;
+length 58.216798 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0438-6_03716_1$ND46781200_03716;
+from node_OS0438-6_03716_1;
+to node_ND46781200_03716;
+length 73.761598 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_BS2056-1_03716_1$46739608_03716_1;
+from node_BS2056-1_03716_1;
+to node_46739608_03716_1;
+length 68.884798 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_1703674E_03716$ND149492380_03716;
+from node_1703674E_03716;
+to node_ND149492380_03716;
+length 36.575999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5072423-2_03716$B5072424-2_03716;
+from node_B5072423-2_03716;
+to node_B5072424-2_03716;
+length 57.607198 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_B5076263-1_03716$B5076264-2_03716;
+from node_B5076263-1_03716;
+to node_B5076264-2_03716;
+length 113.690396 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "AB";
+name line_ND149492380_03716$B5076200-1_03716;
+from node_ND149492380_03716;
+to node_B5076200-1_03716;
+length 113.995196 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_B5075161-2_03716$B5075162-2_03716;
+from node_B5075161-2_03716;
+to node_B5075162-2_03716;
+length 173.126394 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS0297-4_03716_1$ND46740085_03716;
+from node_GS0297-4_03716_1;
+to node_ND46740085_03716;
+length 34.442399 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_1642379E_03716$100711528_03716;
+from node_1642379E_03716;
+to node_100711528_03716;
+length 5.791200 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "A";
+name line_BS5249-1_03716$B5075163-2_03716;
+from node_BS5249-1_03716;
+to node_B5075163-2_03716;
+length 250.240792 m;
+configuration underground_CLP_1C_750_5_12_16KV;
+}
+
+object line_configuration {
+name overhead_ACSR_3C_653_653N;
+z11 0.208634739333333+0.929511791333333j;
+z12 0.193694638+0.894328861j;
+z13 0.193694638+0.894328861j;
+z21 0.193694638+0.894328861j;
+z22 0.208634739333333+0.929511791333333j;
+z23 0.193694638+0.894328861j;
+z31 0.193694638+0.894328861j;
+z32 0.193694638+0.894328861j;
+z33 0.208634739333333+0.929511791333333j;
+}
+object line_configuration {
+name overhead_CU_3C_4_0;
+z11 0.376119303666667+1.46585102433333j;
+z12 0.286138124+2.259230689j;
+z13 0.286138124+2.259230689j;
+z21 0.286138124+2.259230689j;
+z22 0.376119303666667+1.46585102433333j;
+z23 0.286138124+2.259230689j;
+z31 0.286138124+2.259230689j;
+z32 0.286138124+2.259230689j;
+z33 0.376119303666667+1.46585102433333j;
+}
+object line_configuration {
+name overhead_CU_3C_#4;
+z11 1.51317546866667+1.564384039j;
+z12 0.286138124+2.25922908j;
+z13 0.286138124+2.25922908j;
+z21 0.286138124+2.25922908j;
+z22 1.51317546866667+1.564384039j;
+z23 0.286138124+2.25922908j;
+z31 0.286138124+2.25922908j;
+z32 0.286138124+2.25922908j;
+z33 1.51317546866667+1.564384039j;
+}
+object line_configuration {
+name overhead_ACSR_3C_#4_#4N;
+z11 2.41414735433333+1.481206784j;
+z12 0.727835977+1.736011242j;
+z13 0.727835977+1.736011242j;
+z21 0.727835977+1.736011242j;
+z22 2.41414735433333+1.481206784j;
+z23 0.727835977+1.736011242j;
+z31 0.727835977+1.736011242j;
+z32 0.727835977+1.736011242j;
+z33 2.41414735433333+1.481206784j;
+}
+object line_configuration {
+name overhead_ACSR_3C_336;
+z11 0.370920624666667+1.424911092j;
+z12 0.286138124+2.25922908j;
+z13 0.286138124+2.25922908j;
+z21 0.286138124+2.25922908j;
+z22 0.370920624666667+1.424911092j;
+z23 0.286138124+2.25922908j;
+z31 0.286138124+2.25922908j;
+z32 0.286138124+2.25922908j;
+z33 0.370920624666667+1.424911092j;
+}
+object line_configuration {
+name overhead_ACSR_3C_#4;
+z11 2.26691473666667+1.65561273j;
+z12 0.286138124+2.25922908j;
+z13 0.286138124+2.25922908j;
+z21 0.286138124+2.25922908j;
+z22 2.26691473666667+1.65561273j;
+z23 0.286138124+2.25922908j;
+z31 0.286138124+2.25922908j;
+z32 0.286138124+2.25922908j;
+z33 2.26691473666667+1.65561273j;
+}
+object line_configuration {
+name overhead_ACSR_3C_336_336N;
+z11 0.407170858333333+1.00120293166667j;
+z12 0.323545765+1.2128642j;
+z13 0.323545765+1.2128642j;
+z21 0.323545765+1.2128642j;
+z22 0.407170858333333+1.00120293166667j;
+z23 0.323545765+1.2128642j;
+z31 0.323545765+1.2128642j;
+z32 0.323545765+1.2128642j;
+z33 0.407170858333333+1.00120293166667j;
+}
+object line_configuration {
+name overhead_ACSR_3C_1_0_1_0N;
+z11 1.06071501466667+1.22933982366667j;
+z12 0.605695178+1.259256497j;
+z13 0.605695178+1.259256497j;
+z21 0.605695178+1.259256497j;
+z22 1.06071501466667+1.22933982366667j;
+z23 0.605695178+1.259256497j;
+z31 0.605695178+1.259256497j;
+z32 0.605695178+1.259256497j;
+z33 1.06071501466667+1.22933982366667j;
+}
+object line_configuration {
+name overhead_ACSR_3C_1_0;
+z11 0.954195996666667+1.562664018j;
+z12 0.286138124+2.25922908j;
+z13 0.286138124+2.25922908j;
+z21 0.286138124+2.25922908j;
+z22 0.954195996666667+1.562664018j;
+z23 0.286138124+2.25922908j;
+z31 0.286138124+2.25922908j;
+z32 0.286138124+2.25922908j;
+z33 0.954195996666667+1.562664018j;
+}
+object line_configuration {
+name overhead_ACSR_3C_4_0;
+z11 0.524287286666667+1.5151953j;
+z12 0.286138124+2.25922908j;
+z13 0.286138124+2.25922908j;
+z21 0.286138124+2.25922908j;
+z22 0.524287286666667+1.5151953j;
+z23 0.286138124+2.25922908j;
+z31 0.286138124+2.25922908j;
+z32 0.286138124+2.25922908j;
+z33 0.524287286666667+1.5151953j;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779068_03716$PS0600_03716;
+from node_ND46779068_03716;
+to node_PS0600_03716;
+length 78.333597 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND170120763_03716$ND46779244_03716;
+from node_ND170120763_03716;
+to node_ND46779244_03716;
+length 67.055998 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1589924E_03716$ND46780178_03716;
+from node_1589924E_03716;
+to node_ND46780178_03716;
+length 236.524792 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780096_03716$1135550E_03716;
+from node_ND46780096_03716;
+to node_1135550E_03716;
+length 23.469599 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_736703H_03716$736705H_03716;
+from node_736703H_03716;
+to node_736705H_03716;
+length 48.767998 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND170120737_03716$ND46779889_03716;
+from node_ND170120737_03716;
+to node_ND46779889_03716;
+length 47.853598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1063715E_03716$1063712E_03716;
+from node_1063715E_03716;
+to node_1063712E_03716;
+length 193.243194 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779650_03716$1717922E_03716;
+from node_ND46779650_03716;
+to node_1717922E_03716;
+length 41.452799 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740066_03716$ND46779401_03716;
+from node_ND46740066_03716;
+to node_ND46779401_03716;
+length 38.404799 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND151450054_03716$4366139E_03716;
+from node_ND151450054_03716;
+to node_4366139E_03716;
+length 34.137599 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779351_03716$PS0025_03716;
+from node_ND46779351_03716;
+to node_PS0025_03716;
+length 28.041599 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740031_03716$ND46779967_03716;
+from node_ND46740031_03716;
+to node_ND46779967_03716;
+length 99.974397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779401_03716$736701H_03716;
+from node_ND46779401_03716;
+to node_736701H_03716;
+length 16.459199 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1703676E_03716$1703677E_03716_1;
+from node_1703676E_03716;
+to node_1703677E_03716_1;
+length 45.415199 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778859_03716$1087857E_03716;
+from node_ND46778859_03716;
+to node_1087857E_03716;
+length 29.870399 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND73251429_03716$1288621E_03716;
+from node_ND73251429_03716;
+to node_1288621E_03716;
+length 1.524000 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94548047_03716$ND151450054_03716;
+from node_ND94548047_03716;
+to node_ND151450054_03716;
+length 56.997598 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778859_03716$2340833E_03716_1;
+from node_ND46778859_03716;
+to node_2340833E_03716_1;
+length 0.304800 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1135550E_03716$1136202E_03716;
+from node_1135550E_03716;
+to node_1136202E_03716;
+length 61.874398 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780998_03716$1335103E_03716;
+from node_ND46780998_03716;
+to node_1335103E_03716;
+length 13.106400 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_BF00227_03716_1$ND46779200_03716;
+from node_BF00227_03716_1;
+to node_ND46779200_03716;
+length 17.373599 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739782_03716$1679854E_03716_1;
+from node_ND46739782_03716;
+to node_1679854E_03716_1;
+length 2.438400 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779141_03716$ND46779142_03716;
+from node_ND46779141_03716;
+to node_ND46779142_03716;
+length 82.295997 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1717922E_03716$ND46739775_03716;
+from node_1717922E_03716;
+to node_ND46739775_03716;
+length 48.767998 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1717927E_03716$ND46779068_03716;
+from node_1717927E_03716;
+to node_ND46779068_03716;
+length 14.630400 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739999_03716$736709H_03716;
+from node_ND46739999_03716;
+to node_736709H_03716;
+length 67.055998 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4009390E_03716$1063720E_03716;
+from node_4009390E_03716;
+to node_1063720E_03716;
+length 5.181600 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1385964E_03716$ND46739860_03716;
+from node_1385964E_03716;
+to node_ND46739860_03716;
+length 76.504798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740141_03716$PS1178_03716_1;
+from node_ND46740141_03716;
+to node_PS1178_03716_1;
+length 18.897599 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_736705H_03716$736706H_03716;
+from node_736705H_03716;
+to node_736706H_03716;
+length 49.682398 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND170120737_03716$ND170120763_03716;
+from node_ND170120737_03716;
+to node_ND170120763_03716;
+length 39.623999 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739814_03716$4538745E_03716;
+from node_ND46739814_03716;
+to node_4538745E_03716;
+length 29.870399 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779854_03716$4504160E_03716;
+from node_ND46779854_03716;
+to node_4504160E_03716;
+length 64.922398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740030_03716$ND46740031_03716;
+from node_ND46740030_03716;
+to node_ND46740031_03716;
+length 79.857597 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739360_03716$ND73251429_03716;
+from node_ND46739360_03716;
+to node_ND73251429_03716;
+length 93.878397 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS0807_03716_1$ND46778954_03716;
+from node_PS0807_03716_1;
+to node_ND46778954_03716;
+length 59.131198 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778962_03716$ND46779208_03716;
+from node_ND46778962_03716;
+to node_ND46779208_03716;
+length 42.062399 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739775_03716$ND160132241_03716;
+from node_ND46739775_03716;
+to node_ND160132241_03716;
+length 75.590398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739790_03716$1642378E_03716;
+from node_ND46739790_03716;
+to node_1642378E_03716;
+length 35.661599 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94547995_03716$1839739E_03716;
+from node_ND94547995_03716;
+to node_1839739E_03716;
+length 5.486400 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779068_03716$PS1396_03716;
+from node_ND46779068_03716;
+to node_PS1396_03716;
+length 3.048000 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779818_03716$ND46779590_03716;
+from node_ND46779818_03716;
+to node_ND46779590_03716;
+length 63.093598 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1135185E_03716$1135187E_03716;
+from node_1135185E_03716;
+to node_1135187E_03716;
+length 72.237598 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740176_03716$RCS0959_03716;
+from node_ND46740176_03716;
+to node_RCS0959_03716;
+length 33.223199 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778906_03716$ND46779236_03716;
+from node_ND46778906_03716;
+to node_ND46779236_03716;
+length 60.045598 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS0600_03716_1$ND46778921_03716;
+from node_PS0600_03716_1;
+to node_ND46778921_03716;
+length 197.815194 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1679853E_03716$ND46739782_03716;
+from node_1679853E_03716;
+to node_ND46739782_03716;
+length 28.041599 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND108142671_03716$1679518E_03716;
+from node_ND108142671_03716;
+to node_1679518E_03716;
+length 63.703198 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_736701H_03716$736703H_03716;
+from node_736701H_03716;
+to node_736703H_03716;
+length 60.655198 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740092_03716$4009392T1_03716_1;
+from node_ND46740092_03716;
+to node_4009392T1_03716_1;
+length 10.972800 m;
+configuration overhead_CU_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739732_03716$ND46780145_03716;
+from node_ND46739732_03716;
+to node_ND46780145_03716;
+length 88.696797 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1335104E_03716$ND46739921_03716;
+from node_1335104E_03716;
+to node_ND46739921_03716;
+length 35.051999 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778897_03716$ND46740030_03716;
+from node_ND46778897_03716;
+to node_ND46740030_03716;
+length 55.168798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1679852E_03716$1679853E_03716;
+from node_1679852E_03716;
+to node_1679853E_03716;
+length 60.959998 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1063719E_03716$1063715E_03716;
+from node_1063719E_03716;
+to node_1063715E_03716;
+length 115.214396 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779313_03716$ND46740052_03716;
+from node_ND46779313_03716;
+to node_ND46740052_03716;
+length 50.291998 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780953_03716$2022851E_03716;
+from node_ND46780953_03716;
+to node_2022851E_03716;
+length 107.594397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739989_03716$ND46779818_03716;
+from node_ND46739989_03716;
+to node_ND46779818_03716;
+length 38.404799 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1575440E_03716$ND170120737_03716;
+from node_1575440E_03716;
+to node_ND170120737_03716;
+length 83.515197 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1225980E_03716$ND46740141_03716;
+from node_1225980E_03716;
+to node_ND46740141_03716;
+length 61.264798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779313_03716$1288609E_03716;
+from node_ND46779313_03716;
+to node_1288609E_03716;
+length 35.356799 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779548_03716$ND46779093_03716;
+from node_ND46779548_03716;
+to node_ND46779093_03716;
+length 66.446398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778913_03716$ND94547995_03716;
+from node_ND46778913_03716;
+to node_ND94547995_03716;
+length 3.048000 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779244_03716$1575445E_03716;
+from node_ND46779244_03716;
+to node_1575445E_03716;
+length 3.048000 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779142_03716$ND46779686_03716;
+from node_ND46779142_03716;
+to node_ND46779686_03716;
+length 79.552797 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780096_03716$ND46779650_03716;
+from node_ND46780096_03716;
+to node_ND46779650_03716;
+length 95.097597 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739921_03716$1335106E_03716;
+from node_ND46739921_03716;
+to node_1335106E_03716;
+length 67.055998 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND151450054_03716$4814502E_03716_1;
+from node_ND151450054_03716;
+to node_4814502E_03716_1;
+length 0.609600 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779208_03716$ND94548013_03716;
+from node_ND46779208_03716;
+to node_ND94548013_03716;
+length 3.352800 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780145_03716$ND46739767_03716;
+from node_ND46780145_03716;
+to node_ND46739767_03716;
+length 79.552797 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779818_03716$1642374E_03716;
+from node_ND46779818_03716;
+to node_1642374E_03716;
+length 27.736799 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1575627E_03716$ND46739988_03716;
+from node_1575627E_03716;
+to node_ND46739988_03716;
+length 79.552797 m;
+configuration overhead_ACSR_3C_#4_#4N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779496_03716$1679856E_03716;
+from node_ND46779496_03716;
+to node_1679856E_03716;
+length 3.657600 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740142_03716$ND46739732_03716;
+from node_ND46740142_03716;
+to node_ND46739732_03716;
+length 59.740798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779039_03716$ND46739899_03716;
+from node_ND46779039_03716;
+to node_ND46739899_03716;
+length 68.884798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740176_03716$1225980E_03716;
+from node_ND46740176_03716;
+to node_1225980E_03716;
+length 34.442399 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740142_03716$2018840E_03716;
+from node_ND46740142_03716;
+to node_2018840E_03716;
+length 1.524000 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1130050E_03716_1$ND108142671_03716;
+from node_1130050E_03716_1;
+to node_ND108142671_03716;
+length 29.565599 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS1396_03716_1$ND94548047_03716;
+from node_PS1396_03716_1;
+to node_ND94548047_03716;
+length 5.791200 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1087857E_03716$1087858E_03716;
+from node_1087857E_03716;
+to node_1087858E_03716;
+length 156.362395 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1575635E_03716$1385964E_03716;
+from node_1575635E_03716;
+to node_1385964E_03716;
+length 107.594397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779200_03716$1405381E_03716;
+from node_ND46779200_03716;
+to node_1405381E_03716;
+length 34.747199 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779967_03716$1701702E_03716_1;
+from node_ND46779967_03716;
+to node_1701702E_03716_1;
+length 2.133600 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778867_03716$BF00221_03716;
+from node_ND46778867_03716;
+to node_BF00221_03716;
+length 56.083198 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1335103E_03716$1335104E_03716;
+from node_1335103E_03716;
+to node_1335104E_03716;
+length 35.051999 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1087853E_03716$ND46778859_03716;
+from node_1087853E_03716;
+to node_ND46778859_03716;
+length 84.429597 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778906_03716$BF00227_03716;
+from node_ND46778906_03716;
+to node_BF00227_03716;
+length 9.144000 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4009392T1_03716$1087853E_03716;
+from node_4009392T1_03716;
+to node_1087853E_03716;
+length 41.757599 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779496_03716$ND46739814_03716;
+from node_ND46779496_03716;
+to node_ND46739814_03716;
+length 17.373599 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1136202E_03716$ND46779791_03716;
+from node_1136202E_03716;
+to node_ND46779791_03716;
+length 8.229600 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779791_03716$4470237E_03716;
+from node_ND46779791_03716;
+to node_4470237E_03716;
+length 22.555199 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4504160E_03716$1575440E_03716;
+from node_4504160E_03716;
+to node_1575440E_03716;
+length 86.258397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779001_03716$ND46779854_03716;
+from node_ND46779001_03716;
+to node_ND46779854_03716;
+length 59.740798 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778954_03716$ND46779313_03716;
+from node_ND46778954_03716;
+to node_ND46779313_03716;
+length 87.172797 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1063712E_03716$1135185E_03716;
+from node_1063712E_03716;
+to node_1135185E_03716;
+length 72.542398 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94548013_03716$ND46778913_03716;
+from node_ND94548013_03716;
+to node_ND46778913_03716;
+length 14.935200 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2022851E_03716$ND46778906_03716;
+from node_2022851E_03716;
+to node_ND46778906_03716;
+length 5.181600 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1335107E_03716$ND46740066_03716;
+from node_1335107E_03716;
+to node_ND46740066_03716;
+length 28.651199 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739988_03716$ND46739989_03716;
+from node_ND46739988_03716;
+to node_ND46739989_03716;
+length 26.822399 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1642378E_03716$ND46778962_03716;
+from node_1642378E_03716;
+to node_ND46778962_03716;
+length 35.661599 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779244_03716$1589924E_03716;
+from node_ND46779244_03716;
+to node_1589924E_03716;
+length 117.957596 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779547_03716$ND46779548_03716;
+from node_ND46779547_03716;
+to node_ND46779548_03716;
+length 88.087197 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1679518E_03716$1680863E_03716;
+from node_1679518E_03716;
+to node_1680863E_03716;
+length 64.617598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1419310E_03716$ND46779141_03716;
+from node_1419310E_03716;
+to node_ND46779141_03716;
+length 67.360798 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1405385E_03716$1419310E_03716;
+from node_1405385E_03716;
+to node_1419310E_03716;
+length 201.167994 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1589934E_03716$ND46778867_03716;
+from node_1589934E_03716;
+to node_ND46778867_03716;
+length 34.137599 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778914_03716$1679852E_03716;
+from node_ND46778914_03716;
+to node_1679852E_03716;
+length 49.682398 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739966_03716$1575627E_03716;
+from node_ND46739966_03716;
+to node_1575627E_03716;
+length 55.473598 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1680863E_03716$ND46739966_03716;
+from node_1680863E_03716;
+to node_ND46739966_03716;
+length 43.586399 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778947_03716$1589934E_03716;
+from node_ND46778947_03716;
+to node_1589934E_03716;
+length 37.185599 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS1178_03716$ND46779001_03716;
+from node_PS1178_03716;
+to node_ND46779001_03716;
+length 70.103998 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1135187E_03716$1135189E_03716;
+from node_1135187E_03716;
+to node_1135189E_03716;
+length 63.093598 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND108142671_03716$1575641E_03716;
+from node_ND108142671_03716;
+to node_1575641E_03716;
+length 2.438400 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94548047_03716$ND46780096_03716;
+from node_ND94548047_03716;
+to node_ND46780096_03716;
+length 56.387998 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740092_03716$ND46779039_03716;
+from node_ND46740092_03716;
+to node_ND46779039_03716;
+length 7.010400 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1288609E_03716$ND46739360_03716;
+from node_1288609E_03716;
+to node_ND46739360_03716;
+length 38.709599 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94547995_03716$ND46778914_03716;
+from node_ND94547995_03716;
+to node_ND46778914_03716;
+length 27.736799 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2243141E_03716$ND46740100_03716;
+from node_2243141E_03716;
+to node_ND46740100_03716;
+length 60.045598 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_736709H_03716$ND46779935_03716;
+from node_736709H_03716;
+to node_ND46779935_03716;
+length 44.195999 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1286120E_03716$ND46780953_03716;
+from node_1286120E_03716;
+to node_ND46780953_03716;
+length 61.569598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740091_03716$ND46740092_03716;
+from node_ND46740091_03716;
+to node_ND46740092_03716;
+length 55.778398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779942_03716$PS0793_03716;
+from node_ND46779942_03716;
+to node_PS0793_03716;
+length 34.747199 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46780178_03716$ND94548145_03716;
+from node_ND46780178_03716;
+to node_ND94548145_03716;
+length 54.559198 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_736706H_03716$ND46739999_03716;
+from node_736706H_03716;
+to node_ND46739999_03716;
+length 42.367199 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1642374E_03716$ND46739790_03716;
+from node_1642374E_03716;
+to node_ND46739790_03716;
+length 93.268797 m;
+configuration overhead_ACSR_3C_1_0_1_0N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND94548145_03716$ND46778947_03716;
+from node_ND94548145_03716;
+to node_ND46778947_03716;
+length 158.191195 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739860_03716$2134827E_03716;
+from node_ND46739860_03716;
+to node_2134827E_03716;
+length 66.141598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779967_03716$PS0157_03716;
+from node_ND46779967_03716;
+to node_PS0157_03716;
+length 28.346399 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1405381E_03716$1405385E_03716;
+from node_1405381E_03716;
+to node_1405385E_03716;
+length 188.975994 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1135189E_03716$2242831E_03716_1;
+from node_1135189E_03716;
+to node_2242831E_03716_1;
+length 102.107997 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1335106E_03716$1335107E_03716;
+from node_1335106E_03716;
+to node_1335107E_03716;
+length 24.079199 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779590_03716$1874794E_03716;
+from node_ND46779590_03716;
+to node_1874794E_03716;
+length 41.757599 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778947_03716$1589933E_03716_1;
+from node_ND46778947_03716;
+to node_1589933E_03716_1;
+length 3.352800 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739900_03716$ND46779547_03716;
+from node_ND46739900_03716;
+to node_ND46779547_03716;
+length 84.429597 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740052_03716$PS0808_03716;
+from node_ND46740052_03716;
+to node_PS0808_03716;
+length 189.585594 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2018840E_03716_1$2243141E_03716;
+from node_2018840E_03716_1;
+to node_2243141E_03716;
+length 10.668000 m;
+configuration overhead_ACSR_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1063720E_03716$1063719E_03716;
+from node_1063720E_03716;
+to node_1063719E_03716;
+length 39.014399 m;
+configuration overhead_ACSR_3C_4_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739767_03716$ND46778897_03716;
+from node_ND46739767_03716;
+to node_ND46778897_03716;
+length 20.726399 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1679857E_03716$ND46779496_03716;
+from node_1679857E_03716;
+to node_ND46779496_03716;
+length 22.555199 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46778921_03716$ND46740091_03716;
+from node_ND46778921_03716;
+to node_ND46740091_03716;
+length 31.089599 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739782_03716$1679857E_03716;
+from node_ND46739782_03716;
+to node_1679857E_03716;
+length 157.276795 m;
+configuration overhead_ACSR_3C_1_0;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739899_03716$ND46739900_03716;
+from node_ND46739899_03716;
+to node_ND46739900_03716;
+length 87.782397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46739900_03716$4009390E_03716_1;
+from node_ND46739900_03716;
+to node_4009390E_03716_1;
+length 7.620000 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46740141_03716$ND46740142_03716;
+from node_ND46740141_03716;
+to node_ND46740142_03716;
+length 93.878397 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND46779236_03716$ND46740176_03716;
+from node_ND46779236_03716;
+to node_ND46740176_03716;
+length 35.051999 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND73251429_03716$ND46779942_03716;
+from node_ND73251429_03716;
+to node_ND46779942_03716;
+length 25.298399 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "AB";
+name line_ND46739732_03716$2028723E_03716_1;
+from node_ND46739732_03716;
+to node_2028723E_03716_1;
+length 1.828800 m;
+configuration line_configuration_ND46739732$2028723E;
+}
+
+object line_configuration {
+name line_configuration_ND46739732$2028723E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line_conductor{
+name conductor_CU_#4;
+geometric_mean_radius 0.213360 cm;
+resistance 0.881166 ohm/km;
+}
+object line_spacing {
+name line_spacing_STANDARD_2W_1N;
+distance_AB 1.929384 m;
+distance_AC 12.192 m;
+distance_AN 2.843784 m;
+distance_BC 12.343718508596 m;
+distance_BN 0.9144 m;
+distance_CN 12.5192640134577 m;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779650_03716$FP923_03716_1;
+from node_ND46779650_03716;
+to node_FP923_03716_1;
+length 3.352800 m;
+configuration line_configuration_ND46779650$FP923;
+}
+
+object line_configuration {
+name line_configuration_ND46779650$FP923;
+conductor_A conductor_ACSR_653;
+conductor_B conductor_ACSR_653;
+conductor_C conductor_ACSR_653;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line_conductor{
+name conductor_ACSR_653;
+geometric_mean_radius 0.940054 cm;
+resistance 0.089540 ohm/km;
+}
+object line_spacing {
+name line_spacing_STANDARD_3W_1N;
+distance_AB 1.929384 m;
+distance_AC 2.843784 m;
+distance_AN 0.9144 m;
+distance_BC 0.9144 m;
+distance_BN 1.014984 m;
+distance_CN 1.929384 m;
+}
+object overhead_line {
+phases "AB";
+name line_BF000224_03716_1$1063729E_03716;
+from node_BF000224_03716_1;
+to node_1063729E_03716;
+length 14.935200 m;
+configuration line_configuration_BF000224$1063729E;
+}
+
+object line_configuration {
+name line_configuration_BF000224$1063729E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line_conductor{
+name conductor_ACSR_336;
+geometric_mean_radius 0.673608 cm;
+resistance 0.171250 ohm/km;
+}
+object overhead_line {
+phases "AB";
+name line_4667236E_03716$1575624E_03716;
+from node_4667236E_03716;
+to node_1575624E_03716;
+length 58.826398 m;
+configuration line_configuration_4667236E$1575624E;
+}
+
+object line_configuration {
+name line_configuration_4667236E$1575624E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line_conductor{
+name conductor_ACSR_#4;
+geometric_mean_radius 0.100584 cm;
+resistance 1.349618 ohm/km;
+}
+object overhead_line {
+phases "AB";
+name line_ND46780178_03716$ND46778850_03716;
+from node_ND46780178_03716;
+to node_ND46778850_03716;
+length 59.131198 m;
+configuration line_configuration_ND46780178$ND46778850;
+}
+
+object line_configuration {
+name line_configuration_ND46780178$ND46778850;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739899_03716$BF000225_03716;
+from node_ND46739899_03716;
+to node_BF000225_03716;
+length 12.801600 m;
+configuration line_configuration_ND46739899$BF000225;
+}
+
+object line_configuration {
+name line_configuration_ND46739899$BF000225;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_687850H_03716$687834H_03716;
+from node_687850H_03716;
+to node_687834H_03716;
+length 81.686397 m;
+configuration line_configuration_687850H$687834H;
+}
+
+object line_configuration {
+name line_configuration_687850H$687834H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779889_03716$1703676E_03716;
+from node_ND46779889_03716;
+to node_1703676E_03716;
+length 108.508797 m;
+configuration line_configuration_ND46779889$1703676E;
+}
+
+object line_configuration {
+name line_configuration_ND46779889$1703676E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1135198E_03716$1135196E_03716;
+from node_1135198E_03716;
+to node_1135196E_03716;
+length 71.627998 m;
+configuration line_configuration_1135198E$1135196E;
+}
+
+object line_configuration {
+name line_configuration_1135198E$1135196E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1135180E_03716$1135178E_03716;
+from node_1135180E_03716;
+to node_1135178E_03716;
+length 61.264798 m;
+configuration line_configuration_1135180E$1135178E;
+}
+
+object line_configuration {
+name line_configuration_1135180E$1135178E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063709E_03716$1063707E_03716;
+from node_1063709E_03716;
+to node_1063707E_03716;
+length 57.302398 m;
+configuration line_configuration_1063709E$1063707E;
+}
+
+object line_configuration {
+name line_configuration_1063709E$1063707E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1088546E_03716$1088552E_03716;
+from node_1088546E_03716;
+to node_1088552E_03716;
+length 144.779995 m;
+configuration line_configuration_1088546E$1088552E;
+}
+
+object line_configuration {
+name line_configuration_1088546E$1088552E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779093_03716$BF00225_03716_1;
+from node_ND46779093_03716;
+to node_BF00225_03716_1;
+length 16.154399 m;
+configuration line_configuration_ND46779093$BF00225;
+}
+
+object line_configuration {
+name line_configuration_ND46779093$BF00225;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739814_03716$1679858E_03716;
+from node_ND46739814_03716;
+to node_1679858E_03716;
+length 14.325600 m;
+configuration line_configuration_1679858E$ND46739814;
+}
+
+object line_configuration {
+name line_configuration_1679858E$ND46739814;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779854_03716$4504161E_03716;
+from node_ND46779854_03716;
+to node_4504161E_03716;
+length 27.736799 m;
+configuration line_configuration_ND46779854$4504161E;
+}
+
+object line_configuration {
+name line_configuration_ND46779854$4504161E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1335226E_03716$4502189E_03716;
+from node_1335226E_03716;
+to node_4502189E_03716;
+length 72.542398 m;
+configuration line_configuration_1335226E$4502189E;
+}
+
+object line_configuration {
+name line_configuration_1335226E$4502189E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740091_03716$4009393E_03716_1;
+from node_ND46740091_03716;
+to node_4009393E_03716_1;
+length 9.144000 m;
+configuration line_configuration_4009393E$ND46740091;
+}
+
+object line_configuration {
+name line_configuration_4009393E$ND46740091;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063705E_03716$1063702E_03716;
+from node_1063705E_03716;
+to node_1063702E_03716;
+length 192.633594 m;
+configuration line_configuration_1063705E$1063702E;
+}
+
+object line_configuration {
+name line_configuration_1063705E$1063702E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469092E_03716$1469094E_03716;
+from node_1469092E_03716;
+to node_1469094E_03716;
+length 85.039197 m;
+configuration line_configuration_1469092E$1469094E;
+}
+
+object line_configuration {
+name line_configuration_1469092E$1469094E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46778954_03716$2369067E_03716;
+from node_ND46778954_03716;
+to node_2369067E_03716;
+length 2.133600 m;
+configuration line_configuration_ND46778954$2369067E;
+}
+
+object line_configuration {
+name line_configuration_ND46778954$2369067E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739929_03716$1469099E_03716;
+from node_ND46739929_03716;
+to node_1469099E_03716;
+length 42.976799 m;
+configuration line_configuration_ND46739929$1469099E;
+}
+
+object line_configuration {
+name line_configuration_ND46739929$1469099E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778947_03716$BF00219_03716_1;
+from node_ND46778947_03716;
+to node_BF00219_03716_1;
+length 53.644798 m;
+configuration line_configuration_ND46778947$BF00219;
+}
+
+object line_configuration {
+name line_configuration_ND46778947$BF00219;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779172_03716$1511278E_03716;
+from node_ND46779172_03716;
+to node_1511278E_03716;
+length 68.579998 m;
+configuration line_configuration_ND46779172$1511278E;
+}
+
+object line_configuration {
+name line_configuration_ND46779172$1511278E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1135196E_03716$1135194E_03716;
+from node_1135196E_03716;
+to node_1135194E_03716;
+length 68.884798 m;
+configuration line_configuration_1135196E$1135194E;
+}
+
+object line_configuration {
+name line_configuration_1135196E$1135194E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779141_03716$1419315E_03716;
+from node_ND46779141_03716;
+to node_1419315E_03716;
+length 31.089599 m;
+configuration line_configuration_ND46779141$1419315E;
+}
+
+object line_configuration {
+name line_configuration_ND46779141$1419315E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1335237E_03716$1335239E_03716;
+from node_1335237E_03716;
+to node_1335239E_03716;
+length 62.788798 m;
+configuration line_configuration_1335237E$1335239E;
+}
+
+object line_configuration {
+name line_configuration_1335237E$1335239E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575617E_03716$1575620E_03716;
+from node_1575617E_03716;
+to node_1575620E_03716;
+length 64.922398 m;
+configuration line_configuration_1575617E$1575620E;
+}
+
+object line_configuration {
+name line_configuration_1575617E$1575620E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688927H_03716$4704578E_03716;
+from node_688927H_03716;
+to node_4704578E_03716;
+length 41.147999 m;
+configuration line_configuration_688927H$4704578E;
+}
+
+object line_configuration {
+name line_configuration_688927H$4704578E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1135182E_03716$1135180E_03716;
+from node_1135182E_03716;
+to node_1135180E_03716;
+length 75.895198 m;
+configuration line_configuration_1135182E$1135180E;
+}
+
+object line_configuration {
+name line_configuration_1135182E$1135180E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1673799E_03716$1673796E_03716;
+from node_1673799E_03716;
+to node_1673796E_03716;
+length 136.550396 m;
+configuration line_configuration_1673799E$1673796E;
+}
+
+object line_configuration {
+name line_configuration_1673799E$1673796E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063702E_03716$1135182E_03716;
+from node_1063702E_03716;
+to node_1135182E_03716;
+length 73.761598 m;
+configuration line_configuration_1063702E$1135182E;
+}
+
+object line_configuration {
+name line_configuration_1063702E$1135182E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1252665E_03716$1252667E_03716;
+from node_1252665E_03716;
+to node_1252667E_03716;
+length 69.799198 m;
+configuration line_configuration_1252665E$1252667E;
+}
+
+object line_configuration {
+name line_configuration_1252665E$1252667E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND170120763_03716$ND46739660_03716;
+from node_ND170120763_03716;
+to node_ND46739660_03716;
+length 34.747199 m;
+configuration line_configuration_ND46739660$ND170120763;
+}
+
+object line_configuration {
+name line_configuration_ND46739660$ND170120763;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4667233E_03716$ND46781357_03716;
+from node_4667233E_03716;
+to node_ND46781357_03716;
+length 26.822399 m;
+configuration line_configuration_4667233E$ND46781357;
+}
+
+object line_configuration {
+name line_configuration_4667233E$ND46781357;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_BF00221_03716_1$ND46778842_03716;
+from node_BF00221_03716_1;
+to node_ND46778842_03716;
+length 0.304800 m;
+configuration line_configuration_BF00221$ND46778842;
+}
+
+object line_configuration {
+name line_configuration_BF00221$ND46778842;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763337E_03716$763334E_03716;
+from node_763337E_03716;
+to node_763334E_03716;
+length 120.091196 m;
+configuration line_configuration_763337E$763334E;
+}
+
+object line_configuration {
+name line_configuration_763337E$763334E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779337_03716$1478408E_03716;
+from node_ND46779337_03716;
+to node_1478408E_03716;
+length 85.039197 m;
+configuration line_configuration_ND46779337$1478408E;
+}
+
+object line_configuration {
+name line_configuration_ND46779337$1478408E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469089E_03716$1469092E_03716;
+from node_1469089E_03716;
+to node_1469092E_03716;
+length 58.826398 m;
+configuration line_configuration_1469089E$1469092E;
+}
+
+object line_configuration {
+name line_configuration_1469089E$1469092E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4619878E_03716$1335226E_03716;
+from node_4619878E_03716;
+to node_1335226E_03716;
+length 62.788798 m;
+configuration line_configuration_1335226E$4619878E;
+}
+
+object line_configuration {
+name line_configuration_1335226E$4619878E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1252673E_03716$1252675E_03716;
+from node_1252673E_03716;
+to node_1252675E_03716;
+length 69.494398 m;
+configuration line_configuration_1252673E$1252675E;
+}
+
+object line_configuration {
+name line_configuration_1252673E$1252675E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063729E_03716$1063727E_03716;
+from node_1063729E_03716;
+to node_1063727E_03716;
+length 74.675998 m;
+configuration line_configuration_1063729E$1063727E;
+}
+
+object line_configuration {
+name line_configuration_1063729E$1063727E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575606E_03716$1575610E_03716;
+from node_1575606E_03716;
+to node_1575610E_03716;
+length 133.197596 m;
+configuration line_configuration_1575606E$1575610E;
+}
+
+object line_configuration {
+name line_configuration_1575606E$1575610E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4502726E_03716$1591147E_03716;
+from node_4502726E_03716;
+to node_1591147E_03716;
+length 146.913595 m;
+configuration line_configuration_4502726E$1591147E;
+}
+
+object line_configuration {
+name line_configuration_4502726E$1591147E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1088550E_03716$1088546E_03716;
+from node_1088550E_03716;
+to node_1088546E_03716;
+length 32.613599 m;
+configuration line_configuration_1088550E$1088546E;
+}
+
+object line_configuration {
+name line_configuration_1088550E$1088546E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779686_03716$1469081E_03716;
+from node_ND46779686_03716;
+to node_1469081E_03716;
+length 28.651199 m;
+configuration line_configuration_ND46779686$1469081E;
+}
+
+object line_configuration {
+name line_configuration_ND46779686$1469081E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779152_03716$ND46739974_03716;
+from node_ND46779152_03716;
+to node_ND46739974_03716;
+length 71.627998 m;
+configuration line_configuration_ND46779152$ND46739974;
+}
+
+object line_configuration {
+name line_configuration_ND46779152$ND46739974;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688872H_03716$688864H_03716;
+from node_688872H_03716;
+to node_688864H_03716;
+length 48.767998 m;
+configuration line_configuration_688872H$688864H;
+}
+
+object line_configuration {
+name line_configuration_688872H$688864H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779913_03716$1511259E_03716;
+from node_ND46779913_03716;
+to node_1511259E_03716;
+length 56.387998 m;
+configuration line_configuration_ND46779913$1511259E;
+}
+
+object line_configuration {
+name line_configuration_ND46779913$1511259E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46780998_03716$1335232E_03716;
+from node_ND46780998_03716;
+to node_1335232E_03716;
+length 45.110399 m;
+configuration line_configuration_ND46780998$1335232E;
+}
+
+object line_configuration {
+name line_configuration_ND46780998$1335232E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778962_03716$1642379E_03716_1;
+from node_ND46778962_03716;
+to node_1642379E_03716_1;
+length 3.962400 m;
+configuration line_configuration_ND46778962$1642379E;
+}
+
+object line_configuration {
+name line_configuration_ND46778962$1642379E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575613E_03716$1575617E_03716;
+from node_1575613E_03716;
+to node_1575617E_03716;
+length 125.272796 m;
+configuration line_configuration_1575613E$1575617E;
+}
+
+object line_configuration {
+name line_configuration_1575613E$1575617E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1642384E_03716$1641743E_03716;
+from node_1642384E_03716;
+to node_1641743E_03716;
+length 82.600797 m;
+configuration line_configuration_1642384E$1641743E;
+}
+
+object line_configuration {
+name line_configuration_1642384E$1641743E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46739860_03716$BF00222_03716;
+from node_ND46739860_03716;
+to node_BF00222_03716;
+length 13.411200 m;
+configuration line_configuration_ND46739860$BF00222;
+}
+
+object line_configuration {
+name line_configuration_ND46739860$BF00222;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4472865E_03716$1510065E_03716;
+from node_4472865E_03716;
+to node_1510065E_03716;
+length 116.738396 m;
+configuration line_configuration_4472865E$1510065E;
+}
+
+object line_configuration {
+name line_configuration_4472865E$1510065E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779200_03716$4472865E_03716;
+from node_ND46779200_03716;
+to node_4472865E_03716;
+length 87.477597 m;
+configuration line_configuration_ND46779200$4472865E;
+}
+
+object line_configuration {
+name line_configuration_ND46779200$4472865E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063707E_03716$1063705E_03716;
+from node_1063707E_03716;
+to node_1063705E_03716;
+length 57.607198 m;
+configuration line_configuration_1063707E$1063705E;
+}
+
+object line_configuration {
+name line_configuration_1063707E$1063705E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1478421E_03716$1511252E_03716;
+from node_1478421E_03716;
+to node_1511252E_03716;
+length 131.673596 m;
+configuration line_configuration_1478421E$1511252E;
+}
+
+object line_configuration {
+name line_configuration_1478421E$1511252E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4664398E_03716$ND46779474_03716;
+from node_4664398E_03716;
+to node_ND46779474_03716;
+length 85.648797 m;
+configuration line_configuration_4664398E$ND46779474;
+}
+
+object line_configuration {
+name line_configuration_4664398E$ND46779474;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469084E_03716$1469087E_03716;
+from node_1469084E_03716;
+to node_1469087E_03716;
+length 105.765597 m;
+configuration line_configuration_1469084E$1469087E;
+}
+
+object line_configuration {
+name line_configuration_1469084E$1469087E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740100_03716$716543H_03716;
+from node_ND46740100_03716;
+to node_716543H_03716;
+length 34.442399 m;
+configuration line_configuration_ND46740100$716543H;
+}
+
+object line_configuration {
+name line_configuration_ND46740100$716543H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46781357_03716$ND46779172_03716;
+from node_ND46781357_03716;
+to node_ND46779172_03716;
+length 81.381597 m;
+configuration line_configuration_ND46781357$ND46779172;
+}
+
+object line_configuration {
+name line_configuration_ND46781357$ND46779172;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4704578E_03716$ND101857618_03716;
+from node_4704578E_03716;
+to node_ND101857618_03716;
+length 96.926397 m;
+configuration line_configuration_4704578E$ND101857618;
+}
+
+object line_configuration {
+name line_configuration_4704578E$ND101857618;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779142_03716$1469089E_03716;
+from node_ND46779142_03716;
+to node_1469089E_03716;
+length 31.394399 m;
+configuration line_configuration_ND46779142$1469089E;
+}
+
+object line_configuration {
+name line_configuration_ND46779142$1469089E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575602E_03716$1575606E_03716;
+from node_1575602E_03716;
+to node_1575606E_03716;
+length 121.919996 m;
+configuration line_configuration_1575602E$1575606E;
+}
+
+object line_configuration {
+name line_configuration_1575602E$1575606E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00119_03716$1335222E_03716;
+from node_BF00119_03716;
+to node_1335222E_03716;
+length 26.822399 m;
+configuration line_configuration_BF00119$1335222E;
+}
+
+object line_configuration {
+name line_configuration_BF00119$1335222E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779039_03716$4009392E_03716_1;
+from node_ND46779039_03716;
+to node_4009392E_03716_1;
+length 7.620000 m;
+configuration line_configuration_4009392E$ND46779039;
+}
+
+object line_configuration {
+name line_configuration_4009392E$ND46779039;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063727E_03716$1063725E_03716;
+from node_1063727E_03716;
+to node_1063725E_03716;
+length 41.757599 m;
+configuration line_configuration_1063727E$1063725E;
+}
+
+object line_configuration {
+name line_configuration_1063727E$1063725E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063737E_03716$1063734E_03716;
+from node_1063737E_03716;
+to node_1063734E_03716;
+length 193.243194 m;
+configuration line_configuration_1063737E$1063734E;
+}
+
+object line_configuration {
+name line_configuration_1063737E$1063734E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND94548013_03716$1642384E_03716;
+from node_ND94548013_03716;
+to node_1642384E_03716;
+length 106.375197 m;
+configuration line_configuration_1642384E$ND94548013;
+}
+
+object line_configuration {
+name line_configuration_1642384E$ND94548013;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779141_03716$1478403E_03716;
+from node_ND46779141_03716;
+to node_1478403E_03716;
+length 49.682398 m;
+configuration line_configuration_ND46779141$1478403E;
+}
+
+object line_configuration {
+name line_configuration_ND46779141$1478403E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688873H_03716$688872H_03716;
+from node_688873H_03716;
+to node_688872H_03716;
+length 37.490399 m;
+configuration line_configuration_688873H$688872H;
+}
+
+object line_configuration {
+name line_configuration_688873H$688872H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740066_03716$1335237E_03716;
+from node_ND46740066_03716;
+to node_1335237E_03716;
+length 29.565599 m;
+configuration line_configuration_ND46740066$1335237E;
+}
+
+object line_configuration {
+name line_configuration_ND46740066$1335237E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469096E_03716$1478421E_03716;
+from node_1469096E_03716;
+to node_1478421E_03716;
+length 137.464796 m;
+configuration line_configuration_1469096E$1478421E;
+}
+
+object line_configuration {
+name line_configuration_1469096E$1478421E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063722E_03716$1135198E_03716;
+from node_1063722E_03716;
+to node_1135198E_03716;
+length 72.237598 m;
+configuration line_configuration_1063722E$1135198E;
+}
+
+object line_configuration {
+name line_configuration_1063722E$1135198E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779001_03716$4619880E_03716;
+from node_ND46779001_03716;
+to node_4619880E_03716;
+length 42.976799 m;
+configuration line_configuration_ND46779001$4619880E;
+}
+
+object line_configuration {
+name line_configuration_ND46779001$4619880E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1511268E_03716$4667233E_03716;
+from node_1511268E_03716;
+to node_4667233E_03716;
+length 59.435998 m;
+configuration line_configuration_1511268E$4667233E;
+}
+
+object line_configuration {
+name line_configuration_1511268E$4667233E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46778914_03716$1641750E_03716_1;
+from node_ND46778914_03716;
+to node_1641750E_03716_1;
+length 4.876800 m;
+configuration line_configuration_ND46778914$1641750E;
+}
+
+object line_configuration {
+name line_configuration_ND46778914$1641750E;
+conductor_A conductor_ACSR_1_0;
+conductor_B conductor_ACSR_1_0;
+conductor_C conductor_ACSR_1_0;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line_conductor{
+name conductor_ACSR_1_0;
+geometric_mean_radius 0.216408 cm;
+resistance 0.533758 ohm/km;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779547_03716$BF000224_03716;
+from node_ND46779547_03716;
+to node_BF000224_03716;
+length 14.935200 m;
+configuration line_configuration_ND46779547$BF000224;
+}
+
+object line_configuration {
+name line_configuration_ND46779547$BF000224;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1252675E_03716$1252678E_03716;
+from node_1252675E_03716;
+to node_1252678E_03716;
+length 96.621597 m;
+configuration line_configuration_1252675E$1252678E;
+}
+
+object line_configuration {
+name line_configuration_1252675E$1252678E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_738140H_03716$738143H_03716;
+from node_738140H_03716;
+to node_738143H_03716;
+length 107.899197 m;
+configuration line_configuration_738140H$738143H;
+}
+
+object line_configuration {
+name line_configuration_738140H$738143H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763316E_03716$763314E_03716;
+from node_763316E_03716;
+to node_763314E_03716;
+length 120.700796 m;
+configuration line_configuration_763316E$763314E;
+}
+
+object line_configuration {
+name line_configuration_763316E$763314E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00120_03716_1$687827H_03716;
+from node_BF00120_03716_1;
+to node_687827H_03716;
+length 47.548798 m;
+configuration line_configuration_BF00120$687827H;
+}
+
+object line_configuration {
+name line_configuration_BF00120$687827H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_1575632E_03716$1575635E_03716;
+from node_1575632E_03716;
+to node_1575635E_03716;
+length 45.110399 m;
+configuration line_configuration_1575632E$1575635E;
+}
+
+object line_configuration {
+name line_configuration_1575632E$1575635E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_716543H_03716$4742140E_03716;
+from node_716543H_03716;
+to node_4742140E_03716;
+length 176.783994 m;
+configuration line_configuration_716543H$4742140E;
+}
+
+object line_configuration {
+name line_configuration_716543H$4742140E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4619880E_03716$1326133E_03716;
+from node_4619880E_03716;
+to node_1326133E_03716;
+length 39.014399 m;
+configuration line_configuration_1326133E$4619880E;
+}
+
+object line_configuration {
+name line_configuration_1326133E$4619880E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688874H_03716$688873H_03716;
+from node_688874H_03716;
+to node_688873H_03716;
+length 60.959998 m;
+configuration line_configuration_688874H$688873H;
+}
+
+object line_configuration {
+name line_configuration_688874H$688873H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00123_03716_1$687847H_03716;
+from node_BF00123_03716_1;
+to node_687847H_03716;
+length 44.195999 m;
+configuration line_configuration_BF00123$687847H;
+}
+
+object line_configuration {
+name line_configuration_BF00123$687847H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740030_03716$BF00123_03716;
+from node_ND46740030_03716;
+to node_BF00123_03716;
+length 13.716000 m;
+configuration line_configuration_ND46740030$BF00123;
+}
+
+object line_configuration {
+name line_configuration_ND46740030$BF00123;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1478411E_03716$ND46779913_03716;
+from node_1478411E_03716;
+to node_ND46779913_03716;
+length 31.699199 m;
+configuration line_configuration_1478411E$ND46779913;
+}
+
+object line_configuration {
+name line_configuration_1478411E$ND46779913;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763324E_03716$763321E_03716;
+from node_763324E_03716;
+to node_763321E_03716;
+length 131.673596 m;
+configuration line_configuration_763324E$763321E;
+}
+
+object line_configuration {
+name line_configuration_763324E$763321E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46781357_03716$1511273E_03716;
+from node_ND46781357_03716;
+to node_1511273E_03716;
+length 70.408798 m;
+configuration line_configuration_ND46781357$1511273E;
+}
+
+object line_configuration {
+name line_configuration_ND46781357$1511273E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779590_03716$1874793E_03716;
+from node_ND46779590_03716;
+to node_1874793E_03716;
+length 10.363200 m;
+configuration line_configuration_ND46779590$1874793E;
+}
+
+object line_configuration {
+name line_configuration_ND46779590$1874793E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1510065E_03716$1510069E_03716;
+from node_1510065E_03716;
+to node_1510069E_03716;
+length 180.136794 m;
+configuration line_configuration_1510065E$1510069E;
+}
+
+object line_configuration {
+name line_configuration_1510065E$1510069E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_738136H_03716$738135H_03716;
+from node_738136H_03716;
+to node_738135H_03716;
+length 95.097597 m;
+configuration line_configuration_738136H$738135H;
+}
+
+object line_configuration {
+name line_configuration_738136H$738135H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_2134827E_03716$RCS0259_03716_1;
+from node_2134827E_03716;
+to node_RCS0259_03716_1;
+length 74.980798 m;
+configuration line_configuration_RCS0259$2134827E;
+}
+
+object line_configuration {
+name line_configuration_RCS0259$2134827E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1335235E_03716$1335214E_03716;
+from node_1335235E_03716;
+to node_1335214E_03716;
+length 58.826398 m;
+configuration line_configuration_1335235E$1335214E;
+}
+
+object line_configuration {
+name line_configuration_1335235E$1335214E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46780953_03716$BF00218_03716;
+from node_ND46780953_03716;
+to node_BF00218_03716;
+length 13.411200 m;
+configuration line_configuration_ND46780953$BF00218;
+}
+
+object line_configuration {
+name line_configuration_ND46780953$BF00218;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_736718H_03716$ND46779622_03716;
+from node_736718H_03716;
+to node_ND46779622_03716;
+length 93.878397 m;
+configuration line_configuration_736718H$ND46779622;
+}
+
+object line_configuration {
+name line_configuration_736718H$ND46779622;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF000225_03716_1$ND145433857_03716;
+from node_BF000225_03716_1;
+to node_ND145433857_03716;
+length 3.048000 m;
+configuration line_configuration_BF000225$ND145433857;
+}
+
+object line_configuration {
+name line_configuration_BF000225$ND145433857;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739921_03716$736732H_03716;
+from node_ND46739921_03716;
+to node_736732H_03716;
+length 13.716000 m;
+configuration line_configuration_ND46739921$736732H;
+}
+
+object line_configuration {
+name line_configuration_ND46739921$736732H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_1575631E_03716$1575632E_03716;
+from node_1575631E_03716;
+to node_1575632E_03716;
+length 51.511198 m;
+configuration line_configuration_1575631E$1575632E;
+}
+
+object line_configuration {
+name line_configuration_1575631E$1575632E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00121_03716_1$687846H_03716;
+from node_BF00121_03716_1;
+to node_687846H_03716;
+length 52.120798 m;
+configuration line_configuration_BF00121$687846H;
+}
+
+object line_configuration {
+name line_configuration_BF00121$687846H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1701703E_03716_1$688868H_03716;
+from node_1701703E_03716_1;
+to node_688868H_03716;
+length 87.477597 m;
+configuration line_configuration_1701703E$688868H;
+}
+
+object line_configuration {
+name line_configuration_1701703E$688868H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063725E_03716$1063722E_03716;
+from node_1063725E_03716;
+to node_1063722E_03716;
+length 191.719194 m;
+configuration line_configuration_1063725E$1063722E;
+}
+
+object line_configuration {
+name line_configuration_1063725E$1063722E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779222_03716$1511264E_03716;
+from node_ND46779222_03716;
+to node_1511264E_03716;
+length 37.795199 m;
+configuration line_configuration_ND46779222$1511264E;
+}
+
+object line_configuration {
+name line_configuration_ND46779222$1511264E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778842_03716$4664398E_03716;
+from node_ND46778842_03716;
+to node_4664398E_03716;
+length 85.953597 m;
+configuration line_configuration_ND46778842$4664398E;
+}
+
+object line_configuration {
+name line_configuration_ND46778842$4664398E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00219_03716$1575602E_03716;
+from node_BF00219_03716;
+to node_1575602E_03716;
+length 28.041599 m;
+configuration line_configuration_BF00219$1575602E;
+}
+
+object line_configuration {
+name line_configuration_BF00219$1575602E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_736711H_03716$736714H_03716;
+from node_736711H_03716;
+to node_736714H_03716;
+length 53.035198 m;
+configuration line_configuration_736711H$736714H;
+}
+
+object line_configuration {
+name line_configuration_736711H$736714H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778921_03716$763329E_03716;
+from node_ND46778921_03716;
+to node_763329E_03716;
+length 132.587996 m;
+configuration line_configuration_ND46778921$763329E;
+}
+
+object line_configuration {
+name line_configuration_ND46778921$763329E;
+conductor_A conductor_ACSR_653;
+conductor_B conductor_ACSR_653;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739775_03716$763324E_03716;
+from node_ND46739775_03716;
+to node_763324E_03716;
+length 78.028798 m;
+configuration line_configuration_763324E$ND46739775;
+}
+
+object line_configuration {
+name line_configuration_763324E$ND46739775;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_687847H_03716$688856H_03716;
+from node_687847H_03716;
+to node_688856H_03716;
+length 148.742395 m;
+configuration line_configuration_687847H$688856H;
+}
+
+object line_configuration {
+name line_configuration_687847H$688856H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1641743E_03716$4636932E_03716;
+from node_1641743E_03716;
+to node_4636932E_03716;
+length 140.817595 m;
+configuration line_configuration_1641743E$4636932E;
+}
+
+object line_configuration {
+name line_configuration_1641743E$4636932E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739988_03716$4667237E_03716_1;
+from node_ND46739988_03716;
+to node_4667237E_03716_1;
+length 4.876800 m;
+configuration line_configuration_4667237E$ND46739988;
+}
+
+object line_configuration {
+name line_configuration_4667237E$ND46739988;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779935_03716$736711H_03716;
+from node_ND46779935_03716;
+to node_736711H_03716;
+length 25.907999 m;
+configuration line_configuration_ND46779935$736711H;
+}
+
+object line_configuration {
+name line_configuration_ND46779935$736711H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779913_03716$ND46779222_03716;
+from node_ND46779913_03716;
+to node_ND46779222_03716;
+length 84.124797 m;
+configuration line_configuration_ND46779913$ND46779222;
+}
+
+object line_configuration {
+name line_configuration_ND46779913$ND46779222;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1642105E_03716$1642109E_03716;
+from node_1642105E_03716;
+to node_1642109E_03716;
+length 126.187196 m;
+configuration line_configuration_1642105E$1642109E;
+}
+
+object line_configuration {
+name line_configuration_1642105E$1642109E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1478403E_03716$ND46779337_03716;
+from node_1478403E_03716;
+to node_ND46779337_03716;
+length 81.991197 m;
+configuration line_configuration_1478403E$ND46779337;
+}
+
+object line_configuration {
+name line_configuration_1478403E$ND46779337;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1679858E_03716_1$1673799E_03716;
+from node_1679858E_03716_1;
+to node_1673799E_03716;
+length 69.494398 m;
+configuration line_configuration_1679858E$1673799E;
+}
+
+object line_configuration {
+name line_configuration_1679858E$1673799E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739732_03716$BF00120_03716;
+from node_ND46739732_03716;
+to node_BF00120_03716;
+length 9.448800 m;
+configuration line_configuration_ND46739732$BF00120;
+}
+
+object line_configuration {
+name line_configuration_ND46739732$BF00120;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779791_03716$4470236E_03716;
+from node_ND46779791_03716;
+to node_4470236E_03716;
+length 10.363200 m;
+configuration line_configuration_ND46779791$4470236E;
+}
+
+object line_configuration {
+name line_configuration_ND46779791$4470236E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+conductor_C conductor_ACSR_#4;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1252667E_03716$4636942E_03716;
+from node_1252667E_03716;
+to node_4636942E_03716;
+length 95.097597 m;
+configuration line_configuration_1252667E$4636942E;
+}
+
+object line_configuration {
+name line_configuration_1252667E$4636942E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778850_03716$1581599E_03716;
+from node_ND46778850_03716;
+to node_1581599E_03716;
+length 97.535997 m;
+configuration line_configuration_ND46778850$1581599E;
+}
+
+object line_configuration {
+name line_configuration_ND46778850$1581599E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1641739E_03716$ND46779151_03716;
+from node_1641739E_03716;
+to node_ND46779151_03716;
+length 74.675998 m;
+configuration line_configuration_1641739E$ND46779151;
+}
+
+object line_configuration {
+name line_configuration_1641739E$ND46779151;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778850_03716$1581594E_03716;
+from node_ND46778850_03716;
+to node_1581594E_03716;
+length 82.295997 m;
+configuration line_configuration_ND46778850$1581594E;
+}
+
+object line_configuration {
+name line_configuration_ND46778850$1581594E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779914_03716$1511256E_03716;
+from node_ND46779914_03716;
+to node_1511256E_03716;
+length 98.755197 m;
+configuration line_configuration_ND46779914$1511256E;
+}
+
+object line_configuration {
+name line_configuration_ND46779914$1511256E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763329E_03716$763327E_03716;
+from node_763329E_03716;
+to node_763327E_03716;
+length 89.001597 m;
+configuration line_configuration_763329E$763327E;
+}
+
+object line_configuration {
+name line_configuration_763329E$763327E;
+conductor_A conductor_ACSR_653;
+conductor_B conductor_ACSR_653;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46740100_03716$2286233E_03716;
+from node_ND46740100_03716;
+to node_2286233E_03716;
+length 3.048000 m;
+configuration line_configuration_ND46740100$2286233E;
+}
+
+object line_configuration {
+name line_configuration_ND46740100$2286233E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+conductor_C conductor_ACSR_#4;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739767_03716$BF00122_03716_1;
+from node_ND46739767_03716;
+to node_BF00122_03716_1;
+length 15.544800 m;
+configuration line_configuration_ND46739767$BF00122;
+}
+
+object line_configuration {
+name line_configuration_ND46739767$BF00122;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_736714H_03716$736716H_03716;
+from node_736714H_03716;
+to node_736716H_03716;
+length 63.398398 m;
+configuration line_configuration_736714H$736716H;
+}
+
+object line_configuration {
+name line_configuration_736714H$736716H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740066_03716$736734H_03716;
+from node_ND46740066_03716;
+to node_736734H_03716;
+length 39.623999 m;
+configuration line_configuration_ND46740066$736734H;
+}
+
+object line_configuration {
+name line_configuration_ND46740066$736734H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_687846H_03716$687850H_03716;
+from node_687846H_03716;
+to node_687850H_03716;
+length 59.131198 m;
+configuration line_configuration_687846H$687850H;
+}
+
+object line_configuration {
+name line_configuration_687846H$687850H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063742E_03716$4636941E_03716;
+from node_1063742E_03716;
+to node_4636941E_03716;
+length 73.761598 m;
+configuration line_configuration_1063742E$4636941E;
+}
+
+object line_configuration {
+name line_configuration_1063742E$4636941E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779548_03716$BF000223_03716_1;
+from node_ND46779548_03716;
+to node_BF000223_03716_1;
+length 14.630400 m;
+configuration line_configuration_ND46779548$BF000223;
+}
+
+object line_configuration {
+name line_configuration_ND46779548$BF000223;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_687839H_03716$687836H_03716;
+from node_687839H_03716;
+to node_687836H_03716;
+length 74.371198 m;
+configuration line_configuration_687839H$687836H;
+}
+
+object line_configuration {
+name line_configuration_687839H$687836H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1511264E_03716$1511268E_03716;
+from node_1511264E_03716;
+to node_1511268E_03716;
+length 128.320796 m;
+configuration line_configuration_1511264E$1511268E;
+}
+
+object line_configuration {
+name line_configuration_1511264E$1511268E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779351_03716$PS0807_03716;
+from node_ND46779351_03716;
+to node_PS0807_03716;
+length 0.914400 m;
+configuration line_configuration_PS0807$ND46779351;
+}
+
+object line_configuration {
+name line_configuration_PS0807$ND46779351;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739790_03716$1642377E_03716_1;
+from node_ND46739790_03716;
+to node_1642377E_03716_1;
+length 1.828800 m;
+configuration line_configuration_ND46739790$1642377E;
+}
+
+object line_configuration {
+name line_configuration_ND46739790$1642377E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688863H_03716$688862H_03716;
+from node_688863H_03716;
+to node_688862H_03716;
+length 60.350398 m;
+configuration line_configuration_688863H$688862H;
+}
+
+object line_configuration {
+name line_configuration_688863H$688862H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739974_03716$4664399E_03716;
+from node_ND46739974_03716;
+to node_4664399E_03716;
+length 47.548798 m;
+configuration line_configuration_ND46739974$4664399E;
+}
+
+object line_configuration {
+name line_configuration_ND46739974$4664399E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779914_03716$1478419E_03716;
+from node_ND46779914_03716;
+to node_1478419E_03716;
+length 31.699199 m;
+configuration line_configuration_ND46779914$1478419E;
+}
+
+object line_configuration {
+name line_configuration_ND46779914$1478419E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00220_03716$1575613E_03716;
+from node_BF00220_03716;
+to node_1575613E_03716;
+length 74.371198 m;
+configuration line_configuration_BF00220$1575613E;
+}
+
+object line_configuration {
+name line_configuration_BF00220$1575613E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46739966_03716$1575631E_03716;
+from node_ND46739966_03716;
+to node_1575631E_03716;
+length 18.592799 m;
+configuration line_configuration_ND46739966$1575631E;
+}
+
+object line_configuration {
+name line_configuration_ND46739966$1575631E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4502189E_03716$1335230E_03716;
+from node_4502189E_03716;
+to node_1335230E_03716;
+length 46.939198 m;
+configuration line_configuration_4502189E$1335230E;
+}
+
+object line_configuration {
+name line_configuration_4502189E$1335230E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF000223_03716$1063742E_03716;
+from node_BF000223_03716;
+to node_1063742E_03716;
+length 12.801600 m;
+configuration line_configuration_BF000223$1063742E;
+}
+
+object line_configuration {
+name line_configuration_BF000223$1063742E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46779093_03716$PS0668_03716;
+from node_ND46779093_03716;
+to node_PS0668_03716;
+length 53.035198 m;
+configuration line_configuration_PS0668$ND46779093;
+}
+
+object line_configuration {
+name line_configuration_PS0668$ND46779093;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4667237E_03716$1642388E_03716;
+from node_4667237E_03716;
+to node_1642388E_03716;
+length 67.970398 m;
+configuration line_configuration_4667237E$1642388E;
+}
+
+object line_configuration {
+name line_configuration_4667237E$1642388E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46740031_03716$1701703E_03716;
+from node_ND46740031_03716;
+to node_1701703E_03716;
+length 14.630400 m;
+configuration line_configuration_1701703E$ND46740031;
+}
+
+object line_configuration {
+name line_configuration_1701703E$ND46740031;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779474_03716$1642390E_03716;
+from node_ND46779474_03716;
+to node_1642390E_03716;
+length 59.435998 m;
+configuration line_configuration_ND46779474$1642390E;
+}
+
+object line_configuration {
+name line_configuration_ND46779474$1642390E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739921_03716$1335235E_03716;
+from node_ND46739921_03716;
+to node_1335235E_03716;
+length 49.682398 m;
+configuration line_configuration_ND46739921$1335235E;
+}
+
+object line_configuration {
+name line_configuration_ND46739921$1335235E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1613668E_03716$1613665E_03716;
+from node_1613668E_03716;
+to node_1613665E_03716;
+length 142.341595 m;
+configuration line_configuration_1613668E$1613665E;
+}
+
+object line_configuration {
+name line_configuration_1613668E$1613665E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778897_03716$2028724E_03716;
+from node_ND46778897_03716;
+to node_2028724E_03716;
+length 8.839200 m;
+configuration line_configuration_ND46778897$2028724E;
+}
+
+object line_configuration {
+name line_configuration_ND46778897$2028724E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1511259E_03716$4667234E_03716;
+from node_1511259E_03716;
+to node_4667234E_03716;
+length 107.594397 m;
+configuration line_configuration_1511259E$4667234E;
+}
+
+object line_configuration {
+name line_configuration_1511259E$4667234E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575620E_03716$4667236E_03716;
+from node_1575620E_03716;
+to node_4667236E_03716;
+length 138.074396 m;
+configuration line_configuration_1575620E$4667236E;
+}
+
+object line_configuration {
+name line_configuration_1575620E$4667236E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_688864H_03716$688863H_03716;
+from node_688864H_03716;
+to node_688863H_03716;
+length 49.987198 m;
+configuration line_configuration_688864H$688863H;
+}
+
+object line_configuration {
+name line_configuration_688864H$688863H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779401_03716$2319946E_03716;
+from node_ND46779401_03716;
+to node_2319946E_03716;
+length 64.007998 m;
+configuration line_configuration_ND46779401$2319946E;
+}
+
+object line_configuration {
+name line_configuration_ND46779401$2319946E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779151_03716$ND46779152_03716;
+from node_ND46779151_03716;
+to node_ND46779152_03716;
+length 81.076797 m;
+configuration line_configuration_ND46779151$ND46779152;
+}
+
+object line_configuration {
+name line_configuration_ND46779151$ND46779152;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1276141E_03716$763316E_03716;
+from node_1276141E_03716;
+to node_763316E_03716;
+length 90.525597 m;
+configuration line_configuration_1276141E$763316E;
+}
+
+object line_configuration {
+name line_configuration_1276141E$763316E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779913_03716$ND46779914_03716;
+from node_ND46779913_03716;
+to node_ND46779914_03716;
+length 75.590398 m;
+configuration line_configuration_ND46779913$ND46779914;
+}
+
+object line_configuration {
+name line_configuration_ND46779913$ND46779914;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779474_03716$1642105E_03716;
+from node_ND46779474_03716;
+to node_1642105E_03716;
+length 18.592799 m;
+configuration line_configuration_ND46779474$1642105E;
+}
+
+object line_configuration {
+name line_configuration_ND46779474$1642105E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_687827H_03716$688927H_03716;
+from node_687827H_03716;
+to node_688927H_03716;
+length 50.291998 m;
+configuration line_configuration_687827H$688927H;
+}
+
+object line_configuration {
+name line_configuration_687827H$688927H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1335243E_03716$4502726E_03716;
+from node_1335243E_03716;
+to node_4502726E_03716;
+length 32.918399 m;
+configuration line_configuration_1335243E$4502726E;
+}
+
+object line_configuration {
+name line_configuration_1335243E$4502726E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1088552E_03716$1252665E_03716;
+from node_1088552E_03716;
+to node_1252665E_03716;
+length 77.723998 m;
+configuration line_configuration_1088552E$1252665E;
+}
+
+object line_configuration {
+name line_configuration_1088552E$1252665E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4636941E_03716$1063737E_03716;
+from node_4636941E_03716;
+to node_1063737E_03716;
+length 41.757599 m;
+configuration line_configuration_4636941E$1063737E;
+}
+
+object line_configuration {
+name line_configuration_4636941E$1063737E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1063734E_03716$1252673E_03716;
+from node_1063734E_03716;
+to node_1252673E_03716;
+length 72.542398 m;
+configuration line_configuration_1063734E$1252673E;
+}
+
+object line_configuration {
+name line_configuration_1063734E$1252673E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469081E_03716$1469084E_03716;
+from node_1469081E_03716;
+to node_1469084E_03716;
+length 61.264798 m;
+configuration line_configuration_1469081E$1469084E;
+}
+
+object line_configuration {
+name line_configuration_1469081E$1469084E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46780145_03716$BF00121_03716;
+from node_ND46780145_03716;
+to node_BF00121_03716;
+length 12.192000 m;
+configuration line_configuration_ND46780145$BF00121;
+}
+
+object line_configuration {
+name line_configuration_ND46780145$BF00121;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779236_03716$BF00119_03716_1;
+from node_ND46779236_03716;
+to node_BF00119_03716_1;
+length 5.181600 m;
+configuration line_configuration_ND46779236$BF00119;
+}
+
+object line_configuration {
+name line_configuration_ND46779236$BF00119;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_RCS0259_03716$1286120E_03716;
+from node_RCS0259_03716;
+to node_1286120E_03716;
+length 76.809598 m;
+configuration line_configuration_RCS0259$1286120E;
+}
+
+object line_configuration {
+name line_configuration_RCS0259$1286120E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763347E_03716$763346E_03716;
+from node_763347E_03716;
+to node_763346E_03716;
+length 64.617598 m;
+configuration line_configuration_763347E$763346E;
+}
+
+object line_configuration {
+name line_configuration_763347E$763346E;
+conductor_A conductor_ACSR_1_0;
+conductor_B conductor_ACSR_1_0;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1335222E_03716$4619878E_03716;
+from node_1335222E_03716;
+to node_4619878E_03716;
+length 64.312798 m;
+configuration line_configuration_1335222E$4619878E;
+}
+
+object line_configuration {
+name line_configuration_1335222E$4619878E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779222_03716$1478414E_03716;
+from node_ND46779222_03716;
+to node_1478414E_03716;
+length 31.699199 m;
+configuration line_configuration_ND46779222$1478414E;
+}
+
+object line_configuration {
+name line_configuration_ND46779222$1478414E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_763346E_03716$763342E_03716;
+from node_763346E_03716;
+to node_763342E_03716;
+length 178.003194 m;
+configuration line_configuration_763346E$763342E;
+}
+
+object line_configuration {
+name line_configuration_763346E$763342E;
+conductor_A conductor_ACSR_1_0;
+conductor_B conductor_ACSR_1_0;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779151_03716$1681002E_03716;
+from node_ND46779151_03716;
+to node_1681002E_03716;
+length 46.024799 m;
+configuration line_configuration_ND46779151$1681002E;
+}
+
+object line_configuration {
+name line_configuration_ND46779151$1681002E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_736732H_03716$736733H_03716;
+from node_736732H_03716;
+to node_736733H_03716;
+length 28.346399 m;
+configuration line_configuration_736732H$736733H;
+}
+
+object line_configuration {
+name line_configuration_736732H$736733H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779622_03716$2061035E_03716;
+from node_ND46779622_03716;
+to node_2061035E_03716;
+length 137.464796 m;
+configuration line_configuration_ND46779622$2061035E;
+}
+
+object line_configuration {
+name line_configuration_ND46779622$2061035E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779172_03716$1511283E_03716;
+from node_ND46779172_03716;
+to node_1511283E_03716;
+length 130.149596 m;
+configuration line_configuration_ND46779172$1511283E;
+}
+
+object line_configuration {
+name line_configuration_ND46779172$1511283E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND160132241_03716$4009398E_03716;
+from node_ND160132241_03716;
+to node_4009398E_03716;
+length 1.219200 m;
+configuration line_configuration_4009398E$ND160132241;
+}
+
+object line_configuration {
+name line_configuration_4009398E$ND160132241;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779686_03716$1419325E_03716;
+from node_ND46779686_03716;
+to node_1419325E_03716;
+length 64.922398 m;
+configuration line_configuration_ND46779686$1419325E;
+}
+
+object line_configuration {
+name line_configuration_ND46779686$1419325E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779622_03716$738140H_03716;
+from node_ND46779622_03716;
+to node_738140H_03716;
+length 47.243998 m;
+configuration line_configuration_ND46779622$738140H;
+}
+
+object line_configuration {
+name line_configuration_ND46779622$738140H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739989_03716$1642371E_03716_1;
+from node_ND46739989_03716;
+to node_1642371E_03716_1;
+length 7.924800 m;
+configuration line_configuration_ND46739989$1642371E;
+}
+
+object line_configuration {
+name line_configuration_ND46739989$1642371E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1642109E_03716$ND46782284_03716;
+from node_1642109E_03716;
+to node_ND46782284_03716;
+length 41.147999 m;
+configuration line_configuration_1642109E$ND46782284;
+}
+
+object line_configuration {
+name line_configuration_1642109E$ND46782284;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1575639E_03716$1613668E_03716;
+from node_1575639E_03716;
+to node_1613668E_03716;
+length 106.984797 m;
+configuration line_configuration_1575639E$1613668E;
+}
+
+object line_configuration {
+name line_configuration_1575639E$1613668E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND145433857_03716$1063709E_03716;
+from node_ND145433857_03716;
+to node_1063709E_03716;
+length 22.250399 m;
+configuration line_configuration_ND145433857$1063709E;
+}
+
+object line_configuration {
+name line_configuration_ND145433857$1063709E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779967_03716$688874H_03716;
+from node_ND46779967_03716;
+to node_688874H_03716;
+length 14.325600 m;
+configuration line_configuration_ND46779967$688874H;
+}
+
+object line_configuration {
+name line_configuration_ND46779967$688874H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1088548E_03716$1088550E_03716;
+from node_1088548E_03716;
+to node_1088550E_03716;
+length 114.604796 m;
+configuration line_configuration_1088548E$1088550E;
+}
+
+object line_configuration {
+name line_configuration_1088548E$1088550E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4009392E_03716$763337E_03716;
+from node_4009392E_03716;
+to node_763337E_03716;
+length 110.947196 m;
+configuration line_configuration_4009392E$763337E;
+}
+
+object line_configuration {
+name line_configuration_4009392E$763337E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_PS0668_03716_1$ND46779351_03716;
+from node_PS0668_03716_1;
+to node_ND46779351_03716;
+length 65.836798 m;
+configuration line_configuration_PS0668$ND46779351;
+}
+
+object line_configuration {
+name line_configuration_PS0668$ND46779351;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_4009393E_03716$1335388E_03716;
+from node_4009393E_03716;
+to node_1335388E_03716;
+length 12.192000 m;
+configuration line_configuration_4009393E$1335388E;
+}
+
+object line_configuration {
+name line_configuration_4009393E$1335388E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND145433857_03716$763347E_03716;
+from node_ND145433857_03716;
+to node_763347E_03716;
+length 73.151998 m;
+configuration line_configuration_763347E$ND145433857;
+}
+
+object line_configuration {
+name line_configuration_763347E$ND145433857;
+conductor_A conductor_ACSR_1_0;
+conductor_B conductor_ACSR_1_0;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739999_03716$736718H_03716;
+from node_ND46739999_03716;
+to node_736718H_03716;
+length 45.110399 m;
+configuration line_configuration_ND46739999$736718H;
+}
+
+object line_configuration {
+name line_configuration_ND46739999$736718H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_BF00222_03716_1$1575639E_03716;
+from node_BF00222_03716_1;
+to node_1575639E_03716;
+length 49.377598 m;
+configuration line_configuration_BF00222$1575639E;
+}
+
+object line_configuration {
+name line_configuration_BF00222$1575639E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779152_03716$1681006E_03716;
+from node_ND46779152_03716;
+to node_1681006E_03716;
+length 44.500799 m;
+configuration line_configuration_ND46779152$1681006E;
+}
+
+object line_configuration {
+name line_configuration_ND46779152$1681006E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779142_03716$1419320E_03716;
+from node_ND46779142_03716;
+to node_1419320E_03716;
+length 31.394399 m;
+configuration line_configuration_ND46779142$1419320E;
+}
+
+object line_configuration {
+name line_configuration_ND46779142$1419320E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779337_03716$1478411E_03716;
+from node_ND46779337_03716;
+to node_1478411E_03716;
+length 57.302398 m;
+configuration line_configuration_ND46779337$1478411E;
+}
+
+object line_configuration {
+name line_configuration_ND46779337$1478411E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46740052_03716$9044E_03716_1;
+from node_ND46740052_03716;
+to node_9044E_03716_1;
+length 7.315200 m;
+configuration line_configuration_ND46740052$9044E;
+}
+
+object line_configuration {
+name line_configuration_ND46740052$9044E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND160132241_03716$1276141E_03716;
+from node_ND160132241_03716;
+to node_1276141E_03716;
+length 60.045598 m;
+configuration line_configuration_ND160132241$1276141E;
+}
+
+object line_configuration {
+name line_configuration_ND160132241$1276141E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739929_03716$1469096E_03716;
+from node_ND46739929_03716;
+to node_1469096E_03716;
+length 80.162397 m;
+configuration line_configuration_ND46739929$1469096E;
+}
+
+object line_configuration {
+name line_configuration_ND46739929$1469096E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46739974_03716$1673790E_03716;
+from node_ND46739974_03716;
+to node_1673790E_03716;
+length 127.406396 m;
+configuration line_configuration_ND46739974$1673790E;
+}
+
+object line_configuration {
+name line_configuration_ND46739974$1673790E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_1469087E_03716$ND46739929_03716;
+from node_1469087E_03716;
+to node_ND46739929_03716;
+length 121.310396 m;
+configuration line_configuration_1469087E$ND46739929;
+}
+
+object line_configuration {
+name line_configuration_1469087E$ND46739929;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46778867_03716$BF00220_03716_1;
+from node_ND46778867_03716;
+to node_BF00220_03716_1;
+length 3.657600 m;
+configuration line_configuration_ND46778867$BF00220;
+}
+
+object line_configuration {
+name line_configuration_ND46778867$BF00220;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND46778842_03716$1641739E_03716;
+from node_ND46778842_03716;
+to node_1641739E_03716;
+length 79.552797 m;
+configuration line_configuration_ND46778842$1641739E;
+}
+
+object line_configuration {
+name line_configuration_ND46778842$1641739E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_BF00218_03716_1$ND46780998_03716;
+from node_BF00218_03716_1;
+to node_ND46780998_03716;
+length 46.329599 m;
+configuration line_configuration_BF00218$ND46780998;
+}
+
+object line_configuration {
+name line_configuration_BF00218$ND46780998;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_2319946E_03716$1335243E_03716;
+from node_2319946E_03716;
+to node_1335243E_03716;
+length 27.431999 m;
+configuration line_configuration_2319946E$1335243E;
+}
+
+object line_configuration {
+name line_configuration_2319946E$1335243E;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779622_03716$738136H_03716;
+from node_ND46779622_03716;
+to node_738136H_03716;
+length 40.843199 m;
+configuration line_configuration_ND46779622$738136H;
+}
+
+object line_configuration {
+name line_configuration_ND46779622$738136H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_ND46779889_03716$1703674E_03716_1;
+from node_ND46779889_03716;
+to node_1703674E_03716_1;
+length 1.219200 m;
+configuration line_configuration_ND46779889$1703674E;
+}
+
+object line_configuration {
+name line_configuration_ND46779889$1703674E;
+conductor_A conductor_CU_#4;
+conductor_B conductor_CU_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00225_03716$1088548E_03716;
+from node_BF00225_03716;
+to node_1088548E_03716;
+length 25.907999 m;
+configuration line_configuration_BF00225$1088548E;
+}
+
+object line_configuration {
+name line_configuration_BF00225$1088548E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+spacing line_spacing_STANDARD_2W_1N;
+}
+object overhead_line {
+phases "AB";
+name line_BF00122_03716$687839H_03716;
+from node_BF00122_03716;
+to node_687839H_03716;
+length 48.158398 m;
+configuration line_configuration_BF00122$687839H;
+}
+
+object line_configuration {
+name line_configuration_BF00122$687839H;
+conductor_A conductor_ACSR_#4;
+conductor_B conductor_ACSR_#4;
+spacing line_spacing_STANDARD_2W_1N;
+}

@@ -1,0 +1,3005 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+object switch{
+name switch_BS0811-R;
+phases ABC;
+from node_BS0811-L_T_00411;
+to node_BS0811-R_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076618-1;
+phases A;
+from node_B5076618-1_00411;
+to node_B5076618_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914315;
+phases ABC;
+from node_74914315_00411;
+to node_74914315_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_P5468244-A;
+phases ABC;
+from node_P5468244-A_00411;
+to node_P5468244-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072194-2;
+phases A;
+from node_B5072194_F_00411;
+to node_B5072194-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-3;
+phases ABC;
+from node_OS0433-3_00411;
+to node_OS0433-3_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5078594-1;
+phases A;
+from node_B5078594_F_00411;
+to node_B5078594-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0811-L;
+phases ABC;
+from node_BS0811-L_T_00411;
+to node_BS0811-L_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074220-A;
+phases AB;
+from node_P5074220-A_00411;
+to node_P5074220-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0462-1;
+phases ABC;
+from node_GS0462-1_00411;
+to node_GS0462-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_804149E;
+phases AB;
+from node_804149E_00411;
+to node_804149E_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-4;
+phases ABC;
+from node_OS0433-4_00411;
+to node_OS0433-4_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0970-5;
+phases ABC;
+from node_OS0970-4_00411_1;
+to node_OS0970-5_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS2196-1;
+phases A;
+from node_BS2196-1_00411;
+to node_BS2196-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_149699533;
+phases ABC;
+from node_149699533_00411;
+to node_149699533_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5300935-1;
+phases A;
+from node_B5300935-1_00411;
+to node_B5300935_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079820-2;
+phases A;
+from node_B5079820-2_00411;
+to node_B5079820_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072187-1;
+phases A;
+from node_B5072187_F_00411;
+to node_B5072187-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5468244-T;
+phases ABC;
+from node_P5468244-T_T_00411;
+to node_P5468244-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077111-T;
+phases ABC;
+from node_P5077111-A_T_00411;
+to node_P5077111-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075886-1;
+phases A;
+from node_B5075886-1_00411;
+to node_B5075886_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300940-2;
+phases A;
+from node_B5300940_F_00411;
+to node_B5300940-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074327-1;
+phases AB;
+from node_B5074327-1_00411;
+to node_B5074327_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J855A-1;
+phases A;
+from node_26586271_00411;
+to node_J855A-1P_00411;
+status CLOSED;
+}
+object switch{
+name switch_149699151_00411$J108A-3P_00411-1;
+phases ABC;
+from node_149699151_00411;
+to node_J108A-3P_00411;
+status CLOSED;
+}
+object switch{
+name switch_26586837;
+phases A;
+from node_26586837_00411_1;
+to node_26586837_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5363743-T;
+phases ABC;
+from node_P5363743-T_T_00411;
+to node_P5363743-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072183-2;
+phases A;
+from node_B5072183_F_00411;
+to node_B5072183-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075886-2;
+phases A;
+from node_B5075886_F_00411;
+to node_B5075886-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0810-T_00411$BS0810-L_T_0041-1;
+phases ABC;
+from node_BS0810-T_00411;
+to node_BS0810-L_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_5532P1;
+phases ABC;
+from node_5532P1_00411_1;
+to node_5532P1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073685-B;
+phases AB;
+from node_P5073685-B_00411;
+to node_P5073685-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077110-A;
+phases ABC;
+from node_P5077110-A_00411;
+to node_P5077110-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072168-2;
+phases A;
+from node_B5072168-2_00411;
+to node_B5072168_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078588-2;
+phases A;
+from node_B5078588-2_00411;
+to node_B5078588_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0970-4;
+phases ABC;
+from node_OS0970-4_00411_1;
+to node_OS0970-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074476-2;
+phases A;
+from node_P5074476-2_00411;
+to node_P5074476_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072193-1;
+phases A;
+from node_B5072193-1_00411;
+to node_B5072193_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074221-A;
+phases AB;
+from node_P5074221-A_00411;
+to node_P5074221-B_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074334-2;
+phases AB;
+from node_B5074334_F_00411;
+to node_B5074334-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078597-2;
+phases A;
+from node_B5078597-2_00411;
+to node_B5078597_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079142-1;
+phases A;
+from node_B5079142_F_00411;
+to node_B5079142-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076614-2;
+phases A;
+from node_B5076614-2_00411;
+to node_B5076614_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074223-A;
+phases AB;
+from node_P5074223-A_00411;
+to node_P5074223-B_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079823-1;
+phases A;
+from node_B5079823-1_00411;
+to node_B5079823_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0462-5;
+phases ABC;
+from node_GS0462-5_00411;
+to node_GS0462-5_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_26586781;
+phases ABC;
+from node_26586781_00411_1;
+to node_26586781_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914370;
+phases A;
+from node_74914370_00411_1;
+to node_74914370_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300940-1;
+phases A;
+from node_B5300940-1_00411;
+to node_B5300940_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_7533E;
+phases AB;
+from node_7533E_00411_1;
+to node_7533E_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5539379-1;
+phases ABC;
+from node_P5539379-1_00411;
+to node_P5539379-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078579-1;
+phases A;
+from node_B5078579_F_00411;
+to node_B5078579-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076589-1;
+phases A;
+from node_B5076589_F_00411;
+to node_B5076589-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME3116-1;
+phases ABC;
+from node_PME3116-1_00411;
+to node_PME3116-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5076612-1;
+phases A;
+from node_B5076612_F_00411;
+to node_B5076612-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300942-2;
+phases A;
+from node_B5300942-2_00411;
+to node_B5300942_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076612-2;
+phases A;
+from node_B5076612-2_00411;
+to node_B5076612_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300935-2;
+phases A;
+from node_B5300935_F_00411;
+to node_B5300935-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077097-1;
+phases A;
+from node_B5077097_F_00411;
+to node_B5077097-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078580-2;
+phases A;
+from node_B5078580-2_00411;
+to node_B5078580_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079145-2;
+phases A;
+from node_B5079145-2_00411;
+to node_B5079145_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914447;
+phases A;
+from node_74914447_00411;
+to node_74914447_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5300943-1;
+phases A;
+from node_B5300943_F_00411;
+to node_B5300943-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079147-1;
+phases A;
+from node_B5079147-1_00411;
+to node_B5079147_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS8593-1;
+phases A;
+from node_BS8593-1_00411_1;
+to node_BS8593-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078585-2;
+phases A;
+from node_B5078585-2_00411;
+to node_B5078585_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-3;
+phases ABC;
+from node_OS0823-3_00411;
+to node_OS0823-3_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_OS0487-1;
+phases ABC;
+from node_OS0487-1_00411;
+to node_OS0487-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_RCS1160-1;
+phases ABC;
+from node_RCS1160-1CL_00411;
+to node_RCS1160-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077946-2;
+phases A;
+from node_B5077946-2_00411;
+to node_B5077946_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_98371262;
+phases A;
+from node_98371262_00411;
+to node_98371262_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5300936-2;
+phases A;
+from node_B5300936-2_00411;
+to node_B5300936_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074221-B;
+phases AB;
+from node_P5074221-B_T_00411;
+to node_P5074221-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076587-1;
+phases A;
+from node_B5076587_F_00411;
+to node_B5076587-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074334-1;
+phases AB;
+from node_B5074334-1_00411;
+to node_B5074334_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300936-1;
+phases A;
+from node_B5300936_F_00411;
+to node_B5300936-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074232-B;
+phases A;
+from node_P5074232-B_00411;
+to node_P5074232-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078587-2;
+phases A;
+from node_B5078587_F_00411;
+to node_B5078587-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078583-2;
+phases A;
+from node_B5078583-2_00411;
+to node_B5078583_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072194-1;
+phases A;
+from node_B5072194-1_00411;
+to node_B5072194_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074329-1;
+phases AB;
+from node_B5074329_F_00411;
+to node_B5074329-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076585-2;
+phases A;
+from node_B5076585_F_00411;
+to node_B5076585-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2175-1;
+phases A;
+from node_BS2175-1_00411_1;
+to node_BS2175-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075884-2;
+phases A;
+from node_B5075884-2_00411;
+to node_B5075884_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075885-1;
+phases A;
+from node_B5075885_F_00411;
+to node_B5075885-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076618-2;
+phases A;
+from node_B5076618_F_00411;
+to node_B5076618-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074476-1;
+phases A;
+from node_P5074476_F_00411;
+to node_P5074476-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0583-4;
+phases ABC;
+from node_138485970_00411;
+to node_GS0583-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5468244-B;
+phases ABC;
+from node_P5468244-T_T_00411;
+to node_P5468244-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0583-1;
+phases ABC;
+from node_GS0583-1_00411;
+to node_138485954_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079148-1;
+phases A;
+from node_B5079148-1_00411;
+to node_B5079148_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_1567534E;
+phases AB;
+from node_1567534E_00411_1;
+to node_1567534E_00411;
+status CLOSED;
+}
+object switch{
+name switch_ND105879129_PH_00411$26586639_-1;
+phases ABC;
+from node_ND105879129_PH_00411;
+to node_26586639_PH_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073039-A;
+phases AB;
+from node_P5073039-A_00411;
+to node_P5073039-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300937-2;
+phases A;
+from node_B5300937-2_00411;
+to node_B5300937_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-5;
+phases ABC;
+from node_OS0823-5_00411;
+to node_OS0823-5_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS2197-1;
+phases ABC;
+from node_BS2197-1_00411;
+to node_BS2197-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5074333-2;
+phases AB;
+from node_B5074333_F_00411;
+to node_B5074333-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072178-1;
+phases A;
+from node_B5072178_F_00411;
+to node_B5072178-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074474-B;
+phases A;
+from node_P5074474-B_00411;
+to node_P5074474-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076616-1;
+phases A;
+from node_B5076616-1_00411;
+to node_B5076616_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_176256939;
+phases ABC;
+from node_176256939_00411_1;
+to node_176256939_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074335-1;
+phases AB;
+from node_B5074335-1_00411;
+to node_B5074335_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078586-1;
+phases A;
+from node_B5078586_F_00411;
+to node_B5078586-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075885-2;
+phases A;
+from node_B5075885-2_00411;
+to node_B5075885_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5444400-1;
+phases ABC;
+from node_P5444400-1_00411;
+to node_P5444400-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0462-2;
+phases ABC;
+from node_GS0462-2_00411;
+to node_26494058_00411;
+status CLOSED;
+}
+object switch{
+name switch_143905645;
+phases A;
+from node_143905645_00411;
+to node_143905645_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS0810-L_T_00411$BS0810-L_F_00-1;
+phases ABC;
+from node_BS0810-L_T_00411;
+to node_BS0810-L_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J855A-2;
+phases A;
+from node_26586287_00411;
+to node_J855A-2_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077955-2;
+phases A;
+from node_B5077955-2_00411;
+to node_B5077955_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0730-1;
+phases A;
+from node_BS0730-1_00411_1;
+to node_BS0730-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077950-2;
+phases A;
+from node_B5077950-2_00411;
+to node_B5077950_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2177-1;
+phases A;
+from node_BS2177-1_00411_1;
+to node_BS2177-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078587-1;
+phases A;
+from node_B5078587-1_00411;
+to node_B5078587_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072680-1;
+phases A;
+from node_B5072680-1_00411;
+to node_B5072680_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_149699483;
+phases ABC;
+from node_149699483_00411_1;
+to node_149699483_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5079150-1;
+phases ABC;
+from node_P5079150-1_00411;
+to node_P5079150-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078595-2;
+phases A;
+from node_B5078595-2_00411;
+to node_B5078595_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074475-1;
+phases A;
+from node_P5074475_F_00411;
+to node_P5074475-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077948-1;
+phases A;
+from node_B5077948_F_00411;
+to node_B5077948-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072195-2;
+phases A;
+from node_B5072195_F_00411;
+to node_B5072195-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072173-2;
+phases A;
+from node_B5072173_F_00411;
+to node_B5072173-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074473-1;
+phases A;
+from node_P5074473-1_00411;
+to node_P5074473_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_26585073_00411$J725A-1P_00411-1;
+phases ABC;
+from node_26585073_00411;
+to node_J725A-1P_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546264-1;
+phases A;
+from node_B5546264-1_00411;
+to node_B5546264_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5517589-1;
+phases ABC;
+from node_P5517589-1_00411;
+to node_P5517589-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072170-2;
+phases A;
+from node_B5072170_F_00411;
+to node_B5072170-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5078482-1;
+phases ABC;
+from node_P5078482-1_00411;
+to node_P5078482-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079143-1;
+phases A;
+from node_B5079143_F_00411;
+to node_B5079143-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076617-1;
+phases A;
+from node_B5076617-1_00411;
+to node_B5076617_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0054-2;
+phases ABC;
+from node_J0054-2P_00411;
+to node_26532263_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0058-3;
+phases ABC;
+from node_J0058-3P_00411;
+to node_26494849_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072167-1;
+phases A;
+from node_B5072167-1_00411;
+to node_B5072167_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546191-2;
+phases A;
+from node_B5546191-2_00411;
+to node_B5546191_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077952-1;
+phases A;
+from node_B5077952_F_00411;
+to node_B5077952-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076588-2;
+phases A;
+from node_B5076588-2_00411;
+to node_B5076588_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074333-1;
+phases AB;
+from node_B5074333-1_00411;
+to node_B5074333_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_26586827;
+phases AB;
+from node_26586827_00411_1;
+to node_26586827_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079144-1;
+phases A;
+from node_B5079144_F_00411;
+to node_B5079144-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076586-1;
+phases A;
+from node_B5076586-1_00411;
+to node_B5076586_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J638A-3;
+phases ABC;
+from node_J638A-3P_00411;
+to node_26585722_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076617-2;
+phases A;
+from node_B5076617_F_00411;
+to node_B5076617-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300938-1;
+phases A;
+from node_B5300938-1_00411;
+to node_B5300938_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079144-2;
+phases A;
+from node_B5079144-2_00411;
+to node_B5079144_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914395;
+phases A;
+from node_74914395_00411;
+to node_74914395_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5079822-2;
+phases A;
+from node_B5079822_F_00411;
+to node_B5079822-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074328-1;
+phases AB;
+from node_B5074328-1_00411;
+to node_B5074328_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072170-1;
+phases A;
+from node_B5072170-1_00411;
+to node_B5072170_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077956-2;
+phases A;
+from node_B5077956-2_00411;
+to node_B5077956_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078583-1;
+phases A;
+from node_B5078583_F_00411;
+to node_B5078583-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073040-B;
+phases AB;
+from node_P5073040-A_T_00411;
+to node_P5073040-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079142-2;
+phases A;
+from node_B5079142-2_00411;
+to node_B5079142_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074335-2;
+phases AB;
+from node_B5074335_F_00411;
+to node_B5074335-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0432-4;
+phases ABC;
+from node_OS0432-4_00411_1;
+to node_OS0432-4_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546267-1;
+phases A;
+from node_B5546267-1_00411;
+to node_B5546267_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS5243-L;
+phases ABC;
+from node_BS5243-T_T_00411;
+to node_BS5243-L_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073040-A;
+phases AB;
+from node_P5073040-A_00411;
+to node_P5073040-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914422;
+phases A;
+from node_74914422_00411_1;
+to node_74914422_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0583-3;
+phases ABC;
+from node_138485962_00411;
+to node_GS0583-3_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073686-B;
+phases AB;
+from node_P5073686-B_00411;
+to node_P5073686-B_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0764-1;
+phases ABC;
+from node_GS0764-1_00411;
+to node_GS0764-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_P5363742-1;
+phases ABC;
+from node_P5363742-1_00411;
+to node_P5363742-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077110-B;
+phases ABC;
+from node_P5077110-T_T_00411;
+to node_P5077110-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073684-2;
+phases AB;
+from node_P5073684-2_00411;
+to node_P5073684_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914290;
+phases A;
+from node_74914290_00411_1;
+to node_74914290_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5531152-1;
+phases A;
+from node_B5531152-1_00411;
+to node_B5531152_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5199847-2;
+phases ABC;
+from node_B5199847-2_00411;
+to node_B5199847_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5531154-1;
+phases A;
+from node_B5531154_F_00411;
+to node_B5531154-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME0934-1;
+phases ABC;
+from node_PME0934-1_00411;
+to node_26586123_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076584-2;
+phases A;
+from node_B5076584_F_00411;
+to node_B5076584-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546191-1;
+phases A;
+from node_B5546191_F_00411;
+to node_B5546191-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5199847-1;
+phases ABC;
+from node_B5199847_F_00411;
+to node_B5199847-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300945-2;
+phases A;
+from node_B5300945-2_00411;
+to node_B5300945_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072191-1;
+phases A;
+from node_B5072191-1_00411;
+to node_B5072191_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0058-2;
+phases ABC;
+from node_26494857_00411;
+to node_J0058-2_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078581-1;
+phases A;
+from node_B5078581_F_00411;
+to node_B5078581-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0810-R;
+phases ABC;
+from node_BS0810-L_T_00411;
+to node_BS0810-R_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2035-1;
+phases ABC;
+from node_BS2035-1_00411;
+to node_BS2035-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074330-1;
+phases AB;
+from node_B5074330-1_00411;
+to node_B5074330_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2085-1;
+phases ABC;
+from node_BS2085-1_00411_1;
+to node_BS2085-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077953-2;
+phases A;
+from node_B5077953-2_00411;
+to node_B5077953_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079143-2;
+phases A;
+from node_B5079143-2_00411;
+to node_B5079143_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546264-2;
+phases A;
+from node_B5546264_F_00411;
+to node_B5546264-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546266-1;
+phases A;
+from node_B5546266-1_00411;
+to node_B5546266_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0733-2_00411$108163054_00411-1;
+phases ABC;
+from node_GS0733-2_00411;
+to node_108163054_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5444399-T;
+phases ABC;
+from node_P5444399-A_T_00411;
+to node_P5444399-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074327-2;
+phases AB;
+from node_B5074327_F_00411;
+to node_B5074327-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079819-1;
+phases A;
+from node_B5079819-1_00411;
+to node_B5079819_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0764-4;
+phases ABC;
+from node_GS0764-4_00411;
+to node_26496034_00411;
+status CLOSED;
+}
+object switch{
+name switch_149699508;
+phases ABC;
+from node_149699508_00411;
+to node_149699508_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_GS0450-4;
+phases ABC;
+from node_26532435_00411;
+to node_GS0450-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-2;
+phases ABC;
+from node_OS0823-2_00411;
+to node_OS0823-2_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS0729-1;
+phases A;
+from node_BS0729-1_00411_1;
+to node_BS0729-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072184-1;
+phases A;
+from node_B5072184-1_00411;
+to node_B5072184_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0733-1_00411$GS0733-1_00411_-1;
+phases ABC;
+from node_GS0733-1_00411;
+to node_GS0733-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_J638A-2;
+phases ABC;
+from node_26585730_00411;
+to node_J638A-2_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076611-1;
+phases A;
+from node_B5076611_F_00411;
+to node_B5076611-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME3116-3;
+phases ABC;
+from node_PME3116-3_00411;
+to node_PME3116-3_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5076611-2;
+phases A;
+from node_B5076611-2_00411;
+to node_B5076611_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076592-1;
+phases A;
+from node_B5076592-1_00411;
+to node_B5076592_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072181-1;
+phases A;
+from node_B5072181-1_00411;
+to node_B5072181_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076587-2;
+phases A;
+from node_B5076587-2_00411;
+to node_B5076587_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077099-2;
+phases A;
+from node_B5077099-2_00411;
+to node_B5077099_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME3116-2;
+phases ABC;
+from node_PME3116-4_00411;
+to node_PME3116-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5514204-1;
+phases ABC;
+from node_P5514204-1_00411;
+to node_P5514204-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_1567535E;
+phases ABC;
+from node_1567535E_00411_1;
+to node_1567535E_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074223-B;
+phases AB;
+from node_P5074223-B_T_00411;
+to node_P5074223-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077947-2;
+phases A;
+from node_B5077947-2_00411;
+to node_B5077947_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073041-A;
+phases AB;
+from node_P5073041-A_00411;
+to node_P5073041-B_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2020-1;
+phases ABC;
+from node_BS2020-1_00411;
+to node_BS2020-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_GS0462-3;
+phases ABC;
+from node_GS0462-3_00411;
+to node_GS0462-3_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_PME3116-4;
+phases ABC;
+from node_PME3116-4_00411_1;
+to node_PME3116-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076615-2;
+phases A;
+from node_B5076615-2_00411;
+to node_B5076615_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077955-1;
+phases A;
+from node_B5077955_F_00411;
+to node_B5077955-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2034-1;
+phases ABC;
+from node_BS2034-1_00411;
+to node_BS2034-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5076588-1;
+phases A;
+from node_B5076588_F_00411;
+to node_B5076588-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5598129-1;
+phases AB;
+from node_B5598129-1_00411;
+to node_B5598129_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078579-2;
+phases A;
+from node_B5078579-2_00411;
+to node_B5078579_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546195-1;
+phases A;
+from node_B5546195-1_00411;
+to node_B5546195_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076613-1;
+phases A;
+from node_B5076613_F_00411;
+to node_B5076613-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS5243-T;
+phases ABC;
+from node_BS5243-T_00411;
+to node_BS5243-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076613-2;
+phases A;
+from node_B5076613-2_00411;
+to node_B5076613_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078584-1;
+phases A;
+from node_B5078584-1_00411;
+to node_B5078584_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_143905618;
+phases A;
+from node_143905618_00411;
+to node_143905618_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_P5073042-B;
+phases ABC;
+from node_P5073042-B_00411;
+to node_P5073042-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072178-2;
+phases A;
+from node_B5072178-2_00411;
+to node_B5072178_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2198-L;
+phases ABC;
+from node_BS2198-T_T_00411;
+to node_BS2198-L_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072192-1;
+phases A;
+from node_B5072192-1_00411;
+to node_B5072192_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079146-1;
+phases A;
+from node_B5079146-1_00411;
+to node_B5079146_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546267-2;
+phases A;
+from node_B5546267_F_00411;
+to node_B5546267-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0908-1;
+phases A;
+from node_BS0908-1_00411;
+to node_BS0908-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-1;
+phases ABC;
+from node_26495782_00411;
+to node_OS0823-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0811-T;
+phases ABC;
+from node_BS0811-T_00411;
+to node_BS0811-L_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079147-2;
+phases A;
+from node_B5079147_F_00411;
+to node_B5079147-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076584-1;
+phases A;
+from node_B5076584-1_00411;
+to node_B5076584_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5075988-1;
+phases ABC;
+from node_P5075988-1_00411;
+to node_P5075988-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077098-1;
+phases A;
+from node_B5077098_F_00411;
+to node_B5077098-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0971-3;
+phases ABC;
+from node_OS0971-3_00411;
+to node_26494278_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5363743-A;
+phases ABC;
+from node_P5363743-A_00411;
+to node_P5363743-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_1567536E;
+phases ABC;
+from node_1567536E_00411_1;
+to node_1567536E_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0971-2;
+phases ABC;
+from node_26494262_00411;
+to node_OS0971-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546193-2;
+phases A;
+from node_B5546193-2_00411;
+to node_B5546193_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0058-1;
+phases ABC;
+from node_26494841_00411;
+to node_J0058-1P_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072186-2;
+phases A;
+from node_B5072186_F_00411;
+to node_B5072186-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5075887-2;
+phases A;
+from node_B5075887-2_00411;
+to node_B5075887_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0954-1;
+phases ABC;
+from node_BS0954-1_00411;
+to node_BS0954-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_J638A-1;
+phases ABC;
+from node_26585714_00411;
+to node_J638A-1_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300937-1;
+phases A;
+from node_B5300937_F_00411;
+to node_B5300937-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_161695044;
+phases AB;
+from node_161695044_00411;
+to node_161695044_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_GS0764-5;
+phases ABC;
+from node_26496042_00411;
+to node_GS0764-5_00411;
+status CLOSED;
+}
+object switch{
+name switch_71222442;
+phases A;
+from node_71222442_00411_1;
+to node_71222442_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5531155-2;
+phases A;
+from node_B5531155-2_00411;
+to node_B5531155_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J855A-3;
+phases A;
+from node_J855A-3P_00411;
+to node_26586279_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072190-1;
+phases A;
+from node_B5072190-1_00411;
+to node_B5072190_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300945-1;
+phases A;
+from node_B5300945_F_00411;
+to node_B5300945-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078594-2;
+phases A;
+from node_B5078594-2_00411;
+to node_B5078594_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076614-1;
+phases A;
+from node_B5076614_F_00411;
+to node_B5076614-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073039-T;
+phases AB;
+from node_P5073039-T_T_00411;
+to node_P5073039-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072195-1;
+phases A;
+from node_B5072195-1_00411;
+to node_B5072195_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_4444562E;
+phases ABC;
+from node_4444562E_00411_1;
+to node_4444562E_00411;
+status CLOSED;
+}
+object switch{
+name switch_1567533E;
+phases AB;
+from node_1567533E_00411_1;
+to node_1567533E_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072192-2;
+phases A;
+from node_B5072192_F_00411;
+to node_B5072192-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076589-2;
+phases A;
+from node_B5076589-2_00411;
+to node_B5076589_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0462-4;
+phases ABC;
+from node_26494074_00411;
+to node_GS0462-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME3155-3;
+phases ABC;
+from node_PME3155-2_00411;
+to node_PME3155-3_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079149-2;
+phases A;
+from node_B5079149_F_00411;
+to node_B5079149-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077949-1;
+phases A;
+from node_B5077949_F_00411;
+to node_B5077949-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078591-2;
+phases A;
+from node_B5078591-2_00411;
+to node_B5078591_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079149-1;
+phases A;
+from node_B5079149-1_00411;
+to node_B5079149_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0450-3;
+phases ABC;
+from node_GS0450-3_00411;
+to node_GS0450-3_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_98371287;
+phases A;
+from node_98371287_00411;
+to node_98371287_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5072186-1;
+phases A;
+from node_B5072186-1_00411;
+to node_B5072186_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074475-2;
+phases A;
+from node_P5074475-2_00411;
+to node_P5074475_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074330-2;
+phases AB;
+from node_B5074330_F_00411;
+to node_B5074330-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078586-2;
+phases A;
+from node_B5078586-2_00411;
+to node_B5078586_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074473-2;
+phases A;
+from node_P5074473_F_00411;
+to node_P5074473-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5407588-1;
+phases ABC;
+from node_P5407588-1_00411;
+to node_P5407588-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5363743-B;
+phases ABC;
+from node_P5363743-T_T_00411;
+to node_P5363743-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078596-1;
+phases A;
+from node_B5078596_F_00411;
+to node_B5078596-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0764-2;
+phases ABC;
+from node_26496018_00411;
+to node_GS0764-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073039-B;
+phases AB;
+from node_P5073039-T_T_00411;
+to node_P5073039-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072173-1;
+phases A;
+from node_B5072173-1_00411;
+to node_B5072173_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5514220-1;
+phases ABC;
+from node_P5514220-1_00411;
+to node_P5514220-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0817-1;
+phases AB;
+from node_BS0817-1_00411_1;
+to node_BS0817-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS5243-R;
+phases ABC;
+from node_BS5243-T_T_00411;
+to node_BS5243-R_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0054-1;
+phases ABC;
+from node_26532247_00411;
+to node_J0054-1P_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076616-2;
+phases A;
+from node_B5076616_F_00411;
+to node_B5076616-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076591-1;
+phases A;
+from node_B5076591_F_00411;
+to node_B5076591-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077949-2;
+phases A;
+from node_B5077949-2_00411;
+to node_B5077949_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074222-1;
+phases AB;
+from node_P5074222_F_00411;
+to node_P5074222-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077946-1;
+phases A;
+from node_B5077946_F_00411;
+to node_B5077946-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072182-2;
+phases A;
+from node_B5072182_F_00411;
+to node_B5072182-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078589-2;
+phases A;
+from node_B5078589-2_00411;
+to node_B5078589_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300939-1;
+phases A;
+from node_B5300939-1_00411;
+to node_B5300939_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077956-1;
+phases A;
+from node_B5077956_F_00411;
+to node_B5077956-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076585-1;
+phases A;
+from node_B5076585-1_00411;
+to node_B5076585_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074329-2;
+phases AB;
+from node_B5074329-2_00411;
+to node_B5074329_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0731-1;
+phases A;
+from node_BS0731-1_00411_1;
+to node_BS0731-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074222-2;
+phases AB;
+from node_P5074222-2_00411;
+to node_P5074222_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-6;
+phases ABC;
+from node_OS0823-6_00411;
+to node_26495807_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072679-1;
+phases A;
+from node_B5072679-1_00411;
+to node_B5072679_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072187-2;
+phases A;
+from node_B5072187-2_00411;
+to node_B5072187_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073685-A;
+phases AB;
+from node_P5073685-A_T_00411;
+to node_P5073685-A_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074232-A;
+phases A;
+from node_P5074232-A_T_00411;
+to node_P5074232-A_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077954-1;
+phases A;
+from node_B5077954_F_00411;
+to node_B5077954-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546193-1;
+phases A;
+from node_B5546193_F_00411;
+to node_B5546193-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5199846-2;
+phases ABC;
+from node_B5199846-2_00411;
+to node_B5199846_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_804148E;
+phases AB;
+from node_804148E_00411;
+to node_804148E_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5300941-1;
+phases A;
+from node_B5300941-1_00411;
+to node_B5300941_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546196-1;
+phases A;
+from node_B5546196_F_00411;
+to node_B5546196-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074474-A;
+phases A;
+from node_P5074474-A_T_00411;
+to node_P5074474-A_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077948-2;
+phases A;
+from node_B5077948-2_00411;
+to node_B5077948_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074331;
+phases AB;
+from node_B5074331_00411;
+to node_B5074331_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5079823-2;
+phases A;
+from node_B5079823_F_00411;
+to node_B5079823-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS8592-1;
+phases A;
+from node_BS8592-1_00411_1;
+to node_BS8592-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2198-T;
+phases ABC;
+from node_BS2198-T_00411;
+to node_BS2198-T_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072179-2;
+phases A;
+from node_B5072179-2_00411;
+to node_B5072179_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078589-1;
+phases A;
+from node_B5078589_F_00411;
+to node_B5078589-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300939-2;
+phases A;
+from node_B5300939_F_00411;
+to node_B5300939-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072168-1;
+phases A;
+from node_B5072168_F_00411;
+to node_B5072168-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073041-B;
+phases AB;
+from node_P5073041-B_T_00411;
+to node_P5073041-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077097-2;
+phases A;
+from node_B5077097-2_00411;
+to node_B5077097_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078581-2;
+phases A;
+from node_B5078581-2_00411;
+to node_B5078581_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546265-1;
+phases A;
+from node_B5546265-1_00411;
+to node_B5546265_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0487-2;
+phases ABC;
+from node_OS0487-2_00411;
+to node_26446627_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074220-B;
+phases A;
+from node_P5074220-B_00411;
+to node_P5074220-B_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS8574-1;
+phases A;
+from node_BS8574-1_00411;
+to node_BS8574-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_P5073687-2;
+phases AB;
+from node_P5073687-2_00411;
+to node_P5073687_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072180-2;
+phases A;
+from node_B5072180_F_00411;
+to node_B5072180-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300946-1;
+phases A;
+from node_B5300946-1_00411;
+to node_B5300946_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5598128-1;
+phases AB;
+from node_P5598128-1_00411;
+to node_P5598128-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME0934-4;
+phases ABC;
+from node_26586123_00411;
+to node_PME0934-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079822-1;
+phases A;
+from node_B5079822-1_00411;
+to node_B5079822_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073038-A;
+phases AB;
+from node_P5073038-A_00411;
+to node_P5073038-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME3155-4;
+phases ABC;
+from node_PME3155-4_00411;
+to node_PME3155-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073038-B;
+phases AB;
+from node_P5073038-A_T_00411;
+to node_P5073038-B_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072188-1;
+phases A;
+from node_B5072188_F_00411;
+to node_B5072188-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073684-1;
+phases AB;
+from node_P5073684_F_00411;
+to node_P5073684-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_149699143_00411$J108A-1P_00411-1;
+phases ABC;
+from node_149699143_00411;
+to node_J108A-1P_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-1;
+phases ABC;
+from node_OS0433-1_00411;
+to node_OS0433-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5074328-2;
+phases AB;
+from node_B5074328_F_00411;
+to node_B5074328-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077954-2;
+phases A;
+from node_B5077954-2_00411;
+to node_B5077954_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072183-1;
+phases A;
+from node_B5072183-1_00411;
+to node_B5072183_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072188-2;
+phases A;
+from node_B5072188-2_00411;
+to node_B5072188_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300944-1;
+phases A;
+from node_B5300944_F_00411;
+to node_B5300944-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072180-1;
+phases A;
+from node_B5072180-1_00411;
+to node_B5072180_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077098-2;
+phases A;
+from node_B5077098-2_00411;
+to node_B5077098_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_26586639;
+phases ABC;
+from node_26586639_00411;
+to node_26586639_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-6;
+phases ABC;
+from node_OS0433-6_00411;
+to node_OS0433-6_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS2189-1;
+phases ABC;
+from node_BS2189-1_00411;
+to node_BS2189-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_GS0764-3;
+phases ABC;
+from node_26496026_00411;
+to node_GS0764-3_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072193-2;
+phases A;
+from node_B5072193_F_00411;
+to node_B5072193-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078582-1;
+phases A;
+from node_B5078582_F_00411;
+to node_B5078582-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_J725A-3P_00411$26585081_00411-1;
+phases ABC;
+from node_J725A-3P_00411;
+to node_26585081_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5444399-A;
+phases ABC;
+from node_P5444399-A_00411;
+to node_P5444399-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072169-1;
+phases A;
+from node_B5072169-1_00411;
+to node_B5072169_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5199848-2;
+phases ABC;
+from node_B5199848-2_00411;
+to node_B5199848_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_V5421055-1;
+phases ABC;
+from node_V5421055-1_00411;
+to node_V5421055-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072182-1;
+phases A;
+from node_B5072182-1_00411;
+to node_B5072182_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-2;
+phases ABC;
+from node_OS0433-2_00411;
+to node_26446139_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076590-2;
+phases A;
+from node_B5076590-2_00411;
+to node_B5076590_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS0728-1;
+phases A;
+from node_BS0728-1_00411_1;
+to node_BS0728-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072169-2;
+phases A;
+from node_B5072169_F_00411;
+to node_B5072169-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_70814281;
+phases A;
+from node_70814281_00411;
+to node_70814281_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_OS0487-3;
+phases ABC;
+from node_26446643_00411;
+to node_OS0487-3_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2031-1;
+phases AB;
+from node_BS2031-1_00411_1;
+to node_BS2031-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300941-2;
+phases A;
+from node_B5300941_F_00411;
+to node_B5300941-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_J108A-2P_00411$149699159_00411-1;
+phases ABC;
+from node_J108A-2P_00411;
+to node_149699159_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077110-T;
+phases ABC;
+from node_P5077110-T_T_00411;
+to node_P5077110-T_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5074772-1;
+phases ABC;
+from node_P5074772-1_00411;
+to node_P5074772-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077109-1;
+phases ABC;
+from node_P5077109-1_00411;
+to node_P5077109-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077951-2;
+phases A;
+from node_B5077951-2_00411;
+to node_B5077951_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0583-2;
+phases ABC;
+from node_138485946_00411;
+to node_GS0583-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5300944-2;
+phases A;
+from node_B5300944-2_00411;
+to node_B5300944_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076610-1;
+phases A;
+from node_B5076610-1_00411;
+to node_B5076610_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5531157-1;
+phases A;
+from node_B5531157-1_00411;
+to node_B5531157_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072174-1;
+phases A;
+from node_B5072174-1_00411;
+to node_B5072174_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_74914238;
+phases A;
+from node_74914238_00411_1;
+to node_74914238_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077950-1;
+phases A;
+from node_B5077950_F_00411;
+to node_B5077950-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_140689836;
+phases ABC;
+from node_140689836_00411;
+to node_140689836_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_BS2198-R;
+phases ABC;
+from node_BS2198-T_T_00411;
+to node_BS2198-R_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078596-2;
+phases A;
+from node_B5078596-2_00411;
+to node_B5078596_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0450-2;
+phases ABC;
+from node_GS0450-2_00411;
+to node_GS0450-2_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_74914265;
+phases A;
+from node_74914265_00411_1;
+to node_74914265_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2023-1;
+phases A;
+from node_BS2023-1_00411;
+to node_BS2023-1_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5072184-2;
+phases A;
+from node_B5072184_F_00411;
+to node_B5072184-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5072248-1;
+phases A;
+from node_P5072248-1_00411;
+to node_P5072248-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2019-1;
+phases ABC;
+from node_BS2019-1_00411_1;
+to node_BS2019-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0433-5;
+phases ABC;
+from node_26446171_00411;
+to node_OS0433-5_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074332-1;
+phases AB;
+from node_B5074332_F_00411;
+to node_B5074332-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546263-2;
+phases A;
+from node_B5546263_F_00411;
+to node_B5546263-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0823-4;
+phases ABC;
+from node_26495791_00411;
+to node_OS0823-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079819-2;
+phases A;
+from node_B5079819_F_00411;
+to node_B5079819-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0487-4;
+phases ABC;
+from node_26446651_00411;
+to node_OS0487-4_00411;
+status CLOSED;
+}
+object switch{
+name switch_26585089_00411$J725A-2P_00411-1;
+phases ABC;
+from node_26585089_00411;
+to node_J725A-2P_00411;
+status CLOSED;
+}
+object switch{
+name switch_26586791;
+phases ABC;
+from node_26586791_00411_1;
+to node_26586791_00411;
+status CLOSED;
+}
+object switch{
+name switch_BS2185-1;
+phases A;
+from node_BS2185-1_00411_1;
+to node_BS2185-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5319513-2;
+phases ABC;
+from node_P5319513-2_00411;
+to node_P5319513_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079148-2;
+phases A;
+from node_B5079148_F_00411;
+to node_B5079148-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078590-2;
+phases A;
+from node_B5078590-2_00411;
+to node_B5078590_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_161695071;
+phases AB;
+from node_161695071_00411;
+to node_161695071_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5300943-2;
+phases A;
+from node_B5300943-2_00411;
+to node_B5300943_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_J0054-3;
+phases ABC;
+from node_26532255_00411;
+to node_J0054-3P_00411;
+status CLOSED;
+}
+object switch{
+name switch_PME0934-3;
+phases ABC;
+from node_PME0934-2_00411;
+to node_PME0934-3_00411;
+status CLOSED;
+}
+object switch{
+name switch_OS0432-3;
+phases ABC;
+from node_OS0432-3_00411_1;
+to node_OS0432-3_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5076652-1;
+phases ABC;
+from node_P5076652-1_00411;
+to node_P5076652-1_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077957-2;
+phases A;
+from node_B5077957-2_00411;
+to node_B5077957_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5076591-2;
+phases A;
+from node_B5076591-2_00411;
+to node_B5076591_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5077952-2;
+phases A;
+from node_B5077952-2_00411;
+to node_B5077952_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546197-2;
+phases A;
+from node_B5546197-2_00411;
+to node_B5546197_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546263-1;
+phases A;
+from node_B5546263-1_00411;
+to node_B5546263_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5073042-A;
+phases ABC;
+from node_P5073042-A_T_00411;
+to node_P5073042-A_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072679-2;
+phases A;
+from node_B5072679_F_00411;
+to node_B5072679-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078582-2;
+phases A;
+from node_B5078582-2_00411;
+to node_B5078582_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5074332-2;
+phases AB;
+from node_B5074332-2_00411;
+to node_B5074332_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078585-1;
+phases A;
+from node_B5078585_F_00411;
+to node_B5078585-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5078590-1;
+phases A;
+from node_B5078590_F_00411;
+to node_B5078590-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_P5077111-A;
+phases ABC;
+from node_P5077111-A_00411;
+to node_P5077111-A_T_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546192-2;
+phases A;
+from node_B5546192-2_00411;
+to node_B5546192_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5079818-1;
+phases A;
+from node_B5079818-1_00411;
+to node_B5079818_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_GS0450-1;
+phases ABC;
+from node_GS0450-1_00411;
+to node_26532419_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5531154-2;
+phases A;
+from node_B5531154-2_00411;
+to node_B5531154_F_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5072174-2;
+phases A;
+from node_B5072174_F_00411;
+to node_B5072174-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_149699442;
+phases ABC;
+from node_149699442_00411;
+to node_149699442_00411_1;
+status CLOSED;
+}
+object switch{
+name switch_B5076610-2;
+phases A;
+from node_B5076610_F_00411;
+to node_B5076610-2_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5199846-1;
+phases ABC;
+from node_B5199846_F_00411;
+to node_B5199846-1_00411;
+status CLOSED;
+}
+object switch{
+name switch_B5546196-2;
+phases A;
+from node_B5546196-2_00411;
+to node_B5546196_F_00411;
+status CLOSED;
+}

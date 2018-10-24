@@ -1056,11 +1056,13 @@ static TIMESTAMP commit_all_st(TIMESTAMP t0, TIMESTAMP t2)
 				if ( next==TS_INVALID )
 				{
 					char name[64];
-					throw_exception("object %s commit failed", object_name(obj,name,sizeof(name)-1));
+					output_error("object %s commit failed", object_name(obj,name,sizeof(name)-1));
 					/* TROUBLESHOOT
 						The commit function of the named object has failed.  Make sure that the object's
 						requirements for committing are satisfied and try again.  (likely internal state aberations)
 					 */
+					result = TS_INVALID;
+					break;
 				}
 				if ( next<result ) result = next;
 			}

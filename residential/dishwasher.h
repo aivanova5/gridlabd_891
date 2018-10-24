@@ -36,51 +36,69 @@ class dishwasher : public residential_enduse
 		HEAVY	= 0x02,
 	} DISHWASHERWASHMODE;
 	typedef enum {
-		OFF,
-		CONTROLSTART,
-		PUMPPREWASH,
-		PUMPWASHQUICK,
-		HEATWASHQUICK,
-		PUMPWASHNORMAL,
-		HEATWASHNORMAL,
-		PUMPWASHHEAVY,
-		HEATWASHHEAVY,
-		CONTROLWASH,
-		PUMPRINSE,
-		HEATRINSE,
-		CONTROLRINSE,
-		HEATDRYON,
-		HEATDRYOFF,
-		CONTROLDRY,
-		CONTROLEND,
+		OFF = 0,
+		CONTROLSTART = 1,
+		PUMPPREWASH = 2,
+		PUMPWASHQUICK = 3,
+		HEATWASHQUICK = 4,
+		PUMPWASHNORMAL = 5,
+		HEATWASHNORMAL = 6,
+		PUMPWASHHEAVY = 7,
+		HEATWASHHEAVY = 8,
+		CONTROLWASH = 9,
+		PUMPRINSE = 10,
+		HEATRINSE = 11,
+		CONTROLRINSE = 12,
+		HEATDRYON = 13,
+		HEATDRYOFF = 14,
+		CONTROLDRY = 15,
+		CONTROLEND = 16,
 	} DISHWASHERSTATE;
 public:
 	GL_BITFLAGS(enumeration,controlmode); ///< controller mode
 	GL_STRUCT(double_array,state_duration); ///< state duration
-	GL_STRUCT(complex_array,state_power); ///< power for each state
-	GL_STRUCT(double_array,state_heatgain); ///< heatgain for each state
 	GL_STRUCT(statemachine,state_machine); ///< state machine rules
+	//power components
+	GL_STRUCT(double_array,state_power_Z_real); ///< real power for each state (Z component)
+	GL_STRUCT(double_array,state_power_I_real); ///< real power for each state (I component)
+	GL_STRUCT(double_array,state_power_P_real); ///< real power for each state (P component)
+	GL_STRUCT(double_array,state_power_Z_reactive); ///< reactive power for each state (Z component)
+	GL_STRUCT(double_array,state_power_I_reactive); ///< reactive power for each state (I component)
+	GL_STRUCT(double_array,state_power_P_reactive); ///< reactive power for each state (P component)
+	GL_STRUCT(double,pump_power_Z_real); ///< real power used by pump (Z component)
+	GL_STRUCT(double,pump_power_I_real); ///< real power used by pump (I component)
+	GL_STRUCT(double,pump_power_P_real); ///< real power used by pump (P component)
+	GL_STRUCT(double,pump_power_Z_reactive); ///< reactive power used by pump (Z component)
+	GL_STRUCT(double,pump_power_I_reactive); ///< reactive power used by pump (I component)
+	GL_STRUCT(double,pump_power_P_reactive); ///< reactive power used by pump (P component)
+	GL_STRUCT(double,control_power_Z_real); ///< real power used by controller (Z component)
+	GL_STRUCT(double,control_power_I_real); ///< real power used by controller (I component)
+	GL_STRUCT(double,control_power_P_real); ///< real power used by controller (P component)
+	GL_STRUCT(double,control_power_Z_reactive); ///< reactive power used by controller (Z component)
+	GL_STRUCT(double,control_power_I_reactive); ///< reactive power used by controller (I component)
+	GL_STRUCT(double,control_power_P_reactive); ///< reactive power used by controller (P component)
+	GL_STRUCT(double_array,state_heatgain); ///< heatgain for each state
 	GL_BITFLAGS(enumeration,drymode); ///< dry option selector
 	GL_BITFLAGS(enumeration,washmode); ///< wash option selector
-	GL_STRUCT(complex,pump_power); ///< power used by pump
-	GL_STRUCT(complex,coil_power_wet); ///< power used by coils when wet (100C)
-	GL_STRUCT(complex,coil_power_dry); ///< power used by coils when dry (>>100C)
-	GL_STRUCT(complex,control_power); ///< power used by controller
+	GL_STRUCT(double,coil_power_wet_real); ///< power used by coils when wet (100C)
+	GL_STRUCT(double,coil_power_wet_reactive); ///< power used by coils when wet (100C)
+	GL_STRUCT(double,coil_power_dry_real); ///< power used by coils when wet (100C)
+	GL_STRUCT(double,coil_power_dry_reactive); ///< power used by coils when dry (>>100C)
+	GL_STRUCT(complex, total_power); ///< total power consumed by the appliance
+	GL_STRUCT(complex, total_admittance); ///< total power consumed by the appliance
+	GL_STRUCT(complex, total_current); ///< total power consumed by the appliance
 	GL_ATOMIC(double,state_queue); ///< accumulated demand (units)
 	GL_ATOMIC(double,demand_rate); ///< dish load accumulation rate (units/day)
 	GL_ATOMIC(double,hotwater_demand); ///< hotwater consumption (gpm)
 	GL_ATOMIC(double,hotwater_temperature); ///< hotwater temperature (degF)
 	GL_ATOMIC(double,hotwater_temperature_drop); ///< hotwater temperature drop from plumbing bus (degF)
 	GL_STRUCT(double_array,state_setpoint); ///< temperature setpoints for each state
-
 	GL_ATOMIC(double, energy_baseline);
 	GL_ATOMIC(bool, heated_dry_enabled);
 	GL_ATOMIC(double, daily_dishwasher_demand);
 	GL_ATOMIC(double, queue);
 	GL_ATOMIC(double, queue_min);
 	GL_ATOMIC(double, queue_max);
-
-
 
 private:
 	size_t n_states; ///< number states defined in controlmode

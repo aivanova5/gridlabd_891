@@ -18,11 +18,14 @@
 
 typedef struct s_fsmrule {
 	int64 to; ///< to state value
-	double *lhs; ///> left-hand side comparison value
-	double *rhs; ///< right-hand side comparison value
+	void *lhs; ///> left-hand side comparison value
+	PROPERTYTYPE lhtype;
+	void *rhs; ///< right-hand side comparison value
+	PROPERTYTYPE rhtype;
 	PROPERTYCOMPAREOP cop; ///< comparison operator
 	struct s_fsmrule *next_and; ///< and next rule
 	struct s_fsmrule *next_or; ///< or next rule
+	char *spec; ///< copy of original rule spec
 } FSMRULE; ///< implements a state transition rule
 typedef struct s_fsmcall {
 	void (*entry)(struct s_statemachine *); ///< state entry call
@@ -43,6 +46,7 @@ typedef struct s_statemachine {
 	TIMESTAMP hold_time; ///< time of hold end for current state
 	double runtime; ///< elapsed time in the current state
 	struct s_statemachine *next; /// next machine
+	unsigned int64 interval; /// state machine update interval
 	// external finite state machine
 //	unsigned int nhls;
 //	PROPERTY *lhs;

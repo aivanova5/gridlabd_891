@@ -1,0 +1,182 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+module residential;
+
+#set FEEDER=alloy
+
+#include using(AREA=A,LOADID=1,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=2,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=3,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=4,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=5,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=6,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=7,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=8,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=9,PHASE=A,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=10,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=11,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=12,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=13,PHASE=A,COUNT=3) "titanium_house.glm"
+#include using(AREA=A,LOADID=14,PHASE=B,COUNT=3) "titanium_house.glm"
+#include using(AREA=A,LOADID=15,PHASE=C,COUNT=3) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=16,PHASE=A,COUNT=2) "titanium_house.glm"
+#include using(AREA=A,LOADID=17,PHASE=B,COUNT=2) "titanium_house.glm"
+#include using(AREA=A,LOADID=18,PHASE=C,COUNT=2) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=19,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=20,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=21,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=A,LOADID=22,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=A,LOADID=23,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=24,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=25,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=26,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=27,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=28,PHASE=A,COUNT=3) "titanium_house.glm"
+#include using(AREA=B,LOADID=29,PHASE=B,COUNT=3) "titanium_house.glm"
+#include using(AREA=B,LOADID=30,PHASE=C,COUNT=3) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=31,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=32,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=33,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=34,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=35,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=36,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=37,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=38,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=39,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=40,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=41,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=B,LOADID=42,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=B,LOADID=43,PHASE=A,COUNT=5) "titanium_house.glm"
+#include using(AREA=C,LOADID=44,PHASE=B,COUNT=5) "titanium_house.glm"
+#include using(AREA=C,LOADID=45,PHASE=C,COUNT=5) "titanium_house.glm"
+
+#include using(AREA=C,LOADID=46,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=47,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=48,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=C,LOADID=49,PHASE=A,COUNT=2) "titanium_house.glm"
+#include using(AREA=C,LOADID=50,PHASE=B,COUNT=2) "titanium_house.glm"
+#include using(AREA=C,LOADID=51,PHASE=C,COUNT=2) "titanium_house.glm"
+
+#include using(AREA=C,LOADID=52,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=53,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=54,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=C,LOADID=55,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=56,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=C,LOADID=57,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=58,PHASE=A,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=59,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=60,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=61,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=62,PHASE=A,COUNT=6) "titanium_house.glm"
+#include using(AREA=D,LOADID=63,PHASE=B,COUNT=6) "titanium_house.glm"
+#include using(AREA=D,LOADID=64,PHASE=C,COUNT=6) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=65,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=66,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=67,PHASE=C,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=68,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=69,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=70,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=71,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=72,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=73,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=74,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=75,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=76,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=77,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=78,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=79,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=80,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=81,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=82,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=D,LOADID=83,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=84,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=D,LOADID=85,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=86,PHASE=A,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=87,PHASE=A,COUNT=2) "titanium_house.glm"
+#include using(AREA=E,LOADID=88,PHASE=B,COUNT=2) "titanium_house.glm"
+#include using(AREA=E,LOADID=89,PHASE=C,COUNT=2) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=90,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=91,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=92,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=93,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=94,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=95,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=96,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=97,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=98,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=99,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=100,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=101,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=102,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=103,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=104,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=105,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=106,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=107,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=108,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=109,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=110,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=111,PHASE=A,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=112,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=113,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=114,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=115,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=116,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=117,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=118,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=119,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=120,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=121,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=122,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=123,PHASE=C,COUNT=1) "titanium_house.glm"
+
+#include using(AREA=E,LOADID=124,PHASE=A,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=125,PHASE=B,COUNT=1) "titanium_house.glm"
+#include using(AREA=E,LOADID=126,PHASE=C,COUNT=1) "titanium_house.glm"
+
+

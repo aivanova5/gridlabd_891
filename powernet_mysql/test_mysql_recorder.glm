@@ -1,0 +1,71 @@
+
+// MySQL recorder test - Alyona Ivanova Aug 7, 2018
+
+#ifdef MYSQL
+
+clock {
+	timezone PST+8PDT;
+	starttime '2000-01-01 00:00:00 PST';
+	stoptime '2000-01-02 00:00:00 PST';
+}
+
+
+module residential {
+	implicit_enduses NONE;
+};
+
+module assert;
+module powerflow {
+     solver_method NR;
+     NR_iteration_limit 50;
+     //lu_solver "KLU_x64";
+};
+
+module mysql;
+object database {
+	name gridlabd_DB;
+	hostname "powernet-gridlabd-rt.cftqw2r7udps.us-east-1.rds.amazonaws.com";
+	username "gridlabd";
+	password "tfPKrZ5lOSXAVf3Y";
+	schema "gridlabd";
+	port 3306;
+	//  socketname "/tmp/mysql.sock";
+	clientflags COMPRESS|FOUND_ROWS|IGNORE_SIGPIPE|INTERACTIVE|LOCAL_FILES|MULTI_RESULTS|MULTI_STATEMENTS|ODBC|SSL|REMEMBER_OPTIONS;
+
+}
+
+object triplex_meter {
+	phases AS;
+	nominal_voltage 120;
+	object house {
+		floor_area 2000;
+		heating_setpoint 1;
+		cooling_setpoint 165;
+	}
+}
+
+
+module mysql;
+object recorder {
+	connection gridlabd_DB;
+	table test;
+	parent triplex_meter;
+	recorder_name "mysql_recorder";
+	property energy[kWh], power[kW];
+	// trigger condition;
+	// table|file source-table;
+	mode "w";
+	//  limit max-rows;
+//	interval seconds;
+	options PURGE|UNITS;
+	datetime_fieldname "t";
+	recordid_fieldname "id";
+	header_fieldnames "energy", "power";
+//	group "group-identifier"; 
+//	query_buffer_limit max-query-buffer;  
+	// minimize_data boolean; 
+	// custom_sql "custom_sql";  
+}
+
+
+#endif

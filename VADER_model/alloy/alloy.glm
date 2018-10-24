@@ -1,0 +1,87 @@
+// Feeder name: C:\Users\gonzalf1\Desktop\camden_gridlab_d\alloy.glm
+// Source file: C:\Users\gonzalf1\Desktop\camden_gridlab_d\alloy.sxst
+// Created at: 8/9/2016 11:53:50 AM
+// Please report any problems to Masoud Farivar (masoud.farivar@sce.com)
+//*********************************************
+
+#include "alloy_config.glm"
+
+#set minimum_timestep=240
+#set iteration_limit=50
+#set profiler=1
+#set pauseatexit=0
+#set relax_naming_rules=1
+#set suppress_repeat_messages=0
+#define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+
+clock{
+         timezone PST+8PDT;
+         starttime '2013-01-01 0:00:00';
+         stoptime '2013-01-02 0:00:00';
+}
+
+//*********************************************
+// LOADS
+#ifndef SEQ_CUSTID
+global int32 SEQ_CUSTID 0;
+#endif
+#set allow_reinclude=true
+
+#if LOADS==yes
+#print Adding dynamic loads...
+#else
+#if SOLAR==yes
+#print Adding solar panels...
+#endif
+#else
+#print Adding pseudo-AMI meters...
+#endif
+
+//*********************************************
+// modules
+module tape;
+module mysql {
+	hostname gridlabd.slac.stanford.edu;
+	username gridlabd;
+	password gridlabd;
+	port 3306;
+}
+module powerflow {
+        solver_method NR;
+};
+
+#ifdef VOLTDUMP
+#print Voltage dump to ${VOLTDUMP} is enabled...
+object voltdump {
+	filename ${VOLTDUMP};
+	//group "nodevolts";
+	mode polar;
+}
+#endif
+
+#ifdef CURRDUMP
+#print Current dump to ${CURRDUMP} is enabled...
+object currdump {
+	filename ${CURRDUMP};
+	mode rect;
+}
+#endif
+
+#include "alloy_load_objects.glm"
+#include "alloy_loads.glm"
+#include "alloy_transformers.glm"
+#include "alloy_nodes.glm"
+#include "alloy_lines.glm"
+#include "alloy_switches.glm"
+
+
+#ifdef MAKE_GRAPH_GUID
+#option compile
+export mysql --graph --guid --no_overwrite sce_camden;
+#endif
+
+
+#ifdef MAKE_GRAPH_DIVIDED
+#option compile
+export mysql --graph  sce_camden_alloy;
+#endif

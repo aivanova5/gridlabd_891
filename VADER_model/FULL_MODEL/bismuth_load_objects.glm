@@ -1,0 +1,1808 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAA-D service model configuration control file
+// Aopyright (A) 2016, SLAA National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+object triplex_load {
+	name bismuth_load_1_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_2_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_3_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_4_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_5_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_6_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_7_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_8_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_9_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_10_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_11_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_12_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_13_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_14_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_15_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_16_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_17_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_18_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_19_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_20_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_21_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_22_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_23_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_24_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_25_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_26_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_27_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_28_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_29_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_30_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_31_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_32_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_33_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_34_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_35_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_36_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_37_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_38_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_39_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_40_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_41_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_42_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_43_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_44_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_45_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_46_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_47_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_48_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_49_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_50_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_51_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_52_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_53_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_54_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_55_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_56_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_57_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_58_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_59_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_60_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_61_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_62_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_63_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_64_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_65_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_66_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_67_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_68_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_69_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_70_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_71_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_72_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_73_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_74_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_75_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_76_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_77_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_78_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_79_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_80_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_81_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_82_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_83_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_84_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_85_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_86_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_87_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_88_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_89_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_90_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_91_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_92_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_93_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_94_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_95_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_96_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_97_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_98_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_99_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_100_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_101_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_102_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_103_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_104_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_105_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_106_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_107_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_108_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_109_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_110_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_111_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_112_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_113_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_114_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_115_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_116_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_117_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_118_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_119_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_120_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_121_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_122_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_123_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_124_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_125_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_126_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_127_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_128_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_129_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_130_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_131_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_132_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_133_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_134_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_135_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_136_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_137_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_138_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_139_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_140_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_141_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_142_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_143_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_144_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_145_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_146_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_147_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_148_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_149_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_150_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_151_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_152_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_153_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_154_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_155_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_156_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_157_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_158_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_159_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_160_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_161_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_162_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_163_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_164_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_165_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_166_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_167_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_168_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_169_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_170_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_171_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_172_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_173_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_174_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_175_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_176_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_177_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_178_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_179_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_180_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_181_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_182_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_183_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_184_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_185_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_186_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_187_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_188_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_189_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_190_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_191_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_192_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_193_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_194_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_195_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_196_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_197_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_198_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_199_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_200_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_201_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_202_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_203_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_204_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_205_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_206_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_207_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_208_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_209_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_210_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_211_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_212_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_213_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_214_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_215_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_216_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_217_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_218_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_219_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_220_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_221_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_222_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_223_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_224_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_225_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_226_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_227_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_228_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_229_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_230_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_231_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_232_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_233_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_234_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_235_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_236_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_237_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_238_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_239_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_240_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_241_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_242_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_243_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_244_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name bismuth_load_245_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_246_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_247_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_248_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_249_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_250_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_251_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_252_B;
+	groupid primary;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_253_C;
+	groupid primary;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_254_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_255_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_256_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_257_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+
+object triplex_load {
+	name bismuth_load_258_A;
+	groupid primary;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+

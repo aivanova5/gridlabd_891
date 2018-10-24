@@ -1,0 +1,641 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+object triplex_load {
+	name alloy_load_1_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_2_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_3_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_4_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_5_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_6_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_7_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+	name alloy_load_8_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_9_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_10_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_11_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_12_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_13_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_14_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_15_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_16_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_17_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_18_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_19_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_20_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_21_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_22_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_23_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_24_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_25_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_26_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_27_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_28_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_29_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_30_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_31_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_32_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_33_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_34_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_35_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_36_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_37_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_38_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_39_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_40_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_41_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_42_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_43_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_44_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_45_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_46_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_47_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_48_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_49_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_50_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_51_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_52_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_53_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_54_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_55_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_56_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_57_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_58_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_59_A; 
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_60_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_61_C; 
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_62_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_63_B; 
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_64_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_65_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_66_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_67_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_68_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_69_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_70_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_71_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_72_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_73_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_74_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_75_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_76_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_77_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_78_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_79_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_80_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_81_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_82_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_83_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_84_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_85_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_86_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_87_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_88_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_89_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_90_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_91_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_92_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_93_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_94_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_95_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_96_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_97_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_98_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_99_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_100_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_101_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_102_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_103_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_104_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_105_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_106_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_107_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_108_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_109_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_110_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_111_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_112_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_113_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_114_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_115_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_116_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_117_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_118_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_119_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_120_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_121_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_122_B;
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_123_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_124_A;
+	phases AS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_125_B; 
+	phases BS;
+	nominal_voltage 6928.41;
+}
+object triplex_load {
+    name alloy_load_126_C;
+	phases CS;
+	nominal_voltage 6928.41;
+}
+
+
+

@@ -11,6 +11,39 @@
 static statemachine *first_machine = NULL;
 static unsigned int n_machines = 0;
 
+double cast_double(PROPERTYTYPE ptype, void *addr, size_t index=0)
+{
+	switch (ptype) 
+	{
+		case PT_void: return 0.0;
+		case PT_double: return (double)((double*)addr)[index];
+		case PT_complex: return (double)((char*)addr)[index];
+		case PT_enumeration: return (double)((enumeration*)addr)[index];
+		case PT_set: return (double)((set*)addr)[index];
+		case PT_int16: return (double)((int16*)addr)[index];
+		case PT_int32: return (double)((int32*)addr)[index];
+		case PT_int64: return (double)((int64*)addr)[index];
+		case PT_char8: return (double)((char*)addr)[index];
+		case PT_char32: return (double)((char*)addr)[index];
+		case PT_char256: return (double)((char*)addr)[index];
+		case PT_char1024: return (double)((char*)addr)[index];
+		//case PT_object: return (double)((object*)addr)[index];
+		//case PT_delegated: return (double)((delegated*)addr)[index];
+		case PT_bool: return (double)((bool*)addr)[index];
+		case PT_timestamp: return (double)((char*)addr)[index];
+		case PT_double_array: return (double)((double*)addr)[index];
+	//	case PT_complex_array: return (double)((complex*)addr)[index];
+		case PT_real: return (double)((real*)addr)[index];
+		case PT_float: return (double)((float*)addr)[index];
+	//	case PT_loadshape: return (double)((loadshape*)addr)[index];
+	//	case PT_enduse: return (double)((enduse*)addr)[index];
+	//	case PT_random: return (double)((random*)addr)[index];
+	//	case PT_statemachine: return (double)((statemachine*)addr)[index]; 
+		default:
+			throw "cast_double given unsupported property type";
+	}
+}
+
 extern "C" int fsm_create(statemachine *machine, OBJECT *context)
 {
 	// set up
@@ -21,7 +54,7 @@ extern "C" int fsm_create(statemachine *machine, OBJECT *context)
 
 	// connect to object
 	machine->context = context;
-
+	machine->interval = 60;
 	// done
 	return 1;
 }
@@ -83,33 +116,49 @@ extern "C" TIMESTAMP fsm_sync(statemachine *machine, PASSCONFIG pass, TIMESTAMP 
 	machine->hold_time = TS_NEVER;
 
 	// process rules
-	FSMRULE *rule, *next_or = NULL;
-	for ( rule=machine->transition_rules[state] ; rule!=NULL ; rule=(rule->next_and==NULL?rule->next_or:rule->next_and) )
+	FSMRULE *rule = machine->transition_rules[state];
+	while ( rule!=NULL ) // ; rule=(rule->next_and==NULL?rule->next_or:rule->next_and) )
 	{
 		// get test data
-		double a = *(double*)rule->lhs;
-		double b = *(double*)rule->rhs;
-		double zero = 0;
-
+		double a = cast_double(rule->lhtype,rule->lhs);
+		double b = cast_double(rule->rhtype,rule->rhs);
+		double tolerance = 0.0;
+		output_debug("In SYNC, transition rule '%s' active", rule->spec );
+		char tmp[1024];
 		// if test fails
-		if ( property_compare_basic(PT_double,rule->cop,&a,&b,&zero,NULL) )
+		char *copstr[] = {"==","<=",">=","!=","<",">","in","not in"};
+		output_debug("Testing: %g %s %g ?", a, copstr[rule->cop], b);
+		if ( property_compare_basic(PT_double,rule->cop,&a,&b,&tolerance,NULL) )
 		{
+			output_debug("Test passes");
 			// last test in 'and' chain implies this is the rule to apply
 			if ( rule->next_and==NULL )
-			{
+			{	
+				output_debug("Last test in 'and' chain implies this is the rule to apply. ");
 				fsm_do_exit(machine);
 				TIMESTAMP hold = (TIMESTAMP)machine->transition_holds->get_at((size_t)rule->to,0);
 				machine->entry_time = t1;
 				machine->hold_time = ( hold>0 && hold<TS_NEVER ? t1+hold : TS_NEVER );
 				*(machine->variable) = (enumeration)(rule->to);
-				// fall through
+				rule = rule->next_or;
+			}
+			else
+			{
+				rule = rule->next_and;
 			}
 		}
+		else
+		{
+			output_debug("Test fails");
+			rule = rule->next_or;
+		}
 	}
+	output_debug("No further tests.");
 
 	// processing during call if no state change occurred
 	if ( machine->value==*(machine->variable) )
 	{
+		output_debug("Remaining in this state");
 		fsm_do_during(machine);
 	}
 	else
@@ -118,11 +167,16 @@ extern "C" TIMESTAMP fsm_sync(statemachine *machine, PASSCONFIG pass, TIMESTAMP 
 		machine->value = *(machine->variable);
 
 		// process entry call
+		output_debug("Entering the new state");
 		fsm_do_entry(machine);
 	}
 
 	// hold time is next transition time (soft event)
-	return soften_timestamp(machine->hold_time);
+	TIMESTAMP t2 = ((t1/machine->interval)+1)*machine->interval;
+	t2 = (machine->hold_time < TS_NEVER && machine->hold_time > t2 ? machine->hold_time : t2);
+	char buffer[64];
+	output_debug("FSM next time return is SOFT %s", convert_from_timestamp(t2,buffer,sizeof(buffer))?buffer:"(invalid)");
+	return soften_timestamp(t2);
 }
 
 extern "C" TIMESTAMP fsm_syncall(TIMESTAMP t1)
@@ -187,6 +241,9 @@ extern "C" int fsm_add_transition_rule(statemachine *machine, char *spec)
 	// parse transition specs
 	char tmp[1024];
 	char from[64], to[64], test[1024];
+	char *speccopy = new char[strlen(spec)+1];
+	strcpy(speccopy,spec);
+
 	if ( sscanf(spec,"%[A-Za-z0-9_]->%[A-Za-z0-9_]=%[^\n]",from,to,test)<3 )
 	{
 		output_error("finite state machine in '%s' rule '%s' is invalid", object_name(machine->context,tmp,sizeof(tmp)),spec);
@@ -217,7 +274,11 @@ extern "C" int fsm_add_transition_rule(statemachine *machine, char *spec)
 	{
 		double *lvalue, *rvalue;
 		PROPERTYCOMPAREOP cop;
-
+		PROPERTYTYPE lptype = PT_void;
+		PROPERTY *lhsprop = NULL;
+		//PROPERTYTYPE lptype_double = PT_void;
+		PROPERTYTYPE rptype = PT_void;
+		output_debug("Parser: rule being parsed %s", token);
 		// remote leading whitespace
 		while ( *token!='\0' && isspace(*token) ) token++;
 		if ( *token=='\0' )
@@ -236,30 +297,48 @@ extern "C" int fsm_add_transition_rule(statemachine *machine, char *spec)
 
 		// get left operand
 		if ( strcmp(lhs,"$timer")==0 )
+		{
+			output_debug("FSM: In parser of the left hand side of expression (TIMER)");
 			lvalue = &(machine->runtime);
+			lptype = PT_double;
+			lhsprop = object_get_property(machine->context,lhs, NULL);
+			output_debug("finite state machine in '%s' test '%s' refers to property type '%d'", object_name(machine->context,tmp,sizeof(tmp)),token, lhsprop->name);
+		}
 		else if ( strcmp(lhs,"$state")==0 )
+		{
+			output_debug("FSM: In parser of the left hand side of expression (STATE)");
 			lvalue = &(machine->value);
+			lptype = PT_double;
+		}
 		else if ( !isalpha(lhs[0]) )
 		{
 			lvalue = new double;
 			*lvalue = atof(lhs);
+			lptype = PT_double;
+			output_debug("FSM: In parser of the left hand side of expression (DOUBLE)");
 		}
 		else
-		{
+		{	
+			lhsprop = object_get_property(machine->context,lhs, NULL);
+			output_debug("FSM: In parser of the left hand side of expression (KEYWORD PARSER)");
 			unsigned int64 index = 0;
 			char *pindex = strchr(lhs,'#');
+			output_debug("FSM: In parser of the left hand side of expression, lhs : %s", lhs);
+			output_debug("finite state machine in '%s' test '%s' refers to property type '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, lhsprop->name);
+
 			if ( pindex!=NULL )
 			{
 				// lookup keyword from state variable
-				if ( !property_get_keyword_value(machine->prop,pindex+1,&index) )
+				if ( !property_get_keyword_value(lhsprop,pindex+1,&index) )
 				{
-					output_error("finite state machine in '%s' test '%s' refers to non-existent state '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, pindex+1);
+					output_error("finite state machine in '%s' test '%s' refers to non-existent state '%s' of property type '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, pindex+1, machine->prop->name);
 					return 0;
 				}
 				else // split string
 					*pindex = '\0';
 			}
 			lvalue = object_get_double_by_name(machine->context,lhs);
+			//output_debug("FSM: In parser of the left hand side of expression, lvalue : %s.%s = %f", object_name(machine->context,tmp,sizeof(tmp)),lhs,*lvalue);
 			if ( lvalue==NULL )
 			{
 				output_error("finite state machine in '%s' test '%s' refers to non-existent property '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, lhs);
@@ -267,64 +346,139 @@ extern "C" int fsm_add_transition_rule(statemachine *machine, char *spec)
 			}
 			else
 				lvalue += index;
+
+			
+			if ( lhsprop==NULL )
+			{
+				output_error("finite state machine in '%s' test '%s' refers to invalid l-value property type in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, lhs);
+				return 0;
+			}
+			lptype = lhsprop->ptype;
+			output_debug("FSM: lptype: '%s'", property_getspec(lptype)->name);
 		}
 
 		// get right operand
 		if ( strcmp(rhs,"$timer")==0 )
-			rvalue = &(machine->runtime);
-		else if ( strcmp(rhs,"$state")==0 )
-			rvalue = &(machine->value);
-		else if ( !isalpha(rhs[0]) )
 		{
+			output_debug("FSM: In parser of the right hand side of expression (TIMER)");
+			rvalue = &(machine->runtime);
+			rptype = PT_double;
+		}
+		else if ( strcmp(rhs,"$state")==0 )
+		{
+			rvalue = &(machine->value);
+			rptype = PT_double;
+		}
+		else if ( strchr("+-0123456789",rhs[0]) != NULL ) // constant
+		{
+			output_debug("FSM: In parser of the right hand side of expression (DOUBLE)");
+			output_debug("FSM: '%s' rhs : '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs[0]);
 			rvalue = new double;
 			*rvalue = atof(rhs);
+			rptype = PT_double;
+			output_debug("FSM: In parser of the right hand side of expression (DOUBLE), rvalue: %s.%s = %f", object_name(machine->context,tmp,sizeof(tmp)), rhs, *rvalue);
 		}
-		else 
+		else  // keyword
 		{
+			PROPERTY *rhsprop = machine->prop; // assume context of lhs, or target if lhs has none
+			output_debug("In parser of the right hand side of expression (KEYWORD)");
 			unsigned int64 index = 0;
-			char *pindex = strchr(rhs,'#');
-			if ( pindex!=NULL )
+			char *pindex = strchr(rhs,'#'); //search for hashtag (ie context)
+			char *cindex = strchr(rhs,'.'); //search for period (ie keyword)
+			//if ( pindex == rhs )
+			//{
+			//	rhsprop = lhsprop;
+			//}
+			output_debug("finite state machine in '%s' test '%s' refers to property type '%d'", object_name(machine->context,tmp,sizeof(tmp)), token, rhsprop->ptype);
+			output_debug("RHS KEYWORD : %s and pindex is: %s", rhs, pindex);
+			if ( pindex == NULL ) // missing #
 			{
-				// lookup keyword from state variable
-				if ( !property_get_keyword_value(machine->prop,pindex+1,&index) )
+				output_error("finite state machine in '%s' test '%s' refers to r-value property missing keyword # mark in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs);
+				return 0;
+			}
+			if (cindex == NULL)
+			{
+				output_error("finite state machine in '%s' test '%s' refers to r-value property missing keyword . mark in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs);
+				return 0;
+			}
+			*pindex++ = '\0';
+			*cindex++ = '\0';
+
+			if ( rhs[0] != '#' ) // refers to an array (ex. state_duration#....)
+			{
+				if ( rhsprop == NULL )
+					rhsprop = object_get_property(machine->context,rhs, NULL);
+				output_debug("finite state machine in '%s' test '%s' refers to rhs property type '%d'", object_name(machine->context,tmp,sizeof(tmp)),token, rhsprop->name);
+				if ( rhsprop==NULL )
 				{
-					output_error("finite state machine in '%s' test '%s' refers to non-existent state '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, pindex+1);
+					output_error("finite state machine in '%s' test '%s' refers to invalid r-value property type in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs);
 					return 0;
 				}
-				else // split string
-					*pindex = '\0';
 			}
-			rvalue = object_get_double_by_name(machine->context,rhs);
-			if ( rvalue==NULL )
+			output_debug("FSM: RHS pindex is : %s ", pindex);
+			
+			// lookup keyword from state variable
+			if ( !property_get_keyword_value(rhsprop,pindex,&index) )
+			{
+				output_error("finite state machine in '%s' test '%s' refers to non-existent state '%s' of '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, pindex, rhsprop->name);
+				return 0;
+			}
+
+			
+			double_array *avalue = (double_array*)object_get_addr(machine->context,rhs[0]=='\0' ? lhs : rhs);
+
+			if ( avalue==NULL )
 			{
 				output_error("finite state machine in '%s' test '%s' refers to non-existent property '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs);
 				return 0;
 			}
 			else
-				rvalue += index;
+			{
+				if ( avalue == NULL )
+				{
+					output_error("finite state machine in '%s' test '%s' refers to invalid index %d in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, index, rhs);
+					return 0;
+				}
+				else
+				{
+					rvalue = avalue->get_addr(index,0);
+
+					if ( rvalue == NULL )
+					{
+						output_error("finite state machine in '%s' test '%s' refers to invalid r-value in '%s'", object_name(machine->context,tmp,sizeof(tmp)),token, rhs);
+						return 0;
+					}
+				}
+			}
+			rptype = rhsprop->ptype;
+
 		}
 
-		// get operator
+		// get operator for property type
 		cop = property_compare_op(PT_double,op);
 
 		// create rule
 		rule = new FSMRULE;
 		rule->to = to_key;
 		rule->lhs = lvalue;
+		rule->lhtype = lptype;
 		rule->rhs = rvalue;
+		rule->rhtype = rptype;
 		rule->cop = cop;
-
+		rule->spec = speccopy;
+		output_debug("FSM: rule operator : %d ", cop);
 		// link rule to last rule in state machine (or)
 		if ( next_or!=NULL )
 		{
+			output_debug("FSM : OR rule is linked");
 			rule->next_or = next_or;
-			next_or = NULL;
 			rule->next_and = NULL;
 		}
 
 		// link rule to previous rule in this transition (and)
 		else
 		{	
+			output_debug("FSM: AND rule linked");
 			rule->next_and = machine->transition_rules[from_key];
 			rule->next_or = NULL;
 		}
@@ -340,6 +494,9 @@ extern "C" int fsm_add_transition_hold(statemachine *machine, char *hold)
 	char state[64], unit[256]="s";
 	double duration;
 	uint64 key;
+	output_debug("Duration : '%s'", sscanf(hold,"%[A-Za-z0-9_]=%f%s",state,&duration,unit));
+
+
 	if ( sscanf(hold,"%[A-Za-z0-9_]=%f%s",state,&duration,unit)<2 )
 	{
 		output_error("finite state machine in '%s' hold '%s' is not valid", object_name(machine->context,tmp,sizeof(tmp)),hold);
@@ -419,6 +576,22 @@ void fsm_clear(statemachine *machine)
 	// restore important values
 	machine->context = context;
 	machine->next = next;
+	machine->interval = 60;
+}
+
+void fsm_interval(statemachine *machine, char *interval)
+{
+	unsigned int64 value = atoi(interval);
+	if ( value == 0 )
+	{
+		output_error("interval %s for statemachine is not valid, using NEVER",interval);
+		machine->interval = TS_NEVER;
+	}
+	else
+	{
+		machine->interval = atoi(interval);
+		output_debug("interval being processed: %d", machine->interval);
+	}
 }
 
 extern "C" int convert_to_fsm(char *string, void *data, PROPERTY *prop)
@@ -478,12 +651,16 @@ extern "C" int convert_to_fsm(char *string, void *data, PROPERTY *prop)
 		{
 			fsm_clear(machine);
 		}
+		else if ( strcmp(param,"interval")==0 )
+		{
+			fsm_interval(machine,value);
+		}
 		else if ( strcmp(param,"rule")==0 )
 		{
 			if ( !fsm_add_transition_rule(machine,value) )
 			{
 				output_error("convert_to_fsm(string='%-.64s...',...) unable to add transition rule", string);
-				return 0;
+				return -1;
 			}
 		}
 		else if ( strcmp(param,"hold")==0 )

@@ -1,0 +1,5331 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+#print Transformers file loaded...
+
+object meter {
+	name source_00411;
+	bustype PQ;
+    parent camden_main_bus;
+	    phases ABC;
+	    nominal_voltage 6928.41 V;
+	voltage_A 7199.77+0.0d V;
+	voltage_B 7199.77-120.0d V;
+	voltage_C 7199.77+120.0d V;
+    object recorder {
+            file aluminum_scada.csv;
+            //table source_17916;
+            //interval 3600;
+            property measured_real_energy,measured_reactive_energy;
+    };
+}
+
+
+object capacitor{
+	name capacitor_P5300947;
+	parent node_176256939_00411;
+	    phases ABC;
+	control VOLT;
+	capacitor_A 600.000000 kVAr ;
+	capacitor_B 600.000000 kVAr ;
+	capacitor_C 600.000000 kVAr ;
+	switchA CLOSED;
+	switchB CLOSED;
+	switchC CLOSED;
+	pt_phase ABC;
+	voltage_set_high 7.32 kV;
+	voltage_set_low 7.08 kV;
+	time_delay 60;
+	dwell_time 120;
+	    nominal_voltage 6928.41 V;
+}
+object capacitor{
+	name capacitor_4086095E;
+	parent node_ND26631735_00411;
+	    phases ABC;
+	control VOLT;
+	capacitor_A 0.000000 kVAr ;
+	capacitor_B 0.000000 kVAr ;
+	capacitor_C 400.000000 kVAr ;
+	switchA CLOSED;
+	switchB CLOSED;
+	switchC CLOSED;
+	pt_phase ABC;
+	voltage_set_high 7.32 kV;
+	voltage_set_low 7.08 kV;
+	time_delay 60;
+	dwell_time 120;
+	    nominal_voltage 6928.41 V;
+}
+object capacitor{
+	name capacitor_P5079151;
+	parent node_OS0823-4_00411;
+	    phases ABC;
+	control VOLT;
+	capacitor_A 600.000000 kVAr ;
+	capacitor_B 600.000000 kVAr ;
+	capacitor_C 600.000000 kVAr ;
+	switchA CLOSED;
+	switchB CLOSED;
+	switchC CLOSED;
+	pt_phase ABC;
+	voltage_set_high 7.32 kV;
+	voltage_set_low 7.08 kV;
+	time_delay 60;
+	dwell_time 120;
+	    nominal_voltage 6928.41 V;
+}
+
+
+object transformer{
+    name TX_B5300937_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300937_A;
+    from node_B5300937_F_00411;
+    to aluminum_load_1_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300937_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072195_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072195_A;
+    from node_B5072195_F_00411;
+    to aluminum_load_2_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072195_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5073685_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073685_A;
+    from node_P5073685-A_T_00411;
+    to aluminum_load_3_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073685_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5079142_A;
+    groupid TX_25_A;
+    configuration TX_config_B5079142_A;
+    from node_B5079142_F_00411;
+    to aluminum_load_4_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079142_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5076589_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076589_A;
+    from node_B5076589_F_00411;
+    to aluminum_load_5_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076589_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300945_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300945_A;
+    from node_B5300945_F_00411;
+    to aluminum_load_6_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300945_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_S5071781_A;
+    groupid TX_100_A;
+    configuration TX_config_S5071781_A;
+    from node_S5071781_00411;
+    to aluminum_load_7_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5071781_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5071781_B;
+    groupid TX_100_B;
+    configuration TX_config_S5071781_B;
+    from node_S5071781_00411;
+    to aluminum_load_8_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5071781_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerB_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5071781_C;
+    groupid TX_100_C;
+    configuration TX_config_S5071781_C;
+    from node_S5071781_00411;
+    to aluminum_load_9_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5071781_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerC_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_4086096E_A;
+    groupid TX_5_A;
+    configuration TX_config_4086096E_A;
+    from node_4086096E_00411;
+    to aluminum_load_10_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_4086096E_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 5 kVA;
+    powerA_rating 5 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_4086096E_B;
+    groupid TX_5_B;
+    configuration TX_config_4086096E_B;
+    from node_4086096E_00411;
+    to aluminum_load_11_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_4086096E_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 5 kVA;
+    powerB_rating 5 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_4086096E_C;
+    groupid TX_5_C;
+    configuration TX_config_4086096E_C;
+    from node_4086096E_00411;
+    to aluminum_load_12_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_4086096E_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 5 kVA;
+    powerC_rating 5 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5074332_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074332_A;
+    from node_B5074332_F_00411;
+    to aluminum_load_13_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074332_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5300936_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300936_A;
+    from node_B5300936_F_00411;
+    to aluminum_load_14_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300936_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5074335_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074335_A;
+    from node_B5074335_F_00411;
+    to aluminum_load_15_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074335_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5598129_A;
+    groupid TX_25_A;
+    configuration TX_config_B5598129_A;
+    from node_B5598129_F_00411;
+    to aluminum_load_16_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5598129_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5546266_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546266_A;
+    from node_B5546266_F_00411;
+    to aluminum_load_17_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546266_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076592_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076592_A;
+    from node_B5076592_F_00411;
+    to aluminum_load_18_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076592_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074473_A;
+    groupid TX_100_A;
+    configuration TX_config_P5074473_A;
+    from node_P5074473_F_00411;
+    to aluminum_load_19_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074473_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079823_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079823_A;
+    from node_B5079823_F_00411;
+    to aluminum_load_20_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079823_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5363742_A;
+    groupid TX_25_A;
+    configuration TX_config_P5363742_A;
+    from node_P5363742-1_T_00411;
+    to aluminum_load_21_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363742_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5363742_B;
+    groupid TX_25_B;
+    configuration TX_config_P5363742_B;
+    from node_P5363742-1_T_00411;
+    to aluminum_load_22_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363742_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5363742_C;
+    groupid TX_25_C;
+    configuration TX_config_P5363742_C;
+    from node_P5363742-1_T_00411;
+    to aluminum_load_23_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363742_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T3_A;
+    groupid TX_55_667_A;
+    configuration TX_config_V5421056T3_A;
+    from node_V5421056T3_00411;
+    to aluminum_load_24_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T3_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerA_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T3_B;
+    groupid TX_55_667_B;
+    configuration TX_config_V5421056T3_B;
+    from node_V5421056T3_00411;
+    to aluminum_load_25_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T3_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerB_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T3_C;
+    groupid TX_55_667_C;
+    configuration TX_config_V5421056T3_C;
+    from node_V5421056T3_00411;
+    to aluminum_load_26_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T3_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerC_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077950_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077950_A;
+    from node_B5077950_F_00411;
+    to aluminum_load_27_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077950_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074772_A;
+    groupid TX_50_A;
+    configuration TX_config_P5074772_A;
+    from node_P5074772-1_T_00411;
+    to aluminum_load_28_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074772_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074772_B;
+    groupid TX_50_B;
+    configuration TX_config_P5074772_B;
+    from node_P5074772-1_T_00411;
+    to aluminum_load_29_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074772_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074772_C;
+    groupid TX_50_C;
+    configuration TX_config_P5074772_C;
+    from node_P5074772-1_T_00411;
+    to aluminum_load_30_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074772_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077955_A;
+    groupid TX_50_A;
+    configuration TX_config_B5077955_A;
+    from node_B5077955_F_00411;
+    to aluminum_load_31_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077955_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5074330_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074330_A;
+    from node_B5074330_F_00411;
+    to aluminum_load_32_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074330_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073684_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073684_A;
+    from node_P5073684_F_00411;
+    to aluminum_load_33_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073684_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072173_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072173_A;
+    from node_B5072173_F_00411;
+    to aluminum_load_34_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072173_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072169_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072169_A;
+    from node_B5072169_F_00411;
+    to aluminum_load_35_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072169_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076584_A;
+    groupid TX_50_A;
+    configuration TX_config_B5076584_A;
+    from node_B5076584_F_00411;
+    to aluminum_load_36_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076584_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073042_A;
+    groupid TX_16_667_A;
+    configuration TX_config_P5073042_A;
+    from node_P5073042-A_T_00411;
+    to aluminum_load_37_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073042_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerA_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5073042_B;
+    groupid TX_16_667_B;
+    configuration TX_config_P5073042_B;
+    from node_P5073042-A_T_00411;
+    to aluminum_load_38_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073042_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerB_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5073042_C;
+    groupid TX_16_667_C;
+    configuration TX_config_P5073042_C;
+    from node_P5073042-A_T_00411;
+    to aluminum_load_39_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073042_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerC_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5075988_A;
+    groupid TX_50_A;
+    configuration TX_config_P5075988_A;
+    from node_P5075988-1_T_00411;
+    to aluminum_load_40_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5075988_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5075988_B;
+    groupid TX_50_B;
+    configuration TX_config_P5075988_B;
+    from node_P5075988-1_T_00411;
+    to aluminum_load_41_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5075988_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5075988_C;
+    groupid TX_50_C;
+    configuration TX_config_P5075988_C;
+    from node_P5075988-1_T_00411;
+    to aluminum_load_42_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5075988_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072679_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072679_A;
+    from node_B5072679_F_00411;
+    to aluminum_load_43_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072679_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5075885_A;
+    groupid TX_50_A;
+    configuration TX_config_B5075885_A;
+    from node_B5075885_F_00411;
+    to aluminum_load_44_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5075885_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_V5075701T1_A;
+    groupid TX_16_667_A;
+    configuration TX_config_V5075701T1_A;
+    from node_V5075701T1_00411;
+    to aluminum_load_45_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075701T1_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerA_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075701T1_B;
+    groupid TX_16_667_B;
+    configuration TX_config_V5075701T1_B;
+    from node_V5075701T1_00411;
+    to aluminum_load_46_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075701T1_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerB_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075701T1_C;
+    groupid TX_16_667_C;
+    configuration TX_config_V5075701T1_C;
+    from node_V5075701T1_00411;
+    to aluminum_load_47_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075701T1_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerC_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072181_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072181_A;
+    from node_B5072181_F_00411;
+    to aluminum_load_48_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072181_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078582_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078582_A;
+    from node_B5078582_F_00411;
+    to aluminum_load_49_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078582_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5598128_A;
+    groupid TX_25_A;
+    configuration TX_config_P5598128_A;
+    from node_P5598128-1_T_00411;
+    to aluminum_load_50_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5598128_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5076610_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076610_A;
+    from node_B5076610_F_00411;
+    to aluminum_load_51_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076610_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078586_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078586_A;
+    from node_B5078586_F_00411;
+    to aluminum_load_52_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078586_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_BS0810-LT_A;
+    groupid TX_25_A;
+    configuration TX_config_BS0810-LT_A;
+    from node_BS0810-L_F_00411;
+    to aluminum_load_53_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS0810-LT_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_BS0810-LT_B;
+    groupid TX_25_B;
+    configuration TX_config_BS0810-LT_B;
+    from node_BS0810-L_F_00411;
+    to aluminum_load_54_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS0810-LT_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_BS0810-LT_C;
+    groupid TX_25_C;
+    configuration TX_config_BS0810-LT_C;
+    from node_BS0810-L_F_00411;
+    to aluminum_load_55_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS0810-LT_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076585_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076585_A;
+    from node_B5076585_F_00411;
+    to aluminum_load_56_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076585_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077947_A;
+    groupid TX_50_A;
+    configuration TX_config_B5077947_A;
+    from node_B5077947_F_00411;
+    to aluminum_load_57_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077947_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5078595_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078595_A;
+    from node_B5078595_F_00411;
+    to aluminum_load_58_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078595_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5074329_A;
+    groupid TX_75_A;
+    configuration TX_config_B5074329_A;
+    from node_B5074329_F_00411;
+    to aluminum_load_59_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074329_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074223_A;
+    groupid TX_75_A;
+    configuration TX_config_P5074223_A;
+    from node_P5074223-B_T_00411;
+    to aluminum_load_60_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074223_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076616_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076616_A;
+    from node_B5076616_F_00411;
+    to aluminum_load_61_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076616_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075701_A;
+    groupid TX_1_A;
+    configuration TX_config_V5075701_A;
+    from node_V5075701_00411;
+    to aluminum_load_62_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075701_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 1 kVA;
+    powerA_rating 1 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_S5075263_A;
+    groupid TX_50_A;
+    configuration TX_config_S5075263_A;
+    from node_S5075263_00411;
+    to aluminum_load_63_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075263_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075263_B;
+    groupid TX_50_B;
+    configuration TX_config_S5075263_B;
+    from node_S5075263_00411;
+    to aluminum_load_64_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075263_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075263_C;
+    groupid TX_50_C;
+    configuration TX_config_S5075263_C;
+    from node_S5075263_00411;
+    to aluminum_load_65_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075263_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546196_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546196_A;
+    from node_B5546196_F_00411;
+    to aluminum_load_66_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546196_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079149_A;
+    groupid TX_25_A;
+    configuration TX_config_B5079149_A;
+    from node_B5079149_F_00411;
+    to aluminum_load_67_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079149_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5075886_A;
+    groupid TX_50_A;
+    configuration TX_config_B5075886_A;
+    from node_B5075886_F_00411;
+    to aluminum_load_68_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5075886_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5546265_A;
+    groupid TX_50_A;
+    configuration TX_config_B5546265_A;
+    from node_B5546265_F_00411;
+    to aluminum_load_69_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546265_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072179_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072179_A;
+    from node_B5072179_F_00411;
+    to aluminum_load_70_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072179_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5444400_A;
+    groupid TX_166_667_A;
+    configuration TX_config_P5444400_A;
+    from node_P5444400-1_T_00411;
+    to aluminum_load_71_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444400_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerA_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5444400_B;
+    groupid TX_166_667_B;
+    configuration TX_config_P5444400_B;
+    from node_P5444400-1_T_00411;
+    to aluminum_load_72_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444400_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerB_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5444400_C;
+    groupid TX_166_667_C;
+    configuration TX_config_P5444400_C;
+    from node_P5444400-1_T_00411;
+    to aluminum_load_73_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444400_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerC_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_B5077099_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077099_A;
+    from node_B5077099_F_00411;
+    to aluminum_load_74_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077099_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_J0058-2PT_A;
+    groupid TX_100_A;
+    configuration TX_config_J0058-2PT_A;
+    from node_J0058-2_F_00411;
+    to aluminum_load_75_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J0058-2PT_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_J0058-2PT_B;
+    groupid TX_100_B;
+    configuration TX_config_J0058-2PT_B;
+    from node_J0058-2_F_00411;
+    to aluminum_load_76_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J0058-2PT_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerB_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_J0058-2PT_C;
+    groupid TX_100_C;
+    configuration TX_config_J0058-2PT_C;
+    from node_J0058-2_F_00411;
+    to aluminum_load_77_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J0058-2PT_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerC_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5074328_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074328_A;
+    from node_B5074328_F_00411;
+    to aluminum_load_78_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074328_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5077097_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077097_A;
+    from node_B5077097_F_00411;
+    to aluminum_load_79_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077097_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300941_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300941_A;
+    from node_B5300941_F_00411;
+    to aluminum_load_80_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300941_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5518257_A;
+    groupid TX_833_333_A;
+    configuration TX_config_P5518257_A;
+    from node_P5518257_00411;
+    to aluminum_load_81_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5518257_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 833.333 kVA;
+    powerA_rating 833.333 kVA;
+    impedance 0.002875+0.054625j;
+}
+
+object transformer{
+    name TX_P5518257_B;
+    groupid TX_833_333_B;
+    configuration TX_config_P5518257_B;
+    from node_P5518257_00411;
+    to aluminum_load_82_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5518257_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 833.333 kVA;
+    powerB_rating 833.333 kVA;
+    impedance 0.002875+0.054625j;
+}
+
+object transformer{
+    name TX_P5518257_C;
+    groupid TX_833_333_C;
+    configuration TX_config_P5518257_C;
+    from node_P5518257_00411;
+    to aluminum_load_83_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5518257_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 833.333 kVA;
+    powerC_rating 833.333 kVA;
+    impedance 0.002875+0.054625j;
+}
+
+object transformer{
+    name TX_B5078583_A;
+    groupid TX_50_A;
+    configuration TX_config_B5078583_A;
+    from node_B5078583_F_00411;
+    to aluminum_load_84_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078583_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5076591_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076591_A;
+    from node_B5076591_F_00411;
+    to aluminum_load_85_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076591_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5075884_A;
+    groupid TX_50_A;
+    configuration TX_config_B5075884_A;
+    from node_B5075884_F_00411;
+    to aluminum_load_86_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5075884_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5077110_A;
+    groupid TX_50_A;
+    configuration TX_config_P5077110_A;
+    from node_P5077110-T_F_00411;
+    to aluminum_load_87_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077110_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077110_B;
+    groupid TX_50_B;
+    configuration TX_config_P5077110_B;
+    from node_P5077110-T_F_00411;
+    to aluminum_load_88_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077110_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077110_C;
+    groupid TX_50_C;
+    configuration TX_config_P5077110_C;
+    from node_P5077110-T_F_00411;
+    to aluminum_load_89_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077110_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077111_A;
+    groupid TX_50_A;
+    configuration TX_config_P5077111_A;
+    from node_P5077111-T_F_00411;
+    to aluminum_load_90_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077111_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077111_B;
+    groupid TX_50_B;
+    configuration TX_config_P5077111_B;
+    from node_P5077111-T_F_00411;
+    to aluminum_load_91_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077111_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077111_C;
+    groupid TX_50_C;
+    configuration TX_config_P5077111_C;
+    from node_P5077111-T_F_00411;
+    to aluminum_load_92_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077111_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072680_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072680_A;
+    from node_B5072680_F_00411;
+    to aluminum_load_93_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072680_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079144_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079144_A;
+    from node_B5079144_F_00411;
+    to aluminum_load_94_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079144_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5078591_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078591_A;
+    from node_B5078591_F_00411;
+    to aluminum_load_95_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078591_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072193_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072193_A;
+    from node_B5072193_F_00411;
+    to aluminum_load_96_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072193_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078589_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078589_A;
+    from node_B5078589_F_00411;
+    to aluminum_load_97_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078589_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078580_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078580_A;
+    from node_B5078580_F_00411;
+    to aluminum_load_98_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078580_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072192_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072192_A;
+    from node_B5072192_F_00411;
+    to aluminum_load_99_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072192_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078588_A;
+    groupid TX_50_A;
+    configuration TX_config_B5078588_A;
+    from node_B5078588_F_00411;
+    to aluminum_load_100_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078588_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5079150_A;
+    groupid TX_50_A;
+    configuration TX_config_P5079150_A;
+    from node_P5079150-1_T_00411;
+    to aluminum_load_101_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5079150_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5079150_B;
+    groupid TX_50_B;
+    configuration TX_config_P5079150_B;
+    from node_P5079150-1_T_00411;
+    to aluminum_load_102_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5079150_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5079150_C;
+    groupid TX_50_C;
+    configuration TX_config_P5079150_C;
+    from node_P5079150-1_T_00411;
+    to aluminum_load_103_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5079150_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079818_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079818_A;
+    from node_B5079818_F_00411;
+    to aluminum_load_104_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079818_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5468245_A;
+    groupid TX_50_A;
+    configuration TX_config_P5468245_A;
+    from node_P5468245_00411;
+    to aluminum_load_105_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468245_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5468245_B;
+    groupid TX_50_B;
+    configuration TX_config_P5468245_B;
+    from node_P5468245_00411;
+    to aluminum_load_106_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468245_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5468245_C;
+    groupid TX_50_C;
+    configuration TX_config_P5468245_C;
+    from node_P5468245_00411;
+    to aluminum_load_107_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468245_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078587_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078587_A;
+    from node_B5078587_F_00411;
+    to aluminum_load_108_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078587_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5517589_A;
+    groupid TX_75_A;
+    configuration TX_config_P5517589_A;
+    from node_P5517589-1_T_00411;
+    to aluminum_load_109_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5517589_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5517589_B;
+    groupid TX_75_B;
+    configuration TX_config_P5517589_B;
+    from node_P5517589-1_T_00411;
+    to aluminum_load_110_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5517589_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerB_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5517589_C;
+    groupid TX_75_C;
+    configuration TX_config_P5517589_C;
+    from node_P5517589-1_T_00411;
+    to aluminum_load_111_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5517589_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerC_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077946_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077946_A;
+    from node_B5077946_F_00411;
+    to aluminum_load_112_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077946_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5078482_A;
+    groupid TX_75_A;
+    configuration TX_config_P5078482_A;
+    from node_P5078482-1_T_00411;
+    to aluminum_load_113_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5078482_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5078482_B;
+    groupid TX_75_B;
+    configuration TX_config_P5078482_B;
+    from node_P5078482-1_T_00411;
+    to aluminum_load_114_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5078482_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerB_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5078482_C;
+    groupid TX_75_C;
+    configuration TX_config_P5078482_C;
+    from node_P5078482-1_T_00411;
+    to aluminum_load_115_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5078482_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerC_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078597_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078597_A;
+    from node_B5078597_F_00411;
+    to aluminum_load_116_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078597_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079145_A;
+    groupid TX_75_A;
+    configuration TX_config_B5079145_A;
+    from node_B5079145_F_00411;
+    to aluminum_load_117_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079145_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5539379_A;
+    groupid TX_333_333_A;
+    configuration TX_config_P5539379_A;
+    from node_P5539379-1_T_00411;
+    to aluminum_load_118_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5539379_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 333.333 kVA;
+    powerA_rating 333.333 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_P5539379_B;
+    groupid TX_333_333_B;
+    configuration TX_config_P5539379_B;
+    from node_P5539379-1_T_00411;
+    to aluminum_load_119_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5539379_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 333.333 kVA;
+    powerB_rating 333.333 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_P5539379_C;
+    groupid TX_333_333_C;
+    configuration TX_config_P5539379_C;
+    from node_P5539379-1_T_00411;
+    to aluminum_load_120_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5539379_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 333.333 kVA;
+    powerC_rating 333.333 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_B5076612_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076612_A;
+    from node_B5076612_F_00411;
+    to aluminum_load_121_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076612_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546195_A;
+    groupid TX_50_A;
+    configuration TX_config_B5546195_A;
+    from node_B5546195_F_00411;
+    to aluminum_load_122_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546195_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5074222_A;
+    groupid TX_75_A;
+    configuration TX_config_P5074222_A;
+    from node_P5074222_F_00411;
+    to aluminum_load_123_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074222_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546193_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546193_A;
+    from node_B5546193_F_00411;
+    to aluminum_load_124_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546193_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072190_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072190_A;
+    from node_B5072190_F_00411;
+    to aluminum_load_125_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072190_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076618_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076618_A;
+    from node_B5076618_F_00411;
+    to aluminum_load_126_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076618_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077953_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077953_A;
+    from node_B5077953_F_00411;
+    to aluminum_load_127_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077953_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075265_A;
+    groupid TX_166_667_A;
+    configuration TX_config_S5075265_A;
+    from node_S5075265_00411;
+    to aluminum_load_128_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075265_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerA_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_S5075265_B;
+    groupid TX_166_667_B;
+    configuration TX_config_S5075265_B;
+    from node_S5075265_00411;
+    to aluminum_load_129_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075265_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerB_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_S5075265_C;
+    groupid TX_166_667_C;
+    configuration TX_config_S5075265_C;
+    from node_S5075265_00411;
+    to aluminum_load_130_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075265_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerC_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_B5077954_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077954_A;
+    from node_B5077954_F_00411;
+    to aluminum_load_131_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077954_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5072248_A;
+    groupid TX_75_A;
+    configuration TX_config_P5072248_A;
+    from node_P5072248-1_T_00411;
+    to aluminum_load_132_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5072248_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078594_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078594_A;
+    from node_B5078594_F_00411;
+    to aluminum_load_133_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078594_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077109_A;
+    groupid TX_75_A;
+    configuration TX_config_P5077109_A;
+    from node_P5077109-1_T_00411;
+    to aluminum_load_134_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077109_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077109_B;
+    groupid TX_75_B;
+    configuration TX_config_P5077109_B;
+    from node_P5077109-1_T_00411;
+    to aluminum_load_135_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077109_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerB_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5077109_C;
+    groupid TX_75_C;
+    configuration TX_config_P5077109_C;
+    from node_P5077109-1_T_00411;
+    to aluminum_load_136_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5077109_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerC_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300938_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300938_A;
+    from node_B5300938_F_00411;
+    to aluminum_load_137_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300938_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073687_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073687_A;
+    from node_P5073687_F_00411;
+    to aluminum_load_138_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073687_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072188_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072188_A;
+    from node_B5072188_F_00411;
+    to aluminum_load_139_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072188_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300942_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300942_A;
+    from node_B5300942_F_00411;
+    to aluminum_load_140_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300942_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_BS2035-1T_A;
+    groupid TX_167_A;
+    configuration TX_config_BS2035-1T_A;
+    from node_BS2035-1_T_00411;
+    to aluminum_load_141_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS2035-1T_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 167 kVA;
+    powerA_rating 167 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_BS2035-1T_B;
+    groupid TX_167_B;
+    configuration TX_config_BS2035-1T_B;
+    from node_BS2035-1_T_00411;
+    to aluminum_load_142_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS2035-1T_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 167 kVA;
+    powerB_rating 167 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_BS2035-1T_C;
+    groupid TX_167_C;
+    configuration TX_config_BS2035-1T_C;
+    from node_BS2035-1_T_00411;
+    to aluminum_load_143_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_BS2035-1T_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 167 kVA;
+    powerC_rating 167 kVA;
+    impedance 0.00275+0.05225j;
+}
+
+object transformer{
+    name TX_B5531157_A;
+    groupid TX_50_A;
+    configuration TX_config_B5531157_A;
+    from node_B5531157_F_00411;
+    to aluminum_load_144_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5531157_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5074220_A;
+    groupid TX_50_A;
+    configuration TX_config_P5074220_A;
+    from node_P5074220-A_T_00411;
+    to aluminum_load_145_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074220_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5074232_A;
+    groupid TX_75_A;
+    configuration TX_config_P5074232_A;
+    from node_P5074232-A_T_00411;
+    to aluminum_load_146_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074232_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T1_A;
+    groupid TX_55_667_A;
+    configuration TX_config_V5421056T1_A;
+    from node_V5421056T1_00411;
+    to aluminum_load_147_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T1_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerA_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T1_B;
+    groupid TX_55_667_B;
+    configuration TX_config_V5421056T1_B;
+    from node_V5421056T1_00411;
+    to aluminum_load_148_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T1_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerB_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056T1_C;
+    groupid TX_55_667_C;
+    configuration TX_config_V5421056T1_C;
+    from node_V5421056T1_00411;
+    to aluminum_load_149_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056T1_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerC_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072183_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072183_A;
+    from node_B5072183_F_00411;
+    to aluminum_load_150_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072183_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077951_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077951_A;
+    from node_B5077951_F_00411;
+    to aluminum_load_151_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077951_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074474_A;
+    groupid TX_100_A;
+    configuration TX_config_P5074474_A;
+    from node_P5074474-A_T_00411;
+    to aluminum_load_152_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074474_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076615_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076615_A;
+    from node_B5076615_F_00411;
+    to aluminum_load_153_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076615_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5079821_A;
+    groupid TX_75_A;
+    configuration TX_config_P5079821_A;
+    from node_P5079821_00411;
+    to aluminum_load_154_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5079821_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078596_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078596_A;
+    from node_B5078596_F_00411;
+    to aluminum_load_155_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078596_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078579_A;
+    groupid TX_50_A;
+    configuration TX_config_B5078579_A;
+    from node_B5078579_F_00411;
+    to aluminum_load_156_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078579_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072182_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072182_A;
+    from node_B5072182_F_00411;
+    to aluminum_load_157_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072182_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5072854_A;
+    groupid TX_25_A;
+    configuration TX_config_V5072854_A;
+    from node_V5072854_00411;
+    to aluminum_load_158_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5072854_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5514220_A;
+    groupid TX_25_A;
+    configuration TX_config_P5514220_A;
+    from node_P5514220-1_T_00411;
+    to aluminum_load_159_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5514220_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5514220_B;
+    groupid TX_25_B;
+    configuration TX_config_P5514220_B;
+    from node_P5514220-1_T_00411;
+    to aluminum_load_160_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5514220_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5514220_C;
+    groupid TX_25_C;
+    configuration TX_config_P5514220_C;
+    from node_P5514220-1_T_00411;
+    to aluminum_load_161_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5514220_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075262T1_A;
+    groupid TX_8_333_A;
+    configuration TX_config_V5075262T1_A;
+    from node_V5075262T1_00411;
+    to aluminum_load_162_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075262T1_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerA_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075262T1_B;
+    groupid TX_8_333_B;
+    configuration TX_config_V5075262T1_B;
+    from node_V5075262T1_00411;
+    to aluminum_load_163_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075262T1_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerB_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5075262T1_C;
+    groupid TX_8_333_C;
+    configuration TX_config_V5075262T1_C;
+    from node_V5075262T1_00411;
+    to aluminum_load_164_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5075262T1_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerC_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072170_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072170_A;
+    from node_B5072170_F_00411;
+    to aluminum_load_165_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072170_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077948_A;
+    groupid TX_50_A;
+    configuration TX_config_B5077948_A;
+    from node_B5077948_F_00411;
+    to aluminum_load_166_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077948_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072168_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072168_A;
+    from node_B5072168_F_00411;
+    to aluminum_load_167_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072168_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056_A;
+    groupid TX_55_667_A;
+    configuration TX_config_V5421056_A;
+    from node_V5421056_00411;
+    to aluminum_load_168_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerA_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056_B;
+    groupid TX_55_667_B;
+    configuration TX_config_V5421056_B;
+    from node_V5421056_00411;
+    to aluminum_load_169_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerB_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421056_C;
+    groupid TX_55_667_C;
+    configuration TX_config_V5421056_C;
+    from node_V5421056_00411;
+    to aluminum_load_170_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421056_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 55.667 kVA;
+    powerC_rating 55.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077098_A;
+    groupid TX_25_A;
+    configuration TX_config_B5077098_A;
+    from node_B5077098_F_00411;
+    to aluminum_load_171_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077098_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5079143_A;
+    groupid TX_75_A;
+    configuration TX_config_B5079143_A;
+    from node_B5079143_F_00411;
+    to aluminum_load_172_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079143_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300946_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300946_A;
+    from node_B5300946_F_00411;
+    to aluminum_load_173_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300946_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_J638A-2PT_A;
+    groupid TX_8_333_A;
+    configuration TX_config_J638A-2PT_A;
+    from node_J638A-2_F_00411;
+    to aluminum_load_174_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J638A-2PT_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerA_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_J638A-2PT_B;
+    groupid TX_8_333_B;
+    configuration TX_config_J638A-2PT_B;
+    from node_J638A-2_F_00411;
+    to aluminum_load_175_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J638A-2PT_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerB_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_J638A-2PT_C;
+    groupid TX_8_333_C;
+    configuration TX_config_J638A-2PT_C;
+    from node_J638A-2_F_00411;
+    to aluminum_load_176_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_J638A-2PT_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 8.333 kVA;
+    powerC_rating 8.333 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076613_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076613_A;
+    from node_B5076613_F_00411;
+    to aluminum_load_177_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076613_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078581_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078581_A;
+    from node_B5078581_F_00411;
+    to aluminum_load_178_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078581_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5319513_A;
+    groupid TX_50_A;
+    configuration TX_config_P5319513_A;
+    from node_P5319513_F_00411;
+    to aluminum_load_179_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5319513_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5319513_B;
+    groupid TX_50_B;
+    configuration TX_config_P5319513_B;
+    from node_P5319513_F_00411;
+    to aluminum_load_180_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5319513_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5319513_C;
+    groupid TX_50_C;
+    configuration TX_config_P5319513_C;
+    from node_P5319513_F_00411;
+    to aluminum_load_181_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5319513_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5075887_A;
+    groupid TX_50_A;
+    configuration TX_config_B5075887_A;
+    from node_B5075887_F_00411;
+    to aluminum_load_182_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5075887_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+
+object transformer{
+    name TX_B5077957_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077957_A;
+    from node_B5077957_F_00411;
+    to aluminum_load_183_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077957_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5074333_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074333_A;
+    from node_B5074333_F_00411;
+    to aluminum_load_184_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074333_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073039_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073039_A;
+    from node_P5073039-T_F_00411;
+    to aluminum_load_185_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073039_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5363743_A;
+    groupid TX_25_A;
+    configuration TX_config_P5363743_A;
+    from node_P5363743-T_F_00411;
+    to aluminum_load_186_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363743_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5363743_B;
+    groupid TX_25_B;
+    configuration TX_config_P5363743_B;
+    from node_P5363743-T_F_00411;
+    to aluminum_load_187_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363743_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5363743_C;
+    groupid TX_25_C;
+    configuration TX_config_P5363743_C;
+    from node_P5363743-T_F_00411;
+    to aluminum_load_188_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5363743_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079147_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079147_A;
+    from node_B5079147_F_00411;
+    to aluminum_load_189_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079147_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5199847_A;
+    groupid TX_16_667_A;
+    configuration TX_config_B5199847_A;
+    from node_B5199847_F_00411;
+    to aluminum_load_190_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199847_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerA_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199847_B;
+    groupid TX_16_667_B;
+    configuration TX_config_B5199847_B;
+    from node_B5199847_F_00411;
+    to aluminum_load_191_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199847_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerB_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199847_C;
+    groupid TX_16_667_C;
+    configuration TX_config_B5199847_C;
+    from node_B5199847_F_00411;
+    to aluminum_load_192_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199847_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerC_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079822_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079822_A;
+    from node_B5079822_F_00411;
+    to aluminum_load_193_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079822_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072167_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072167_A;
+    from node_B5072167_F_00411;
+    to aluminum_load_194_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072167_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079148_A;
+    groupid TX_75_A;
+    configuration TX_config_B5079148_A;
+    from node_B5079148_F_00411;
+    to aluminum_load_195_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079148_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5199845_A;
+    groupid TX_25_A;
+    configuration TX_config_P5199845_A;
+    from node_P5199845_00411;
+    to aluminum_load_196_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5199845_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5199845_B;
+    groupid TX_25_B;
+    configuration TX_config_P5199845_B;
+    from node_P5199845_00411;
+    to aluminum_load_197_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5199845_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5199845_C;
+    groupid TX_25_C;
+    configuration TX_config_P5199845_C;
+    from node_P5199845_00411;
+    to aluminum_load_198_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5199845_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072187_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072187_A;
+    from node_B5072187_F_00411;
+    to aluminum_load_199_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072187_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421055_A;
+    groupid TX_50_A;
+    configuration TX_config_V5421055_A;
+    from node_V5421055-1_T_00411;
+    to aluminum_load_200_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421055_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421055_B;
+    groupid TX_50_B;
+    configuration TX_config_V5421055_B;
+    from node_V5421055-1_T_00411;
+    to aluminum_load_201_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421055_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5421055_C;
+    groupid TX_50_C;
+    configuration TX_config_V5421055_C;
+    from node_V5421055-1_T_00411;
+    to aluminum_load_202_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5421055_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546264_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546264_A;
+    from node_B5546264_F_00411;
+    to aluminum_load_203_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546264_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5074334_A;
+    groupid TX_75_A;
+    configuration TX_config_B5074334_A;
+    from node_B5074334_F_00411;
+    to aluminum_load_204_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074334_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076587_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076587_A;
+    from node_B5076587_F_00411;
+    to aluminum_load_205_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076587_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5073041_A;
+    groupid TX_25_A;
+    configuration TX_config_P5073041_A;
+    from node_P5073041-B_T_00411;
+    to aluminum_load_206_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073041_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5079146_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079146_A;
+    from node_B5079146_F_00411;
+    to aluminum_load_207_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079146_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5199846_A;
+    groupid TX_16_667_A;
+    configuration TX_config_B5199846_A;
+    from node_B5199846_F_00411;
+    to aluminum_load_208_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199846_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerA_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199846_B;
+    groupid TX_16_667_B;
+    configuration TX_config_B5199846_B;
+    from node_B5199846_F_00411;
+    to aluminum_load_209_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199846_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerB_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199846_C;
+    groupid TX_16_667_C;
+    configuration TX_config_B5199846_C;
+    from node_B5199846_F_00411;
+    to aluminum_load_210_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199846_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 16.667 kVA;
+    powerC_rating 16.667 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546267_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546267_A;
+    from node_B5546267_F_00411;
+    to aluminum_load_211_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546267_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076590_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076590_A;
+    from node_B5076590_F_00411;
+    to aluminum_load_212_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076590_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546197_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546197_A;
+    from node_B5546197_F_00411;
+    to aluminum_load_213_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546197_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5546192_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546192_A;
+    from node_B5546192_F_00411;
+    to aluminum_load_214_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546192_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072180_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072180_A;
+    from node_B5072180_F_00411;
+    to aluminum_load_215_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072180_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079819_A;
+    groupid TX_50_A;
+    configuration TX_config_B5079819_A;
+    from node_B5079819_F_00411;
+    to aluminum_load_216_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079819_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5074327_A;
+    groupid TX_50_A;
+    configuration TX_config_B5074327_A;
+    from node_B5074327_F_00411;
+    to aluminum_load_217_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5074327_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5514204_A;
+    groupid TX_166_667_A;
+    configuration TX_config_P5514204_A;
+    from node_P5514204-1_T_00411;
+    to aluminum_load_218_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+
+object transformer_configuration {
+    name TX_config_P5514204_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerA_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5514204_B;
+    groupid TX_166_667_B;
+    configuration TX_config_P5514204_B;
+    from node_P5514204-1_T_00411;
+    to aluminum_load_219_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5514204_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerB_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5514204_C;
+    groupid TX_166_667_C;
+    configuration TX_config_P5514204_C;
+    from node_P5514204-1_T_00411;
+    to aluminum_load_220_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+
+object transformer_configuration {
+    name TX_config_P5514204_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerC_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_B5300935_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300935_A;
+    from node_B5300935_F_00411;
+    to aluminum_load_221_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+
+object transformer_configuration {
+    name TX_config_B5300935_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5072186_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072186_A;
+    from node_B5072186_F_00411;
+    to aluminum_load_222_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072186_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075264_A;
+    groupid TX_75_A;
+    configuration TX_config_S5075264_A;
+    from node_S5075264_00411;
+    to aluminum_load_223_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075264_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075264_B;
+    groupid TX_75_B;
+    configuration TX_config_S5075264_B;
+    from node_S5075264_00411;
+    to aluminum_load_224_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075264_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerB_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075264_C;
+    groupid TX_75_C;
+    configuration TX_config_S5075264_C;
+    from node_S5075264_00411;
+    to aluminum_load_225_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075264_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerC_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5073040_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073040_A;
+    from node_P5073040-A_T_00411;
+    to aluminum_load_226_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073040_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5546263_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546263_A;
+    from node_B5546263_F_00411;
+    to aluminum_load_227_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546263_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076586_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076586_A;
+    from node_B5076586_F_00411;
+    to aluminum_load_228_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076586_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5444399_A;
+    groupid TX_166_667_A;
+    configuration TX_config_P5444399_A;
+    from node_P5444399-T_F_00411;
+    to aluminum_load_229_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444399_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerA_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5444399_B;
+    groupid TX_166_667_B;
+    configuration TX_config_P5444399_B;
+    from node_P5444399-T_F_00411;
+    to aluminum_load_230_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444399_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerB_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_P5444399_C;
+    groupid TX_166_667_C;
+    configuration TX_config_P5444399_C;
+    from node_P5444399-T_F_00411;
+    to aluminum_load_231_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5444399_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerC_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_B5300940_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300940_A;
+    from node_B5300940_F_00411;
+    to aluminum_load_232_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300940_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+	powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5300944_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300944_A;
+    from node_B5300944_F_00411;
+    to aluminum_load_233_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300944_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+	powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073686_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073686_A;
+    from node_P5073686-B_T_00411;
+    to aluminum_load_234_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073686_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5546191_A;
+    groupid TX_75_A;
+    configuration TX_config_B5546191_A;
+    from node_B5546191_F_00411;
+    to aluminum_load_235_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5546191_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076617_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076617_A;
+    from node_B5076617_F_00411;
+    to aluminum_load_236_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076617_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072191_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072191_A;
+    from node_B5072191_F_00411;
+    to aluminum_load_237_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072191_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078590_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078590_A;
+    from node_B5078590_F_00411;
+    to aluminum_load_238_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078590_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5468244_A;
+    groupid TX_50_A;
+    configuration TX_config_P5468244_A;
+    from node_P5468244-T_F_00411;
+    to aluminum_load_239_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468244_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5468244_B;
+    groupid TX_50_B;
+    configuration TX_config_P5468244_B;
+    from node_P5468244-T_F_00411;
+    to aluminum_load_240_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468244_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5468244_C;
+    groupid TX_50_C;
+    configuration TX_config_P5468244_C;
+    from node_P5468244-T_F_00411;
+    to aluminum_load_241_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5468244_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5076652_A;
+    groupid TX_50_A;
+    configuration TX_config_P5076652_A;
+    from node_P5076652-1_T_00411;
+    to aluminum_load_242_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5076652_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5076652_B;
+    groupid TX_50_B;
+    configuration TX_config_P5076652_B;
+    from node_P5076652-1_T_00411;
+    to aluminum_load_243_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5076652_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerB_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5076652_C;
+    groupid TX_50_C;
+    configuration TX_config_P5076652_C;
+    from node_P5076652-1_T_00411;
+    to aluminum_load_244_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5076652_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerC_rating 50 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072184_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072184_A;
+    from node_B5072184_F_00411;
+    to aluminum_load_245_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072184_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072178_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072178_A;
+    from node_B5072178_F_00411;
+    to aluminum_load_246_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072178_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5300939_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300939_A;
+    from node_B5300939_F_00411;
+    to aluminum_load_247_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300939_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5407588_A;
+    groupid TX_100_A;
+    configuration TX_config_P5407588_A;
+    from node_P5407588-1_T_00411;
+    to aluminum_load_248_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5407588_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5407588_B;
+    groupid TX_100_B;
+    configuration TX_config_P5407588_B;
+    from node_P5407588-1_T_00411;
+    to aluminum_load_249_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5407588_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerB_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5407588_C;
+    groupid TX_100_C;
+    configuration TX_config_P5407588_C;
+    from node_P5407588-1_T_00411;
+    to aluminum_load_250_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5407588_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerC_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_S5075267_A;
+    groupid TX_166_667_A;
+    configuration TX_config_S5075267_A;
+    from node_S5075267_00411;
+    to aluminum_load_251_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075267_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerA_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_S5075267_B;
+    groupid TX_166_667_B;
+    configuration TX_config_S5075267_B;
+    from node_S5075267_00411;
+    to aluminum_load_252_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075267_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerB_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_S5075267_C;
+    groupid TX_166_667_C;
+    configuration TX_config_S5075267_C;
+    from node_S5075267_00411;
+    to aluminum_load_253_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_S5075267_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 166.667 kVA;
+    powerC_rating 166.667 kVA;
+    impedance 0.0007+0.0133j;
+}
+
+object transformer{
+    name TX_B5531154_A;
+    groupid TX_75_A;
+    configuration TX_config_B5531154_A;
+    from node_B5531154_F_00411;
+    to aluminum_load_254_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5531154_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5531152_A;
+    groupid TX_75_A;
+    configuration TX_config_B5531152_A;
+    from node_B5531152_F_00411;
+    to aluminum_load_255_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5531152_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_V5077788_A;
+    groupid TX_25_A;
+    configuration TX_config_V5077788_A;
+    from node_V5077788_00411;
+    to aluminum_load_256_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_V5077788_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5073038_A;
+    groupid TX_50_A;
+    configuration TX_config_P5073038_A;
+    from node_P5073038-A_T_00411;
+    to aluminum_load_257_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5073038_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5077952_A;
+    groupid TX_75_A;
+    configuration TX_config_B5077952_A;
+    from node_B5077952_F_00411;
+    to aluminum_load_258_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077952_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074476_A;
+    groupid TX_100_A;
+    configuration TX_config_P5074476_A;
+    from node_P5074476_F_00411;
+    to aluminum_load_259_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074476_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072194_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072194_A;
+    from node_B5072194_F_00411;
+    to aluminum_load_260_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072194_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5079820_A;
+    groupid TX_25_A;
+    configuration TX_config_B5079820_A;
+    from node_B5079820_F_00411;
+    to aluminum_load_261_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5079820_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5078585_A;
+    groupid TX_75_A;
+    configuration TX_config_B5078585_A;
+    from node_B5078585_F_00411;
+    to aluminum_load_262_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078585_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5531155_A;
+    groupid TX_75_A;
+    configuration TX_config_B5531155_A;
+    from node_B5531155_F_00411;
+    to aluminum_load_263_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5531155_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5077949_A;
+    groupid TX_50_A;
+    configuration TX_config_B5077949_A;
+    from node_B5077949_F_00411;
+    to aluminum_load_264_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077949_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5076588_A;
+    groupid TX_50_A;
+    configuration TX_config_B5076588_A;
+    from node_B5076588_F_00411;
+    to aluminum_load_265_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076588_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5300943_A;
+    groupid TX_50_A;
+    configuration TX_config_B5300943_A;
+    from node_B5300943_F_00411;
+    to aluminum_load_266_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5300943_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_P5074221_A;
+    groupid TX_75_A;
+    configuration TX_config_P5074221_A;
+    from node_P5074221-B_T_00411;
+    to aluminum_load_267_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074221_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5072174_A;
+    groupid TX_75_A;
+    configuration TX_config_B5072174_A;
+    from node_B5072174_F_00411;
+    to aluminum_load_268_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5072174_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_P5074475_A;
+    groupid TX_100_A;
+    configuration TX_config_P5074475_A;
+    from node_P5074475_F_00411;
+    to aluminum_load_269_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_P5074475_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 100 kVA;
+    powerA_rating 100 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076614_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076614_A;
+    from node_B5076614_F_00411;
+    to aluminum_load_270_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076614_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5076611_A;
+    groupid TX_75_A;
+    configuration TX_config_B5076611_A;
+    from node_B5076611_F_00411;
+    to aluminum_load_271_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5076611_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 75 kVA;
+    powerA_rating 75 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5078584_A;
+    groupid TX_50_A;
+    configuration TX_config_B5078584_A;
+    from node_B5078584_F_00411;
+    to aluminum_load_272_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5078584_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}
+
+object transformer{
+    name TX_B5077956_A;
+    groupid TX_50_A;
+    configuration TX_config_B5077956_A;
+    from node_B5077956_F_00411;
+    to aluminum_load_273_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5077956_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 50 kVA;
+    powerA_rating 50 kVA;
+    impedance 0.0005+0.0095j;
+}	
+
+
+object transformer{
+    name TX_B5199848_A;
+    groupid TX_25_A;
+    configuration TX_config_B5199848_A;
+    from node_B5199848_F_00411;
+    to aluminum_load_274_A;
+    phases AS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199848_A;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerA_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199848_B;
+    groupid TX_25_B;
+    configuration TX_config_B5199848_B;
+    from node_B5199848_F_00411;
+    to aluminum_load_275_B;
+    phases BS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199848_B;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerB_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}
+
+object transformer{
+    name TX_B5199848_C;
+    groupid TX_25_C;
+    configuration TX_config_B5199848_C;
+    from node_B5199848_F_00411;
+    to aluminum_load_276_C;
+    phases CS;
+    nominal_voltage 6928.41 V;
+}
+object transformer_configuration {
+    name TX_config_B5199848_C;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    primary_voltage 6928.41 V;
+    secondary_voltage 120 V;
+    power_rating 25 kVA;
+    powerC_rating 25 kVA;
+    impedance 0.00055+0.01045j;
+}

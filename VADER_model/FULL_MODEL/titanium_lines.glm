@@ -1,0 +1,2081 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+object line_spacing {
+	name ls515312;
+	distance_AB 2.5;
+	distance_AC 7.0;
+	distance_BC 4.5;
+	distance_CN 5.0;
+	distance_AN 5.65685424949;
+	distance_BN 4.27200187266;
+	distance_AE 28.0;
+	distance_BE 28.0;
+	distance_CE 28.0;
+	distance_NE 24.0;
+}
+
+object line_configuration {
+name equivalentsource_17916;
+z11 0+0j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 0+0j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 0+0j;
+conductor_A ulc_equivalentsource_17916;
+conductor_B ulc_equivalentsource_17916;
+conductor_C ulc_equivalentsource_17916;
+spacing ls515312;
+}
+
+object line_configuration {
+name underground_CLP_1C_350_5_12_16KV;
+z11 0.915202418+0.646476892j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 0.915202418+0.646476892j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 0.915202418+0.646476892j;
+conductor_A ulc_underground_CLP_1C_350_5_12_16KV;
+conductor_B ulc_underground_CLP_1C_350_5_12_16KV;
+conductor_C ulc_underground_CLP_1C_350_5_12_16KV;
+spacing ls515312;
+}
+
+object line_configuration {
+name underground_JCN_2C_#2_5_12_16KV;
+z11 1.93915124633333+0.495292570333333j;
+z12 0.527403383333333+0.221093226333333j;
+z13 0.527403383333333+0.221093226333333j;
+z21 0.527403383333333+0.221093226333333j;
+z22 1.93915124633333+0.495292570333333j;
+z23 0.527403383333333+0.221093226333333j;
+z31 0.527403383333333+0.221093226333333j;
+z32 0.527403383333333+0.221093226333333j;
+z33 1.93915124633333+0.495292570333333j;
+conductor_A ulc_underground_JCN_2C_#2_5_12_16KV;
+conductor_B ulc_underground_JCN_2C_#2_5_12_16KV;
+conductor_C ulc_underground_JCN_2C_#2_5_12_16KV;
+spacing ls515312;
+}
+object line_configuration {
+name underground_JCN_3C_#2_5_12_16KV;
+z11 2.254577461+0.460342945j;
+z12 0.467951906+0.173580529j;
+z13 0.467951906+0.173580529j;
+z21 0.467951906+0.173580529j;
+z22 2.254577461+0.460342945j;
+z23 0.467951906+0.173580529j;
+z31 0.467951906+0.173580529j;
+z32 0.467951906+0.173580529j;
+z33 2.254577461+0.460342945j;
+conductor_A ulc_underground_JCN_3C_#2_5_12_16KV;
+conductor_B ulc_underground_JCN_3C_#2_5_12_16KV;
+conductor_C ulc_underground_JCN_3C_#2_5_12_16KV;
+spacing ls515312;
+}
+object line_configuration {
+name underground_CLP_1C_#2_5_12_16KV;
+z11 2.086670266+0.822079934j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 2.086670266+0.822079934j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 2.086670266+0.822079934j;
+conductor_A ulc_underground_CLP_1C_#2_5_12_16KV;
+conductor_B ulc_underground_CLP_1C_#2_5_12_16KV;
+conductor_C ulc_underground_CLP_1C_#2_5_12_16KV;
+spacing ls515312;
+}
+object line_configuration {
+name underground_JCN_1C_#2_5_12_16KV;
+z11 2.086670266+0.822079934j;
+z12 0+0j;
+z13 0+0j;
+z21 0+0j;
+z22 2.086670266+0.822079934j;
+z23 0+0j;
+z31 0+0j;
+z32 0+0j;
+z33 2.086670266+0.822079934j;
+conductor_A ulc_underground_JCN_1C_#2_5_12_16KV;
+conductor_B ulc_underground_JCN_1C_#2_5_12_16KV;
+conductor_C ulc_underground_JCN_1C_#2_5_12_16KV;
+spacing ls515312;
+}
+
+object underground_line {
+phases ABC;
+name source_17916$node_17916;
+from source_17916;
+to node_17916;
+length 5280 ft;
+configuration equivalentsource_17916;
+}
+
+object underground_line_conductor{
+	name ulc_underground_DEFAULT;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_BUS;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_equivalentsource_17916;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_3C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_2C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_1C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_3C_1_0_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_3C_750_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_3C_350_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_3C_1000_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_CLP_1C_350_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_JCN_3C_1000_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_JCN_3C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_JCN_3C_1_0_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line_conductor{
+	name ulc_underground_JCN_1C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+object underground_line_conductor{
+	name ulc_underground_JCN_2C_#2_5_12_16KV;	
+	outer_diameter 1.06;
+	conductor_gmr 0.0111;
+	conductor_diameter 0.368;
+	conductor_resistance 0.97;
+	neutral_gmr 0.00208;
+	neutral_resistance 14.8722;
+	neutral_diameter 0.0640837;
+	neutral_strands 16.0;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS0515-5_17916_1$J2114-3P_17916;
+from node_GS0515-5_17916_1;
+to node_J2114-3P_17916;
+length 210.921593 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS1128-2_17916$61777935_17916;
+from node_GS1128-2_17916;
+to node_61777935_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "AB";
+name line_P5497747-1_17916$P5497748-2_17916;
+from node_P5497747-1_17916;
+to node_P5497748-2_17916;
+length 100.583997 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_PME3063-1_17916_1$P5444357-1_17916;
+from node_PME3063-1_17916_1;
+to node_P5444357-1_17916;
+length 64.922398 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_J412-3P_17916$P5076413-1_17916;
+from node_J412-3P_17916;
+to node_P5076413-1_17916;
+length 182.270394 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1130036E_17916$P5079023-1_17916;
+from node_1130036E_17916;
+to node_P5079023-1_17916;
+length 7.010400 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_61779970_17916$61779962_17916;
+from node_61779970_17916;
+to node_61779962_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4592620E_17916$ND179188660_17916;
+from node_4592620E_17916;
+to node_ND179188660_17916;
+length 80.771997 m;
+configuration underground_JCN_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61779962_17916$GS0515-1_17916;
+from node_61779962_17916;
+to node_GS0515-1_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61781413_17916$GS0645-3_17916;
+from node_61781413_17916;
+to node_GS0645-3_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_PME3093-3_17916$PME3093-4_17916;
+from node_PME3093-3_17916;
+to node_PME3093-4_17916;
+length 15.240000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "AB";
+name line_P5497746-1_17916$P5497747-2_17916;
+from node_P5497746-1_17916;
+to node_P5497747-2_17916;
+length 132.283196 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804475_17916$P5078005-1_17916;
+from node_ND61804475_17916;
+to node_P5078005-1_17916;
+length 146.608795 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_J016A-2P_17916$PME3089-2_17916;
+from node_J016A-2P_17916;
+to node_PME3089-2_17916;
+length 156.362395 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0535-2_17916$GS0645-5_17916;
+from node_GS0535-2_17916;
+to node_GS0645-5_17916;
+length 608.075981 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0494-2_17916$2115384E_17916_1;
+from node_GS0494-2_17916;
+to node_2115384E_17916_1;
+length 123.443996 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61779702_17916$61779686_17916;
+from node_61779702_17916;
+to node_61779686_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_J0133-2P_17916$168743887_17916;
+from node_J0133-2P_17916;
+to node_168743887_17916;
+length 184.708794 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_S5072114_17916$P5078992-A_17916;
+from node_S5072114_17916;
+to node_P5078992-A_17916;
+length 218.236793 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_RCS3190-3_17916_1$153252626_17916_1;
+from node_RCS3190-3_17916_1;
+to node_153252626_17916_1;
+length 107.594397 m;
+configuration underground_JCN_2C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_164861868_17916$164861877_17916;
+from node_164861868_17916;
+to node_164861877_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_J578A-2P_17916$J412-2P_17916;
+from node_J578A-2P_17916;
+to node_J412-2P_17916;
+length 413.613587 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0515-1_17916_1$P5078132-1_17916;
+from node_GS0515-1_17916_1;
+to node_P5078132-1_17916;
+length 248.411992 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0645-3_17916$GS0645-2_17916;
+from node_GS0645-3_17916;
+to node_GS0645-2_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS1145-4_17916$GS0645-4_17916;
+from node_GS1145-4_17916;
+to node_GS0645-4_17916;
+length 195.986394 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_294776E_17916_1$GS1128-1_17916;
+from node_294776E_17916_1;
+to node_GS1128-1_17916;
+length 80.467197 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_B5077101-1_17916$B5077102-2_17916;
+from node_B5077101-1_17916;
+to node_B5077102-2_17916;
+length 39.623999 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_J0133-3P_17916$P5072219_17916;
+from node_J0133-3P_17916;
+to node_P5072219_17916;
+length 128.625596 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_2134547E_17916_1$ND61804817_17916;
+from node_2134547E_17916_1;
+to node_ND61804817_17916;
+length 42.367199 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0970-2_17916$4008031E_17916;
+from node_OS0970-2_17916;
+to node_4008031E_17916;
+length 157.276795 m;
+configuration underground_CLP_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS1145-2_17916_1$ND61804475_17916;
+from node_GS1145-2_17916_1;
+to node_ND61804475_17916;
+length 24.993599 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+object underground_line {
+phases "AB";
+name line_ND179188660_17916$P5595831_17916;
+from node_ND179188660_17916;
+to node_P5595831_17916;
+length 0.914400 m;
+configuration underground_CLP_2C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781421_17916$GS0645-6_17916;
+from node_61781421_17916;
+to node_GS0645-6_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_RCS3190-1_17916$294775E_17916;
+from node_RCS3190-1_17916;
+to node_294775E_17916;
+length 126.187196 m;
+configuration underground_JCN_3C_1000_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS1128-3_17916$GS1145-3_17916;
+from node_GS1128-3_17916;
+to node_GS1145-3_17916;
+length 259.384792 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_136541331_17916$P5512049-1_17916;
+from node_136541331_17916;
+to node_P5512049-1_17916;
+length 2.133600 m;
+configuration underground_JCN_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_J2114-1P_17916$P5077650-1_17916;
+from node_J2114-1P_17916;
+to node_P5077650-1_17916;
+length 135.635996 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "A";
+name line_2115381E_17916_1$B5077100-2_17916;
+from node_2115381E_17916_1;
+to node_B5077100-2_17916;
+length 29.565599 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_J412-1P_17916$61804058_17916;
+from node_J412-1P_17916;
+to node_61804058_17916;
+length 11.277600 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61804058_17916_1$P5076411-1_17916;
+from node_61804058_17916_1;
+to node_P5076411-1_17916;
+length 0.914400 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_BS6417-L_17916$P5076416-1_17916;
+from node_BS6417-L_17916;
+to node_P5076416-1_17916;
+length 64.312798 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804583_17916$J0133-1P_17916;
+from node_ND61804583_17916;
+to node_J0133-1P_17916;
+length 14.020800 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61804112_17916$P5447256-1_17916;
+from node_61804112_17916;
+to node_P5447256-1_17916;
+length 4.267200 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND179188660_17916$RCS3190-2_17916;
+from node_ND179188660_17916;
+to node_RCS3190-2_17916;
+length 7.620000 m;
+configuration underground_JCN_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_J578A-1P_17916$ND61804583_17916;
+from node_J578A-1P_17916;
+to node_ND61804583_17916;
+length 178.917594 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_1680706E_17916_1$P5506503-1_17916;
+from node_1680706E_17916_1;
+to node_P5506503-1_17916;
+length 17.678399 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_168743887_17916_1$P5072218_17916;
+from node_168743887_17916_1;
+to node_P5072218_17916;
+length 8.839200 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_83712797_17916$61803587_17916;
+from node_83712797_17916;
+to node_61803587_17916;
+length 116.738396 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND105233646_17916$GS0297-2_17916;
+from node_ND105233646_17916;
+to node_GS0297-2_17916;
+length 370.027188 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_149943048_17916$P5512210-1_17916;
+from node_149943048_17916;
+to node_P5512210-1_17916;
+length 2.438400 m;
+configuration underground_JCN_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61803587_17916$P5517653_17916;
+from node_61803587_17916;
+to node_P5517653_17916;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804817_17916$ND61804788_17916;
+from node_ND61804817_17916;
+to node_ND61804788_17916;
+length 28.346399 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_174972563_17916$P5446952-1_17916;
+from node_174972563_17916;
+to node_P5446952-1_17916;
+length 1.828800 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781919_17916$P5444277_17916;
+from node_61781919_17916;
+to node_P5444277_17916;
+length 9.144000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_168743914_17916$P5506438_17916;
+from node_168743914_17916;
+to node_P5506438_17916;
+length 201.167994 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_4471501E_17916_1$149943048_17916_1;
+from node_4471501E_17916_1;
+to node_149943048_17916_1;
+length 42.062399 m;
+configuration underground_JCN_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781646_17916$61781654_17916;
+from node_61781646_17916;
+to node_61781654_17916;
+length 7.924800 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4330207E_17916$174972563_17916_1;
+from node_4330207E_17916;
+to node_174972563_17916_1;
+length 162.458395 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "A";
+name line_ND105233646_17916$S5075867_17916;
+from node_ND105233646_17916;
+to node_S5075867_17916;
+length 1.219200 m;
+configuration underground_CLP_1C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_RCS3190-3_17916$151604155_17916;
+from node_RCS3190-3_17916;
+to node_151604155_17916;
+length 15.240000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_164862046_17916$164862030_17916;
+from node_164862046_17916;
+to node_164862030_17916;
+length 7.315200 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_P5072218_17916$168743914_17916_1;
+from node_P5072218_17916;
+to node_168743914_17916_1;
+length 9.144000 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781267_17916$61781275_17916;
+from node_61781267_17916;
+to node_61781275_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61760322_17916$GS0494-1_17916;
+from node_61760322_17916;
+to node_GS0494-1_17916;
+length 7.315200 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_P5444213_17916$61804112_17916_1;
+from node_P5444213_17916;
+to node_61804112_17916_1;
+length 98.450397 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_164861859_17916$GS0535-1_17916;
+from node_164861859_17916;
+to node_GS0535-1_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61779970_17916$GS0515-4_17916;
+from node_61779970_17916;
+to node_GS0515-4_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804788_17916$PME3063-1_17916;
+from node_ND61804788_17916;
+to node_PME3063-1_17916;
+length 93.573597 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND173046028_17916$P5076693-1_17916;
+from node_ND173046028_17916;
+to node_P5076693-1_17916;
+length 103.936797 m;
+configuration underground_JCN_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0515-4_17916$GS0515-5_17916;
+from node_GS0515-4_17916;
+to node_GS0515-5_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61781413_17916$61781421_17916;
+from node_61781413_17916;
+to node_61781421_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61780313_17916$61780305_17916;
+from node_61780313_17916;
+to node_61780305_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0645-2_17916$GS0645-1_17916;
+from node_GS0645-2_17916;
+to node_GS0645-1_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_2134549E_17916_1$ND173046028_17916;
+from node_2134549E_17916_1;
+to node_ND173046028_17916;
+length 47.548798 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_164862038_17916$164862046_17916;
+from node_164862038_17916;
+to node_164862046_17916;
+length 7.924800 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_4465699E_17916$P5445351-1_17916;
+from node_4465699E_17916;
+to node_P5445351-1_17916;
+length 54.254398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781275_17916$61781259_17916;
+from node_61781275_17916;
+to node_61781259_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_ND61804788_17916$61804034_17916_1;
+from node_ND61804788_17916;
+to node_61804034_17916_1;
+length 92.049597 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0494-3_17916$2115380E_17916;
+from node_GS0494-3_17916;
+to node_2115380E_17916;
+length 80.467197 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_4008032E_17916$P5320414-A_17916;
+from node_4008032E_17916;
+to node_P5320414-A_17916;
+length 78.333597 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5468242-B_17916$P5468243_17916;
+from node_P5468242-B_17916;
+to node_P5468243_17916;
+length 77.419198 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_17916$OS0970-1_17916;
+from node_17916;
+to node_OS0970-1_17916;
+length 1197.254362 m;
+configuration underground_CLP_3C_1000_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_164861868_17916$164861859_17916;
+from node_164861868_17916;
+to node_164861859_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "A";
+name line_P5620916-1_17916$153252674_17916_1;
+from node_P5620916-1_17916;
+to node_153252674_17916_1;
+length 3.657600 m;
+configuration underground_JCN_1C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS1145-1_17916_1$J016A-3P_17916;
+from node_GS1145-1_17916_1;
+to node_J016A-3P_17916;
+length 205.435193 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61778372_17916$61778356_17916;
+from node_61778372_17916;
+to node_61778356_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0645-2_17916_1$P5076423-1_17916;
+from node_GS0645-2_17916_1;
+to node_P5076423-1_17916;
+length 185.318394 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0535-1_17916_1$J578A-3P_17916;
+from node_GS0535-1_17916_1;
+to node_J578A-3P_17916;
+length 42.062399 m;
+configuration underground_JCN_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_J2114-2P_17916$S5072114_17916;
+from node_J2114-2P_17916;
+to node_S5072114_17916;
+length 12.801600 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61780297_17916$61780313_17916;
+from node_61780297_17916;
+to node_61780313_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_BS6417-R_17916$P5076415-1_17916;
+from node_BS6417-R_17916;
+to node_P5076415-1_17916;
+length 60.350398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_P5398618-B_17916$P5398619-1_17916;
+from node_P5398618-B_17916;
+to node_P5398619-1_17916;
+length 39.928799 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "A";
+name line_153252626_17916$P5620916-2_17916;
+from node_153252626_17916;
+to node_P5620916-2_17916;
+length 1.828800 m;
+configuration underground_JCN_1C_#2_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_OS0970-3_17916$1680891E_17916_1;
+from node_OS0970-3_17916;
+to node_1680891E_17916_1;
+length 141.427195 m;
+configuration underground_CLP_3C_1000_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61804034_17916$P5444213_17916;
+from node_61804034_17916;
+to node_P5444213_17916;
+length 6.705600 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804475_17916$P5468242-A_17916;
+from node_ND61804475_17916;
+to node_P5468242-A_17916;
+length 202.387194 m;
+configuration underground_CLP_3C_1_0_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_61781646_17916$GS1145-2_17916;
+from node_61781646_17916;
+to node_GS1145-2_17916;
+length 7.315200 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "A";
+name line_153252686_17916_1$P5620917-2_17916;
+from node_153252686_17916_1;
+to node_P5620917-2_17916;
+length 2.133600 m;
+configuration underground_JCN_1C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_1789372E_17916_1$BS6417-T_17916;
+from node_1789372E_17916_1;
+to node_BS6417-T_17916;
+length 132.587996 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61777919_17916$GS1128-2_17916;
+from node_61777919_17916;
+to node_GS1128-2_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_P5320416-B_17916$P5320417-1_17916;
+from node_P5320416-B_17916;
+to node_P5320417-1_17916;
+length 93.573597 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804583_17916$P5073132_17916;
+from node_ND61804583_17916;
+to node_P5073132_17916;
+length 121.615196 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61760346_17916$61760338_17916;
+from node_61760346_17916;
+to node_61760338_17916;
+length 7.315200 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS0515-2_17916$GS0535-3_17916;
+from node_GS0515-2_17916;
+to node_GS0535-3_17916;
+length 335.584789 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+object underground_line {
+phases "ABC";
+name line_PME3089-3_17916_1$61781919_17916;
+from node_PME3089-3_17916_1;
+to node_61781919_17916;
+length 114.604796 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61760338_17916$61760322_17916;
+from node_61760338_17916;
+to node_61760322_17916;
+length 7.924800 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4471508E_17916$ND105233646_17916;
+from node_4471508E_17916;
+to node_ND105233646_17916;
+length 69.799198 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_4330204E_17916_1$GS0494-4_17916;
+from node_4330204E_17916_1;
+to node_GS0494-4_17916;
+length 70.713598 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_P5320414-B_17916$P5320416-A_17916;
+from node_P5320414-B_17916;
+to node_P5320416-A_17916;
+length 94.183197 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "A";
+name line_153252674_17916$153252686_17916;
+from node_153252674_17916;
+to node_153252686_17916;
+length 30.784799 m;
+configuration underground_JCN_1C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_2134546E_17916$GS0733-3_17916;
+from node_2134546E_17916;
+to node_GS0733-3_17916;
+length 93.878397 m;
+configuration underground_CLP_3C_750_5_12_16KV;
+}
+
+
+object underground_line {
+phases "AB";
+name line_4465700E_17916_1$P5497746-2_17916;
+from node_4465700E_17916_1;
+to node_P5497746-2_17916;
+length 112.471196 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_ND61804817_17916$1775299E_17916_1;
+from node_ND61804817_17916;
+to node_1775299E_17916_1;
+length 11.277600 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_294781E_17916_1$GS0515-3_17916;
+from node_294781E_17916_1;
+to node_GS0515-3_17916;
+length 72.542398 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_PME3089-3_17916$PME3089-1_17916;
+from node_PME3089-3_17916;
+to node_PME3089-1_17916;
+length 15.240000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_GS0515-5_17916$61780002_17916;
+from node_GS0515-5_17916;
+to node_61780002_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+object underground_line {
+phases "ABC";
+name line_4475989E_17916_1$83712829_17916_1;
+from node_4475989E_17916_1;
+to node_83712829_17916_1;
+length 24.079199 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS1145-2_17916$GS1145-1_17916;
+from node_GS1145-2_17916;
+to node_GS1145-1_17916;
+length 7.924800 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61779702_17916$61779694_17916;
+from node_61779702_17916;
+to node_61779694_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_PME3093-3_17916_1$83712797_17916_1;
+from node_PME3093-3_17916_1;
+to node_83712797_17916_1;
+length 2.133600 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_83712829_17916$PME3093-2_17916;
+from node_83712829_17916;
+to node_PME3093-2_17916;
+length 2.133600 m;
+configuration underground_DEFAULT;
+}
+
+
+object underground_line {
+phases "A";
+name line_GS0645-6_17916_1$V5073018_17916;
+from node_GS0645-6_17916_1;
+to node_V5073018_17916;
+length 1.524000 m;
+configuration underground_CLP_1C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_61778364_17916$61778372_17916;
+from node_61778364_17916;
+to node_61778372_17916;
+length 7.620000 m;
+configuration underground_BUS;
+}
+
+
+object underground_line {
+phases "A";
+name line_B5077100-1_17916$B5077101-2_17916;
+from node_B5077100-1_17916;
+to node_B5077101-2_17916;
+length 70.103998 m;
+configuration underground_DEFAULT;
+}
+
+object underground_line {
+phases "ABC";
+name line_4471503E_17916$136541331_17916_1;
+from node_4471503E_17916;
+to node_136541331_17916_1;
+length 17.983199 m;
+configuration underground_JCN_3C_#2_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_GS0645-1_17916_1$P5398618-A_17916;
+from node_GS0645-1_17916_1;
+to node_P5398618-A_17916;
+length 148.742395 m;
+configuration underground_CLP_3C_350_5_12_16KV;
+}
+
+
+object underground_line {
+phases "ABC";
+name line_P5078992-B_17916$P5078993-1_17916;
+from node_P5078992-B_17916;
+to node_P5078993-1_17916;
+length 93.268797 m;
+configuration underground_CLP_3C_#2_5_12_16KV;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879489_17916$4592620E_17916_1;
+from node_ND105879489_17916;
+to node_4592620E_17916_1;
+length 3.352800 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804485_17916$ND83808342_17916;
+from node_ND61804485_17916;
+to node_ND83808342_17916;
+length 23.164799 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879489_17916$4465699E_17916_1;
+from node_ND105879489_17916;
+to node_4465699E_17916_1;
+length 1.524000 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2115380E_17916_1$ND61804862_17916;
+from node_2115380E_17916_1;
+to node_ND61804862_17916;
+length 71.323198 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804802_17916$4330205E_17916;
+from node_ND61804802_17916;
+to node_4330205E_17916;
+length 23.164799 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804715_17916$ND61804416_17916;
+from node_ND61804715_17916;
+to node_ND61804416_17916;
+length 110.947196 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804577_17916$294781E_17916;
+from node_ND61804577_17916;
+to node_294781E_17916;
+length 0.609600 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4506963E_17916$ND105879075_17916;
+from node_4506963E_17916;
+to node_ND105879075_17916;
+length 178.612794 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804722_17916$ND83808312_17916;
+from node_ND61804722_17916;
+to node_ND83808312_17916;
+length 34.137599 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND149942987_17916$4506963E_17916;
+from node_ND149942987_17916;
+to node_4506963E_17916;
+length 176.174394 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879213_17916$ND105879234_17916;
+from node_ND105879213_17916;
+to node_ND105879234_17916;
+length 44.500799 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879075_17916$ND61804241_17916;
+from node_ND105879075_17916;
+to node_ND61804241_17916;
+length 64.922398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND83808342_17916$4471508E_17916_1;
+from node_ND83808342_17916;
+to node_4471508E_17916_1;
+length 3.962400 m;
+configuration overhead_ACSR_3C_653;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND136541264_17916$4471503E_17916_1;
+from node_ND136541264_17916;
+to node_4471503E_17916_1;
+length 4.876800 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2115385E_17916$ND61804608_17916;
+from node_2115385E_17916;
+to node_ND61804608_17916;
+length 102.107997 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804241_17916$ND61804802_17916;
+from node_ND61804241_17916;
+to node_ND61804802_17916;
+length 9.753600 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND83808312_17916$ND61804485_17916;
+from node_ND83808312_17916;
+to node_ND61804485_17916;
+length 8.229600 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1680892E_17916$RCS1105_17916;
+from node_1680892E_17916;
+to node_RCS1105_17916;
+length 96.621597 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879075_17916$4330207E_17916_1;
+from node_ND105879075_17916;
+to node_4330207E_17916_1;
+length 2.743200 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804563_17916$PS0080_17916;
+from node_ND61804563_17916;
+to node_PS0080_17916;
+length 7.924800 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804722_17916$2134546E_17916_1;
+from node_ND61804722_17916;
+to node_2134546E_17916_1;
+length 11.887200 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804862_17916$RCS0457_17916;
+from node_ND61804862_17916;
+to node_RCS0457_17916;
+length 18.287999 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804461_17916$PS0639_17916_1;
+from node_ND61804461_17916;
+to node_PS0639_17916_1;
+length 28.955999 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_294778E_17916$ND61804563_17916;
+from node_294778E_17916;
+to node_ND61804563_17916;
+length 120.091196 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804608_17916$4465700E_17916;
+from node_ND61804608_17916;
+to node_4465700E_17916;
+length 1.828800 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1775299E_17916$4801319E_17916;
+from node_1775299E_17916;
+to node_4801319E_17916;
+length 14.630400 m;
+configuration overhead_DEFAULT;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND90415713_17916$ND61804577_17916;
+from node_ND90415713_17916;
+to node_ND61804577_17916;
+length 22.250399 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS0080_17916_1$ND90415713_17916;
+from node_PS0080_17916_1;
+to node_ND90415713_17916;
+length 2.133600 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804461_17916$4008032E_17916_1;
+from node_ND61804461_17916;
+to node_4008032E_17916_1;
+length 46.024799 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_PS0639_17916$ND61804320_17916;
+from node_PS0639_17916;
+to node_ND61804320_17916;
+length 55.473598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4797915E_17916$ND105879213_17916;
+from node_4797915E_17916;
+to node_ND105879213_17916;
+length 53.339998 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804320_17916$ND61804715_17916;
+from node_ND61804320_17916;
+to node_ND61804715_17916;
+length 193.852794 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4008031E_17916_1$ND61804461_17916;
+from node_4008031E_17916_1;
+to node_ND61804461_17916;
+length 34.442399 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879213_17916$294776E_17916;
+from node_ND105879213_17916;
+to node_294776E_17916;
+length 1.828800 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804862_17916$2115381E_17916;
+from node_ND61804862_17916;
+to node_2115381E_17916;
+length 1.524000 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4330205E_17916$4330204E_17916;
+from node_4330205E_17916;
+to node_4330204E_17916;
+length 24.079199 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804608_17916$ND105879489_17916;
+from node_ND61804608_17916;
+to node_ND105879489_17916;
+length 35.661599 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1680707E_17916$ND61804665_17916;
+from node_1680707E_17916;
+to node_ND61804665_17916;
+length 32.918399 m;
+configuration overhead_DEFAULT;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804715_17916$2134549E_17916;
+from node_ND61804715_17916;
+to node_2134549E_17916;
+length 1.219200 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804416_17916$2134547E_17916;
+from node_ND61804416_17916;
+to node_2134547E_17916;
+length 2.133600 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_1680891E_17916$1680892E_17916;
+from node_1680891E_17916;
+to node_1680892E_17916;
+length 14.935200 m;
+configuration overhead_ACSR_3C_653_653N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804665_17916$1680706E_17916;
+from node_ND61804665_17916;
+to node_1680706E_17916;
+length 2.743200 m;
+configuration overhead_DEFAULT;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804665_17916$4475989E_17916;
+from node_ND61804665_17916;
+to node_4475989E_17916;
+length 41.757599 m;
+configuration overhead_DEFAULT;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND83808342_17916$ND136541264_17916;
+from node_ND83808342_17916;
+to node_ND136541264_17916;
+length 348.081589 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4801319E_17916$1680707E_17916;
+from node_4801319E_17916;
+to node_1680707E_17916;
+length 22.555199 m;
+configuration overhead_DEFAULT;
+}
+
+object overhead_line {
+phases "ABC";
+name line_294775E_17916_1$4797915E_17916;
+from node_294775E_17916_1;
+to node_4797915E_17916;
+length 27.127199 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_4471502E_17916$ND149942987_17916;
+from node_4471502E_17916;
+to node_ND149942987_17916;
+length 72.542398 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND149942987_17916$4471501E_17916;
+from node_ND149942987_17916;
+to node_4471501E_17916;
+length 2.133600 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_2115384E_17916$2115385E_17916;
+from node_2115384E_17916;
+to node_2115385E_17916;
+length 38.099999 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804416_17916$ND61804722_17916;
+from node_ND61804416_17916;
+to node_ND61804722_17916;
+length 134.416796 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND61804563_17916$1789372E_17916;
+from node_ND61804563_17916;
+to node_1789372E_17916;
+length 9.448800 m;
+configuration overhead_CU_3C_#4;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND136541264_17916$4471502E_17916;
+from node_ND136541264_17916;
+to node_4471502E_17916;
+length 72.237598 m;
+configuration overhead_ACSR_3C_336_336N;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879234_17916$294778E_17916;
+from node_ND105879234_17916;
+to node_294778E_17916;
+length 58.521598 m;
+configuration overhead_ACSR_3C_336;
+}
+
+object overhead_line {
+phases "ABC";
+name line_ND105879234_17916$1130036E_17916_1;
+from node_ND105879234_17916;
+to node_1130036E_17916_1;
+length 1.828800 m;
+configuration line_configuration_ND105879234$1130036E;
+}
+
+object line_configuration {
+name line_configuration_ND105879234$1130036E;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND90415713_17916$ND90415697_17916;
+from node_ND90415713_17916;
+to node_ND90415697_17916;
+length 31.394399 m;
+configuration line_configuration_ND90415713$ND90415697;
+}
+
+object line_configuration {
+name line_configuration_ND90415713$ND90415697;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND61804577_17916$PS0028_17916;
+from node_ND61804577_17916;
+to node_PS0028_17916;
+length 135.635996 m;
+configuration line_configuration_ND61804577$PS0028;
+}
+
+object line_configuration {
+name line_configuration_ND61804577$PS0028;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}
+object overhead_line {
+phases "ABC";
+name line_ND61804320_17916$ND61804314_17916;
+from node_ND61804320_17916;
+to node_ND61804314_17916;
+length 39.319199 m;
+configuration line_configuration_ND61804320$ND61804314;
+}
+
+object line_configuration {
+name line_configuration_ND61804320$ND61804314;
+conductor_A conductor_ACSR_336;
+conductor_B conductor_ACSR_336;
+conductor_C conductor_ACSR_336;
+spacing line_spacing_STANDARD_3W_1N;
+}

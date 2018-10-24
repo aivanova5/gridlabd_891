@@ -1,0 +1,102 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+// remove static load
+#if LOADS==yes
+#debug Converting area ${AREA} static load ${LOADID} phase ${PHASE} to ${COUNT} houses
+modify ${FEEDER}_load_${LOADID}_${PHASE}.groupid area_${AREA};
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_power_1 0+0j;
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_power_2 0+0j;
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_power_12 0+0j;
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_current_1 0+0j;	
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_current_2 0+0j;	
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_current_12 0+0j;	
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_impedance_1 0+0j;	
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_impedance_2 0+0j;	
+modify ${FEEDER}_load_${LOADID}_${PHASE}.constant_impedance_12 0+0j;	
+
+#define XLOAD=yes
+#else
+#ifdef MYSQL_AMI
+object player {
+	parent ${FEEDER}_load_${LOADID}_${PHASE};
+	connection sce;
+	table ami;
+	property "constant_power_12";
+	query "SELECT adddate(record_date,interval hour_id+utc_offset hour) as t, energy_value as constant_power_12 FROM sce.ami WHERE customer_id = \"1252657E\" and adddate(record_date,interval hour_id hour) between '${starttime/ UTC/}' and '${stoptime/ UTC/}' ORDER BY t";
+}
+#endif
+#endif
+
+// add solar panel installation rank
+#if SOLAR==yes
+#ifndef XLOAD
+#define XLOAD=yes
+#endif
+#ifdef PVPROB
+class solar {
+	double installed;
+}
+#endif
+#endif
+
+#ifdef XLOAD
+// load/solar connection
+object triplex_meter:..${COUNT} { 
+	name `meter_{SEQ_CUSTID:INC}`;
+	groupid ${FEEDER}_load_${LOADID};
+	parent ${FEEDER}_load_${LOADID}_${PHASE};
+	phases ${PHASE}S;
+	nominal_voltage 120;
+	latitude (${FEEDER}_load_${LOADID}_${PHASE}.latitude);
+	longitude (${FEEDER}_load_${LOADID}_${PHASE}.longitude);
+#if LOADS==yes
+	object house { 
+		floor_area random.triangle(1000,2000);
+		name `house_{SEQ_CUSTID}`;
+	}; 
+#endif
+#ifdef MYSQL_AMI
+//	object recorder {
+//		connection ami;
+//		table meter;
+//		property "measured_voltage_1,measured_voltage_2,measured_demand,measured_real_power,measured_reactive_power,measured_real_energy,measured_reactive_energy,measured_current_1,measured_current_2,measured_current_N";
+//		interval 900;
+//		header_fieldnames "name,groupid";
+//	};
+#endif
+#if SOLAR==yes
+	object inverter {
+		name `inverter_{SEQ_CUSTID}`;
+		phases AS;
+		rated_power 25000;	
+		generator_mode CONSTANT_PF;
+		generator_status ONLINE;
+		inverter_efficiency 0.9;
+		inverter_type PWM;
+		object solar {
+			name `solar_{SEQ_CUSTID}`;
+			phases AS;
+#ifndef PVAREA
+			area 350 sf;
+#else
+			area ${PVAREA};
+#endif
+#ifndef PVPROB
+			generator_status ONLINE;
+#else
+			installed random.bernoulli(${PVPROB});
+			generator_status ($installed) ? OFFLINE : ONLINE; 
+#endif			
+			generator_mode SUPPLY_DRIVEN;
+			panel_type SINGLE_CRYSTAL_SILICON;
+		 };
+	};
+#endif
+}
+#endif

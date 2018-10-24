@@ -1,0 +1,104 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////CONFIGURATION FILES////////////////////////////////
+global int32 SEQ_CUSTID 0;
+#include "alloy_config.glm"
+#include "aluminum_config.glm"
+#include "bismuth_config.glm"
+#include "cobalt_config.glm"
+#include "titanium_config.glm"
+
+
+//////////////////////////////SETTINGS///////////////////////////////////////
+#set iteration_limit=50
+#set relax_naming_rules=1
+#set suppress_repeat_messages=0
+#define FEEDER=camden
+
+//////////////////////////////CLOCK//////////////////////////////////////////
+//#set run_realtime=1
+#option server
+#set server_portnum=6267
+clock {
+	timezone PST+8PDT;
+}
+
+//////////////////////////////MODULES////////////////////////////////////////
+module tape;
+module mysql {
+	hostname gridlabd.slac.stanford.edu;
+	username gridlabd;
+	password gridlabd;
+	port 3306;
+}
+module powerflow {
+        solver_method NR;
+};
+
+///////////////////////////////MAIN BUS//////////////////////////////////////
+object meter{
+	name camden_main_bus;
+	bustype SWING;
+	phases ABC;
+	nominal_voltage 6928.41 V;
+	voltage_A 7199.77+0.0d V;
+	voltage_B 7199.77-120.0d V;
+	voltage_C 7199.77+120.0d V;
+	object recorder {
+		file camden_scada.csv;
+		//table source_17916;
+		//interval 3600;
+		property measured_real_energy,measured_reactive_energy;
+	};
+
+}
+
+//////////////////////////////MODEL COMPONENTS///////////////////////////////
+
+//ALLOY
+#include "alloy_load_objects.glm"
+#include "alloy_loads.glm"
+#include "alloy_transformers.glm"
+#include "alloy_nodes.glm"
+#include "alloy_lines.glm"
+#include "alloy_switches.glm"
+
+//ALUMINUM
+#include "aluminum_load_objects.glm"
+#include "aluminum_loads.glm"
+#include "aluminum_transformers.glm"
+#include "aluminum_nodes.glm"
+#include "aluminum_lines.glm"
+#include "aluminum_switches.glm"
+
+//BISMUTH
+#include "bismuth_load_objects.glm"
+#include "bismuth_loads.glm"
+#include "bismuth_transformers.glm"
+#include "bismuth_nodes.glm"
+#include "bismuth_lines.glm"
+#include "bismuth_switches.glm"
+
+//COBALT
+#include "cobalt_load_objects.glm"
+#include "cobalt_loads.glm"
+#include "cobalt_transformers.glm"
+#include "cobalt_nodes.glm"
+#include "cobalt_lines.glm"
+#include "cobalt_switches.glm"
+
+//TITANIUM
+#include "titanium_load_objects.glm"
+#include "titanium_loads.glm"
+#include "titanium_transformers.glm"
+#include "titanium_nodes.glm"
+#include "titanium_lines.glm"
+#include "titanium_switches.glm"

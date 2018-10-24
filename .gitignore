@@ -2,6 +2,10 @@
 
 Makefile.in
 
+# Mac stuff
+.DS_Store
+.dropbox
+
 # http://www.gnu.org/software/autoconf
 /autom4te.cache
 /autoscan.log

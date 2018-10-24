@@ -1,0 +1,1163 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// GridLAB-D service model configuration control file
+// Copyright (C) 2016, SLAC National Accelerator Laboratory
+// Author: Alyona Ivanova
+//
+/////////////////////////////////////////////////////////////////////////////
+
+
+object node{
+name node_4636936E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND106197673_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS1388_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_718811E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4431000E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4707115E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309561_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211437E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4008139_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0567_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678135E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270649_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1658250EPT1_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00286_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND70640903_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0651_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5354648-A_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5444394-1_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927457_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_972235E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_2320044E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270533_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00287_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26268859_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0651_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1679350E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1809759E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5341496-1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND10904198_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0433_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5502416-1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00287_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927436_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1252657E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225910E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225914E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_2320043E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309954_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678145E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS1247_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211420E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_226772E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270587_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00289_00331_1;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270569_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270630_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270533_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927544_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_J5190-3P_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270503_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270588_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1088558E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_33165E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1409957E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270503_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND108680947_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1590592E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270609_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5354648-T_F_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND94548081_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5444394-1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00289_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4094874E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1557881E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1088555E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270624_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4292348E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5513970_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270493_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND106197862_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211021E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BF00286_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5341496-1_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_2320044E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270513_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_J5190-1P_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS1247_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270595_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270513_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1557881E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927497_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225910E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS1388_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS1390_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1590590E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5445191-1_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0485_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270603_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4292348E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309426_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270493_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5354648-A_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_718811E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225907E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678136E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927565_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309919_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1658250EPT1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225912E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_151092E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211421E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309629_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_J5190-2P_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270557_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_33165E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270557_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270523_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND98973562_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1511150E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0025_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND11556365_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0445_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211020E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND94957672_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4008139_00331_1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1511150E_00331_1;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26270523_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211024E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BS2229-T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0485_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309465_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0652_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309546_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND102927587_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_211420E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26268851_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0654_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4094873E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678132E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5445191-1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225924E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_840252EPH_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BS2229-L_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26270434_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4094874E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0652_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5510937-1_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BS2229-T_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5510937-1_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_804328E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_26268867_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5204066_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND26309375_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1409957E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_BS2229-R_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1252662E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678131E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1088560E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_225907E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1838130E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678122E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1088259E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_840252EPH_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5444393_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_P5502416-1_T_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_1590591E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_678120E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND92583208_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0237_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_151092E_00331_1;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_ND94957693_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4510825E_00331;
+groupid primary;
+phases ABN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_PS0654_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_754600H_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
+
+object node{
+name node_4417545E_00331;
+groupid primary;
+phases ABCN;
+nominal_voltage 6928.41 V;
+} 
